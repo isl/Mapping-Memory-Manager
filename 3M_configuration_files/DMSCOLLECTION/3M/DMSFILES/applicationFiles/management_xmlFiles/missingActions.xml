@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2014 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Georgios Samaritakis, Konstantina Konsolaki.
+
+This file is part of the Mapping Memory Manager project.
+
+-->
+
+<missingValidActions>
+    <menugroup id="1" type="topcontent">
+        <menu id="ExportVersion">
+            <actionPerType id="Mapping">
+                <userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">editor</userRights>
+                <userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">admin</userRights>
+            </actionPerType>
+            <label>Export_Version</label>
+            <label>Versions</label>
+        </menu>
+        <menu id="CreateVersion">
+            <actionPerType id="Mapping">
+                <userRights id="ExportVersions?type=Mapping&amp;id=" href="#">editor</userRights>
+                <userRights id="ExportVersions?type=Mapping&amp;id=" href="#">admin</userRights>
+            </actionPerType>
+            <label>CreateVersion</label>
+            <label>CreateVersion</label>
+        </menu>
+        <menu id="New" img_src="/formating/images/newdoc.gif">
+            <actionPerType id="Mapping" help="newHelp">
+                <userRights href="AdminEntity?type=Mapping&amp;action=insert">admin</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=insert">editor</userRights>
+            </actionPerType>
+            <actionPerType id="AdminUser">
+                <userRights href="AdminUser?action=insert">admin</userRights>
+            </actionPerType>
+            <actionPerType id="AdminOrg">
+                <userRights href="AdminOrg?action=insert">sysadmin</userRights>
+            </actionPerType>
+            <actionPerType id="AdminVoc">
+                <userRights href="AdminVoc?action=insert">editor</userRights>
+                <userRights href="AdminVoc?action=insert">admin</userRights>
+            </actionPerType>
+            <actionPerType id="AdminVocTrans">
+                <userRights href="AdminVoc?action=insert_trans">editor</userRights>
+                <userRights href="AdminVoc?action=insert_trans">admin</userRights>
+                <label>AdminVocTrans</label>
+            </actionPerType>
+        </menu>
+        <menu id="info" img_src="/formating/images/newdoc.gif">
+            <actionPerType id="Mapping" help="newHelp">
+                <userRights href="AdminEntity?type=Mapping&amp;action=info">sysadmin</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=info">guest</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=info">admin</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=info">editor</userRights>
+            </actionPerType>
+        </menu>
+        <menu id="reject" img_src="/formating/images/newdoc.gif">
+            <actionPerType id="Mapping" help="newHelp">
+                <userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">sysadmin</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">admin</userRights>
+            </actionPerType>
+        </menu>
+        <menu id="rights" img_src="/formating/images/newdoc.gif">
+            <actionPerType id="Mapping" help="newHelp">
+                <userRights href="AdminEntity?type=Mapping&amp;action=setrights">editor</userRights>
+                <userRights href="AdminEntity?type=Mapping&amp;action=setrights">admin</userRights>
+            </actionPerType>
+        </menu>
+        <menu id="Edit" img_src="/formating/images/newdoc.gif">
+            <actionPerType id="AdminUser">
+                <userRights id="AdminUser?action=edit" href="#">admin</userRights>
+                <userRights id="AdminUser?action=edit" href="">sysadmin</userRights>
+            </actionPerType>
+            <actionPerType id="AdminOrg">
+                <userRights id="AdminOrg?action=edit" href="#">admin</userRights>
+                <userRights id="AdminOrg?action=edit" href="#">sysadmin</userRights>
+            </actionPerType>
+            <label>Epexergasia</label>
+        </menu>
+    </menugroup>
+</missingValidActions>

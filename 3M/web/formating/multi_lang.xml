@@ -1,0 +1,3938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2014 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Georgios Samaritakis, Konstantina Konsolaki.
+
+This file is part of the 3M webapp of Mapping Memory Manager project.
+
+-->
+
+<locale>
+
+    <header>
+        <name>
+            <gr>Ευρωπαϊκό Κέντρο Βυζαντινών και Μεταβυζαντινών Μνημείων</gr>
+            <en>The European Centre of Byzantine and Postbyzantine Monuments</en>
+            <fr>Centre européen de monuments byzantins et post-byzantins</fr>
+            <it>Centro europeo monumenti bizantini e post-bizantini</it>
+            <ar>المركز الأوربى للأثار البيزنطية وما بعد البيزنطية</ar>
+            <sv>Det europeiska centret för bysantinska och postbysantinska monument</sv>
+            <nl>Het Europese Centrum van Byzantijnse en Postbyzantijnse Monumenten</nl>
+        </name>
+    </header>	
+
+    <topmenu>
+        <Diaxirisi>
+            <gr>Διαχείριση</gr>
+            <en>Admin</en>
+            <fr>Administration</fr>
+            <it>Gestione</it>
+            <ar>إدارة</ar>
+            <sv>Administratör</sv>
+            <nl>Beheerder</nl>
+        </Diaxirisi>
+        <BugReport>
+            <gr>Αναφορά προβλήματος</gr>
+            <en>Bug Report</en>
+            <fr>Rapport De Bogue</fr>
+            <it>Riferimento problema</it>
+            <ar>إشارة للمشكلة</ar>
+            <sv>Buggrapport</sv>
+            <nl>Foutrapport</nl>
+        </BugReport>
+        <changePass>
+            <gr>Ρυθμίσεις Λογαριασμού</gr>
+            <en>Account Settings</en>
+            <fr>Paramètres du Compte</fr>
+            <it>Impostazioni Account</it>
+            <ar>إعدادات الحساب</ar>
+            <sv>Kontoinställningar</sv>
+            <nl>Accountinstellingen</nl>
+        </changePass>
+        <Ontotites>
+            <gr>Οντότητες</gr>
+            <en>Entities</en>
+            <fr>Entités</fr>
+            <it>Entità</it>
+            <ar>كيانات</ar>
+            <sv>Enheter</sv>			
+            <nl>Entiteiten</nl>
+        </Ontotites>
+        <Help>
+            <gr>Βοήθεια</gr>
+            <en>Help</en>
+            <fr>Aide</fr>
+            <it>Aiuto</it>
+            <ar>مساعدة</ar>
+            <sv>Hjälp</sv>
+            <nl>Help</nl>
+        </Help>
+        <User_Manual>
+            <gr>Εγχειρίδιο Χρήστη</gr>
+            <en>User Manual</en>
+            <fr>User Manual</fr>
+            <it>Manuale per l'utente</it>
+            <ar>دليل المستخدم </ar>
+            <sv>Användarmanual</sv>
+            <nl>Gebruikershandleiding</nl>
+        </User_Manual>
+        <Guest_Manual>
+            <gr>Εγχειρίδιο Αναγνώστη</gr>
+            <en>Guest Manual</en>
+            <fr>Guest Manual</fr>
+            <it>Manuale per il lettore</it>
+            <ar>دليل القارىء</ar>
+            <sv>Gästmanual</sv>
+            <nl>Gast handleiding</nl>
+        </Guest_Manual>
+        <Admin_Manual>
+            <gr>Εγχειρίδιο Διαχειριστή Φορέα</gr>
+            <en>Adminstrator Manual</en>
+            <fr>Administrator Manual</fr>
+            <it>Manuale per l'ente gestore</it>
+            <ar>دليل  إدارة الجهة</ar>
+            <sv>Administratörsmanual</sv>
+            <nl>Beheerdershandleiding</nl>
+        </Admin_Manual>
+        <SysAdmin_Manual>
+            <gr>Εχγειρίδιο Διαχειριστή Συστήματος</gr>
+            <en>System Administrator Manual </en>
+            <fr>System Administrator Manual </fr>
+            <it>Manuale per l'amministratore del sistema </it>
+            <ar>دليل إدارة النظام </ar>
+            <sv>Manual för systemadministratör</sv>
+            <nl>Handleiding systeembeheerder</nl>
+        </SysAdmin_Manual>
+        <logout>
+            <gr>Έξοδος</gr>
+            <en>Logout</en>
+            <fr>Sortie</fr>
+            <it>Uscita</it>
+            <ar>خروج</ar>
+            <sv>Logga ut</sv>
+            <nl>Afmelden</nl>
+        </logout>
+
+        <DiaxirisiSustimatos>
+            <gr>Διαχείριση Συστήματος</gr>
+            <en>System Admin</en>
+            <fr>Administration de système</fr>
+            <it>Gestione sistema</it>
+            <ar>إدارة النظام</ar>
+            <sv>Systemadministratör</sv>
+            <nl>Systeembeheerder</nl>
+        </DiaxirisiSustimatos>
+        <user>
+            <gr>Χρήστης</gr>
+            <en>User</en>
+            <fr>Utilisateur</fr>
+            <it>Utente</it>
+            <ar>مستخدم</ar>
+            <sv>Användare</sv>
+            <nl>Gebruiker</nl>
+        </user>
+    </topmenu>
+    <leftmenu>        
+        <DigitalPhoto>
+            <gr>Ψηφιακές Φωτογραφίες</gr>
+            <en>Digital Photos</en>
+            <fr>Photos Numériques</fr>
+            <it>Digital Foto</it>
+            <ar>صور الرقمية</ar>
+            <sv>Digitala Bilder</sv>
+            <nl>Digitale Foto's</nl>			
+        </DigitalPhoto>
+
+        <Glossary>
+            <gr>Γλωσσάρι</gr>
+            <en>Glossary</en>
+            <fr>Glossaire</fr>
+            <it>Glossario</it>
+            <ar>قاموس مصطلحات</ar>
+            <sv>Ordlista</sv>
+            <nl>Woordenlijst</nl>	
+        </Glossary>
+        <Comment>
+            <gr>Σχόλια</gr>
+            <en>Comments</en>
+            <fr>Commentaires</fr>
+            <it>Commenti</it>
+            <ar>تعليقات</ar>
+            <sv>Kommentarer</sv>
+            <nl>Comments</nl>	
+        </Comment>  
+        <Martyries>
+            <gr>Μαρτυρίες</gr>
+            <en>Evidences</en>
+            <fr>Evidences</fr>
+            <it>Evidenze</it>
+            <ar>الأدلة</ar>
+            <sv>Bevis</sv>            
+            <nl>Bewijzen</nl>
+        </Martyries>
+        <Route>
+            <gr>Διαδρομές</gr>
+            <en>Trails</en>
+            <fr>Routes</fr>
+            <it>Percorsi</it>
+            <ar>طرق</ar>
+            <sv>Rutter</sv>
+            <nl>Trails</nl>
+        </Route>
+        <Study>
+            <gr>Μελέτες</gr>
+            <en>Essays</en>
+            <fr>études</fr>
+            <it>Studi</it>
+            <ar>دراسات</ar>
+            <sv>Studier</sv>
+            <nl>Essays</nl>
+        </Study>
+        <Game>
+            <gr>Παιχνίδια</gr>
+            <en>Games</en>
+            <fr>Jeux</fr>
+            <it>Giochi</it>
+            <ar>ألعاب</ar>
+            <sv>Spel</sv>
+            <nl>Games</nl>
+        </Game>
+        <Podcast>
+            <gr>Εκπομπές</gr>
+            <en>Podcasts</en>
+            <fr>émissions</fr>
+            <it>Emissioni</it>
+            <ar>انبعاثات</ar>
+            <sv>Utsläpp</sv>
+            <nl>Podcasts</nl>
+        </Podcast>
+
+        <Photos>
+            <gr>Φωτογραφίες</gr>
+            <en>Photos</en>
+            <fr>Les photos</fr>
+            <it>Foto</it>
+            <ar>صور</ar>
+            <sv>Foton</sv>            
+            <nl>Foto's</nl>
+        </Photos>
+        <Panoramata>
+            <gr>Πανοράματα</gr>
+            <en>Panoramas</en>
+            <fr>Panoramas</fr>
+            <it>Panorami</it>
+            <ar>الإستعراضات</ar>
+            <sv>Panoramabilder</sv>
+            <nl>Panorama</nl>
+        </Panoramata>
+        <InfoText>
+            <gr>Πληροφοριακά Κείμενα</gr>
+            <en>Information Texts</en>
+            <fr>InfoText</fr>
+            <it>InfoText</it>
+            <ar>InfoText</ar>
+            <sv>InfoText</sv>
+            <nl>Informatie Teksten</nl>
+        </InfoText>
+        <Diadrastika>
+            <gr>Διαδραστικά</gr>
+            <en>Interactive</en>
+            <fr>Interactif</fr>
+            <it>Interactive</it>
+            <ar>متفاعل</ar>
+            <sv>Interactive</sv>
+            <nl>Interactieve</nl>
+        </Diadrastika>
+        <Video>
+            <gr>Βίντεο</gr>
+            <en>Video</en>
+            <fr>Vidéo</fr>
+            <it>Video</it>
+            <ar>فيديو</ar>
+            <sv>Video</sv>
+            <nl>Video</nl>
+        </Video>
+
+        <DeltiaKinitwnMnimeiwn>
+            <gr>Κινητά Μνημεία</gr>
+            <en>Objects</en>
+            <fr>Objets</fr>
+            <it>here....</it>
+            <ar>here....</ar>
+            <sv>Föremål</sv>
+            <nl>Objecten</nl>
+        </DeltiaKinitwnMnimeiwn>
+        <DeltiaMnimeiwn>
+            <gr>Μνημεία</gr>
+            <en>Monuments</en>
+            <fr>Bulletins de monuments</fr>
+            <it>Monumenti</it>
+            <ar>أثار غير منقولة</ar>
+            <sv>Monument blankett</sv>
+            <nl>Monumenten</nl>
+        </DeltiaMnimeiwn>
+        <DeltiaAkinitwnMnimeiwn>
+            <gr>Ακίνητα Μνημεία</gr>
+            <en>Monuments</en>
+            <fr>Monuments</fr>
+            <it>Monumenti</it>
+            <ar>أثار غير منقولة</ar>
+            <sv>Monument</sv>
+            <nl>Monumenten</nl>
+        </DeltiaAkinitwnMnimeiwn>
+        <Arxeia>
+            <gr>Αρχεία</gr>
+            <en>Archives</en>
+            <fr>Archives</fr>
+            <it>Archivi</it>
+            <ar>ملفات</ar>
+            <sv>Arkiv</sv>
+            <nl>Archieven</nl>
+        </Arxeia>
+        <Bibliografia>
+            <gr>Βιβλιογραφία</gr>
+            <en>Bibliography</en>
+            <fr>Bibliographie</fr>
+            <it>Bibliografia</it>
+            <ar>مراجع</ar>
+            <sv>Bibliografi</sv>
+            <nl>Bibliografie</nl>
+        </Bibliografia>
+        <DocRights>
+            <gr>Δικαιώματα Σε Δελτίο</gr>
+            <en>Card Rights</en>
+            <fr>Droits sur la fiche</fr>
+            <it>Diritti su scheda</it>
+            <ar>حقوق البطاقة</ar>
+            <sv>Blanketträttigheter</sv>
+            <nl>Kaart rechten</nl>
+        </DocRights>
+        <AdminObjs>
+            <gr>Κινητά Μνημεία</gr>
+            <en>Mobile Monuments</en>
+            <fr>Monuments Mobiles</fr>
+            <it>here....</it>
+            <ar>here....</ar>
+            <sv>Mobila monument</sv>
+            <nl>Mobiele monumenten</nl>
+        </AdminObjs>
+        <AdminDocs>
+            <gr>Δελτία Μνημείων</gr>
+            <en>Monument Cards</en>
+            <fr>Bulletins de monuments</fr>
+            <it>Monumenti</it>
+            <ar>أثار غير منقولة</ar>
+            <sv>Monument blankett</sv>
+            <nl>Monument kaarten</nl>
+        </AdminDocs>
+
+        <Tmimata>
+            <gr>Τμήματα</gr>
+            <en>Groups</en>
+            <fr>Parties</fr>
+            <it>Sezioni</it>
+            <ar>أقسام</ar>
+            <sv>Avdelning</sv>
+            <nl>Afdeling</nl>
+        </Tmimata>
+        <Exoplismos>
+            <gr>Εξοπλισμός</gr>
+            <en>Equipment</en>
+            <fr>Équipement</fr>
+            <it>Arredo</it>
+            <ar>تجهيزات</ar>
+            <sv>Utrustning</sv>
+            <nl>Uitrusting</nl>
+        </Exoplismos>
+        <Exoplismos>
+            <gr>Εξοπλισμός</gr>
+            <en>Equipment</en>
+            <fr>Conservation</fr>
+            <it>Arredo</it>
+            <ar>تجهيزات</ar>
+            <sv>Utrustning</sv>
+            <nl>Uitrusting</nl>
+        </Exoplismos>
+        <Simbanta>
+            <gr>Συμβάντα</gr>
+            <en>Events</en>
+            <fr>Incidents</fr>
+            <it>Eventi</it>
+            <ar>أحداث</ar>
+            <sv>Händelse</sv>
+            <nl>Evenementen</nl>
+        </Simbanta>
+        <ExportTo>
+            <gr>Εξαγωγή Σε</gr>
+            <en>Export To</en>
+            <fr>Exportation à</fr>
+            <it>Esporta in</it>
+            <ar>خروج  إلى</ar>
+            <sv>Exportera till</sv>
+            <nl>Exporteer naar</nl>
+        </ExportTo>
+        <GenikesEpiloges>
+            <gr>Γενικές Επιλογές</gr>
+            <en>General Choices</en>
+            <fr>Choix Généraux</fr>
+            <it>Selezioni generali</it>
+            <ar>إختيارات عامة</ar>
+            <sv>Standardval</sv>
+            <nl>Algemene keuzes</nl>
+        </GenikesEpiloges>
+        <ImportFromSKBM>
+            <gr>Εισαγωγή Από ΣΚΒΜ</gr>
+            <en>Import From SKBM</en>
+            <fr>Importation de SKVM</fr>
+            <it>Inserito da CEMBPB</it>
+            <ar>دخول من النظام المركزى للأثار البيزنطية</ar>
+            <sv>Importera från SKBM</sv>
+            <nl>Importeer van SKBM</nl>
+        </ImportFromSKBM>
+        <Organismoi>
+            <gr>Οργανισμοί</gr>
+            <en>Organizations</en>
+            <fr>Organisations</fr>
+            <it>Organismi</it>
+            <ar>هيئات</ar>
+            <sv>Institution</sv>
+            <nl>Instelling</nl>
+        </Organismoi>
+        <AdminOrgs>
+            <gr>Φορείς</gr>
+            <en>Institutions</en>
+            <fr>Organisations</fr>
+            <it>Organismi</it>
+            <ar>جهات</ar>
+            <sv>Institutioner</sv>
+            <nl>Instellingen</nl>
+        </AdminOrgs>
+        <Topoi>
+            <gr>Τόποι</gr>
+            <en>Locations</en>
+            <fr>Lieux</fr>
+            <it>Luoghi</it>
+            <ar>مواقع</ar>
+            <sv>Plats</sv>
+            <nl>Plaats</nl>
+        </Topoi>
+        <Ylika>
+            <gr>Υλικά</gr>
+            <en>Materials</en>
+            <fr>Matériel</fr>
+            <it>Materiali</it>
+            <ar>مواد</ar>
+            <sv>Material</sv>
+            <nl>Materiaal</nl>
+        </Ylika>
+        <DeltiaSintakti>
+            <gr>Τα Δελτία Μου</gr>
+            <en>My Cards</en>
+            <fr>Mes fiches</fr>
+            <it>Le mie Schede </it>
+            <ar>بطاقاتى</ar>
+            <sv>Min blankett</sv>
+            <nl>Mijn kaarten</nl>
+        </DeltiaSintakti>
+        <NewOrg>
+            <gr>Δημιουργία Φορέα</gr>
+            <en>New Institution</en>
+            <fr>Nouvelle Organisation</fr>
+            <it>Crea Organismo</it>
+            <ar>إنشاء جهة</ar>
+            <sv>Ny institution</sv>
+            <nl>Nieuwe instelling</nl>
+        </NewOrg>
+        <NewTerm>
+            <gr>Εισαγωγή Όρου</gr>
+            <en>New Term</en>
+            <fr>Nouvel Terme</fr>
+            <it>Inserisci termine</it>
+            <ar>إدخال مصطلح</ar>
+            <sv>Ny term</sv>
+            <nl>Nieuwe term</nl>
+        </NewTerm>
+        <NewUser>
+            <gr>Δημιουργία Χρήστη</gr>
+            <en>New User</en>
+            <fr>Nouvel Utilisateur</fr>
+            <it>Crea utente</it>
+            <ar>إنشاء مستخدم</ar>
+            <sv>Ny användare</sv>
+            <nl>Nieuwe gebruiker</nl>
+        </NewUser>
+        <Others>
+            <gr>Άλλα</gr>
+            <en>Others</en>
+            <fr>Autres</fr>
+            <it>Altro</it>
+            <ar>أخرى</ar>
+            <sv>Annat </sv>
+            <nl>Anderen</nl>
+        </Others>
+        <DeltiaAllwnSintaktwn>
+            <gr>Δελτία Άλλων</gr>
+            <en>Others’ Cards</en>
+            <fr>Autres fiches</fr>
+            <it>Schede di altri</it>
+            <ar>بطاقات الأخرين</ar>
+            <sv>Andras blankett</sv>
+            <nl>Kaarten van anderen</nl>
+        </DeltiaAllwnSintaktwn>
+        <ProboliMeAitisi>
+            <gr>Υπό Δημοσίευση</gr>
+            <en>Pending For Publishing</en>
+            <fr>Sous publication</fr>
+            <it>In via di pubblicazione</it>
+            <ar>تحت النشر</ar>
+            <sv>Redo för publicering</sv>
+            <nl>In afwachting voor publicatie</nl>
+        </ProboliMeAitisi>
+        <Proswpa>
+            <gr>Πρόσωπα</gr>
+            <en>Persons</en>
+            <fr>Personne</fr>
+            <it>Persone</it>
+            <ar>أشخاص</ar>
+            <sv>Person</sv>
+            <nl>Personen</nl>
+        </Proswpa>
+        <ProboliDimosieumenwn>
+            <gr>Δημοσιευμένα</gr>
+            <en>Published</en>
+            <fr>Publiés</fr>
+            <it>Pubblicate</it>
+            <ar>منشورات</ar>
+            <sv>Publicerad</sv>
+            <nl>Gepubliceerd</nl>
+        </ProboliDimosieumenwn>
+        <published>
+            <gr>Δημοσιευμένα</gr>
+            <en>Published</en>
+            <fr>Publiés</fr>
+            <it>Pubblicate</it>
+            <ar>منشورات</ar>
+            <sv>Publicerad</sv>
+            <nl>Gepubliceerd</nl>
+        </published>
+        <DimosieumenaDeltia>
+            <gr>Δημοσιευμένα Δελτία</gr>
+            <en>Published Cards</en>
+            <fr>Fiches publiées</fr>
+            <it>Schede pubblicate</it>
+            <ar>بطاقات منشورة</ar>
+            <sv>Publicerade blanketter</sv>
+            <nl>Gepubliceerde kaarten</nl>
+        </DimosieumenaDeltia>
+
+        <ProboliOlwn>
+            <gr>Προβολή Όλων</gr>
+            <en>Show All</en>
+            <fr>Projection de Tous</fr>
+            <it>Visualizza tutti</it>
+            <ar>عرض الجميع</ar>
+            <sv>Visa alla</sv>
+            <nl>Alles tonen</nl>
+        </ProboliOlwn>
+
+        <AdminUsers>
+            <gr>Χρήστες</gr>
+            <en>Users</en>
+            <fr>Utilisateurs</fr>
+            <it>Utenti</it>
+            <ar>مستخدمون</ar>
+            <sv>Användare</sv>
+            <nl>Gebruikers</nl>
+        </AdminUsers>
+        <Backup>
+            <gr>Αντίγραφα Συστήματος</gr>
+            <en>System Backup</en>
+            <fr>Système de sauvegarde</fr>
+            <it>Sistema di backup</it>
+            <ar>نظام الاحتياطي</ar>
+            <sv>System Backup</sv>
+            <nl>Systeembackup</nl>
+        </Backup>
+        <make_backup>
+            <gr>Δημιουργία Αντιγράφου</gr>
+            <en>Create Backup</en>
+            <fr>Créer Backup</fr>
+            <it>Crea backup</it>
+            <ar>ايجاد الاحتياطي</ar>
+            <sv>Skapa backup</sv>
+            <nl>Back-up maken</nl>
+        </make_backup>
+
+        <AdminVocs>
+            <gr>Λεξιλόγια</gr>
+            <en>Vocabularies</en>
+            <fr>Vocabulaires</fr>
+            <it>Lessici</it>
+            <ar>مفردات</ar>
+            <sv>Ordlistor</sv>
+            <nl>Woordenlijsten</nl>
+        </AdminVocs>
+        <AdminVoc>
+            <gr>Διαχείριση</gr>
+            <en>Administration</en>
+            <fr>Administration</fr>
+            <it>Gestione</it>
+            <ar>إدارة</ar>
+            <sv>Administration</sv>
+            <nl>Administratie</nl>
+        </AdminVoc>
+        <AdminVocTrans>
+            <gr>Μεταφράσεις</gr>
+            <en>Translations</en>
+            <fr>Traducrtions</fr>
+            <it>Traduzioni</it>
+            <ar>ترجمات</ar>
+            <sv>Översättnin</sv>
+            <nl>Vertaalwerk</nl>
+        </AdminVocTrans>
+        <mappings>
+            <en>Mappings</en>
+        </mappings>
+    </leftmenu>
+    <context>
+        <AudienceLevel>
+            <gr>Τύπος Ακροατηρίου</gr>
+            <en>Audience Level</en>
+            <fr>Public Cible</fr>
+            <it>Pubblico Livello</it>
+            <ar>جمهور المستوى</ar>
+            <sv>Publik Nivå</sv>
+            <nl>Audience Level</nl> 
+        </AudienceLevel>
+        <AccessibleThrough>
+            <gr>Τύπος Πρόσβασης</gr>
+            <en>Accessible Through</en>
+            <fr>Accessible Par</fr>
+            <it>Accessibile Attraverso</it>
+            <ar>الوصول إليها من خلال</ar>
+            <sv>åtkomliga Genom</sv>
+            <nl>Bereikbaar Via</nl> 
+        </AccessibleThrough>
+        <Listen>
+            <gr>Ακρόαση</gr>
+            <en>Listen</en>
+            <fr>Écoutez</fr>
+            <it>Ascoltare</it>
+            <ar>استمع</ar>
+            <sv>Lyssna</sv>
+            <nl>Luisteren</nl> 
+        </Listen>
+        <Imported>
+            <gr>Εισαχθέντα</gr>
+            <en>Imported</en>
+            <fr>Importé</fr>
+            <it>Importato</it>
+            <ar>مستورد</ar>
+            <sv>Importerad</sv>
+            <nl>Geïmporteerde</nl> 
+        </Imported>
+        <NOT_VALID_IMPORT>
+            <gr>Το XML αρχείο δεν είναι έγκυρο.</gr>
+            <en>The XML file is not valid.</en>
+            <fr>Le fichier XML n'est pas valide.</fr>
+            <it>Il file XML non è valido.</it>
+            <ar>ملف XML غير صالح.</ar>
+            <sv>XML-filen är inte giltigt.</sv>
+            <nl>Het XML-bestand is niet geldig.</nl> 
+        </NOT_VALID_IMPORT>
+        <GeneralPurpose>
+            <gr>Γενικός Σκοπός</gr>
+            <en>General Purpose</en>
+            <fr>General Purpose</fr>
+            <it>General Purpose</it>
+            <ar>الغرض العام</ar>
+            <sv>General Purpose</sv>
+            <nl>General Purpose</nl> 
+        </GeneralPurpose>
+        <IntendedUse>
+            <gr>Ειδικός Σκοπός</gr>
+            <en>Intended Use</en>
+            <fr>Utilisation Prévue</fr>
+            <it>Destinazione d'uso</it>
+            <ar>يقصد الاستخدام</ar>
+            <sv>Avsedd Användning</sv>
+            <nl>Beoogd gebruik</nl> 
+        </IntendedUse>
+        <SelectFile>
+            <gr>Επιλέξτε το XML αρχείο που θέλετε να εισάγετε:</gr>
+            <en>Select the XML file you want to import:</en>
+            <fr>Sélectionnez le XML fichier que vous souhaitez importer:</fr>
+            <it>Selezionare il XML file che si desidera importare:</it>
+            <ar>حدد الملف الذي تريد استيراده:</ar>
+            <sv>Välj den XML fil du vill importera:</sv>
+            <nl>Selecteer het XML-bestand dat u wilt importeren:</nl> 
+        </SelectFile>
+        <SelectTXTFile>
+            <gr>Επιλέξτε το .txt αρχείο που περιέχει τους όρους που θέλετε να εισάγετε:</gr>
+            <en>Select the .text file containing the terms you want to import:</en>
+            <fr>Sélectionnez le fichier. txt contenant les termes que vous souhaitez importer:</fr>
+            <it>Selezionare il file. Txt contenente i termini che si desidera importare:</it>
+            <ar>حدد الملف الذي يحتوي على النص حيث تريد استيرادها.:</ar>
+            <sv>Välj. txt-fil som innehåller de villkor du vill importera:</sv>
+            <nl>Selecteer het tekstbestand met de termen die u wilt importeren.:</nl> 
+        </SelectTXTFile>
+        <NotValidFile>
+            <gr>Παρακαλώ επιλέξτε ένα XML αρχείο</gr>
+            <en>Please select an XML file</en>
+            <fr>S'il vous plaît sélectionner un fichier XML</fr>
+            <it>Si prega di selezionare un file XML</it>
+            <ar>الرجاء اختيار ملف XML</ar>
+            <sv>Välj en XML-fil</sv>
+            <nl>Selecteer een XML-bestand</nl> 
+        </NotValidFile>
+        <NotValidTXTFile>
+            <gr>Παρακαλώ επιλέξτε ένα .txt αρχείο</gr>
+            <en>Please select a .txt file</en>
+            <fr>S'il vous plaît sélectionner un fichier .txt</fr>
+            <it>Si prega di selezionare un file .txt</it>
+            <ar>الرجاء اختيار ملف .txt</ar>
+            <sv>Välj en .txt-fil</sv>
+            <nl>Selecteer een. Txt-bestand</nl> 
+        </NotValidTXTFile>
+        <DigitalPhoto>
+            <gr>Ψηφιακή Φωτογραφία</gr>
+            <en>Digital Photo</en>
+            <fr>Photo Numérique</fr>
+            <it>Digital Photo</it>
+            <ar>الصور الرقمية</ar>
+            <sv>Digital Photo</sv>
+            <nl>Digital Photo</nl> 
+        </DigitalPhoto>
+        <EkdoseisGiaTinEggrafi>
+            <gr>Εκδόσεις για την εγγραφή "</gr>
+            <en>Versions for the record "</en>
+            <fr>Des versions pour le dossier "</fr>
+            <it>Versioni per il record "</it>
+            <ar>إصدارات للسجل "</ar>
+            <sv>Versioner för posten "</sv>
+            <nl>Versies voor het record "</nl>
+        </EkdoseisGiaTinEggrafi>
+        <VersionId>
+            <gr>Αριθμός Έκδοσης</gr>
+            <en>Version Number</en>
+            <fr>Numéro de version</fr>
+            <it>Numero di versione</it>
+            <ar>الإصدار رقم</ar>
+            <sv>Versionsnummer</sv>
+            <nl>Versie Nummer</nl>
+        </VersionId>  
+        <NoVersions>
+            <gr>Δεν υπάρχουν διαθέσιμες εκδόσεις για αυτήν την εγγραφή.</gr>
+            <en>There are not available versions for this record.</en>
+            <fr>Il ya pas des versions disponibles pour cet enregistrement.</fr>
+            <it>Non ci sono versioni disponibili per questo record</it>
+            <ar>لا توجد الإصدارات المتوفرة لهذا السجل.</ar>
+            <sv>Det finns inte tillgängliga versioner för denna post.</sv>
+            <nl>Er zijn geen beschikbare versies voor dit record.</nl>            
+        </NoVersions>
+        <Versions>
+            <gr>Εκδόσεις</gr>
+            <en>Versions</en>
+            <fr>Versions</fr>
+            <it>Versioni</it>
+            <ar>إصدارات</ar>
+            <sv>Versioner</sv>
+            <nl>Versies</nl>
+        </Versions>
+        <version>
+            <gr>έκδοση </gr>
+            <en>version </en>
+            <fr>version </fr>
+            <it>version </it>
+            <ar>إصدارا ت</ar>
+            <sv>version </sv>
+            <nl>versie </nl>
+        </version>
+        <Create_Version>
+            <gr>Δημιουργία Έκδοσης</gr>
+            <en>Create Version</en>
+            <fr>Version Créer</fr>
+            <it>Crea Versione</it>
+            <ar>إنشاء النسخة</ar>
+            <sv>Skapa Version</sv>
+            <nl>Maak Version</nl>
+        </Create_Version>
+        <View_Version>
+            <gr>Προβολή Εκδόσεων</gr>
+            <en>View Versions</en>
+            <fr>Afficher les Versions</fr>
+            <it>Visualizza le Versioni</it>
+            <ar>عرض الإصدارات</ar>
+            <sv>Visa Versioner</sv>
+            <nl>Bekijk versies</nl>
+        </View_Version>
+        <ExtraSearchKrithria>
+            <gr>Επιπλέον Κριτήρια Αναζήτησης</gr>
+            <en>Additional Search Criteria</en>
+            <fr>Critères De Recherche Supplémentaires</fr>
+            <it>Ulteriori Criteri Di Ricerca</it>
+            <ar>معايير البحث إضافية</ar>
+            <sv>Ytterligare Sökvillkor</sv>
+            <nl>Aanvullende zoekcriteria</nl>
+        </ExtraSearchKrithria>       
+        <Ola>
+            <gr>Όλα</gr>
+            <en>All</en>
+            <fr>Tous</fr>
+            <it>Tutti</it>
+            <ar>جميع</ar>
+            <sv>Alla</sv>
+            <nl>Alle</nl>
+        </Ola>
+        <Pros8hkhKrithriwn>
+            <gr>Προσθήκη Κριτηρίων</gr>
+            <en>Add Criteria</en>
+            <fr>Ajouter des Critères</fr>
+            <it>Aggiungi criteri</it>
+            <ar>إضافة معايير</ar>
+            <sv>Lägg Kriterier</sv>
+            <nl>Criteria toevoegen</nl>
+        </Pros8hkhKrithriwn>
+        <sunthethAnazhthsh>
+            <gr>Σύνθετη Αναζήτηση</gr>
+            <en>Advanced Search</en>
+            <fr>Recherche Avancée</fr>
+            <it>Ricerca Avanzata</it>
+            <ar>بحث متقدم</ar>
+            <sv>Avancerad Sökning</sv>
+            <nl>Geavanceerd zoeken</nl>
+        </sunthethAnazhthsh>
+        <ProboliMhDimosieumenwn>
+            <gr>Μη Δημοσιευμένα</gr>
+            <en>Unpublished</en>
+            <fr>Non publiés</fr>
+            <it>Non pubblicati </it>
+            <ar>غير منشورة</ar>
+            <sv>Opublicerat</sv>
+            <nl>Niet gepubliceerd</nl>
+        </ProboliMhDimosieumenwn>   
+        <ProboliDimosieumenwn>
+            <gr>Δημοσιευμένα</gr>
+            <en>Published</en>
+            <fr>Publiés</fr>
+            <it>Pubblicate</it>
+            <ar>منشورات</ar>
+            <sv>Publicerad</sv>
+            <nl>Gepubliceerd</nl>
+        </ProboliDimosieumenwn>
+        <restore_backup>
+            <gr>Ανάκτηση Αντιγράφου</gr>
+            <en>Restore Backup</en>
+            <fr>Restaurer Sauvegarder</fr>
+            <it>Ripristina Backup</it>
+            <ar>استعادة النسخ الاحتياط</ar>
+            <sv>Återställ backup</sv>
+            <nl>Back-up terugzetten</nl>
+        </restore_backup>
+        <taDikaMu>
+            <gr>Τα δικά μου</gr>
+            <en>My Cards</en>
+            <fr>mes Cartes</fr>
+            <it>Le mie carte</it>
+            <ar>بلدي بطاقات</ar>
+            <sv>Mina Kort</sv>
+            <nl>Mijn kaarten</nl>
+        </taDikaMu>
+        <Allwn>
+            <gr>Άλλων</gr>
+            <en>Others</en>
+            <fr>Autres</fr>
+            <it>Altrui</it>
+            <ar>آخرون</ar>
+            <sv>Andra</sv>
+            <nl>Anderen</nl>
+        </Allwn>
+        <Anazitisi>
+            <gr>Αναζήτηση</gr>
+            <en>Search</en>
+            <fr>Recherche</fr>
+            <it>Cerca</it>
+            <ar>بحث</ar>
+            <sv>Sök</sv>
+            <nl>Zoek</nl>
+        </Anazitisi>
+        <Perissotera>
+            <gr>Περισσότερα</gr>
+            <en>More</en>
+            <fr>Plus</fr>
+            <it>Più</it>
+            <ar>أكثر</ar>
+            <sv>Mer</sv>
+            <nl>Meer</nl>
+        </Perissotera>
+        <Copy>
+            <gr>Αντιγραφή XML</gr>
+            <en>Copy XML</en>
+            <fr>Copier XML</fr>
+            <it>Copia XML</it>
+            <ar>نسخXML</ar>
+            <sv>Kopiera XML</sv>
+            <nl>Copy XML</nl>
+        </Copy>
+        <Eisagwgi>
+            <gr>Δημιουργία Νέου</gr>
+            <en>Create New</en>
+            <fr>Créez Nouveau</fr>
+            <it>Inserisci</it>
+            <ar>دخول</ar>
+            <sv>Skapa ny</sv>
+            <nl>Maak nieuwe</nl>
+        </Eisagwgi>
+        <Auxwn>
+            <gr>Α/Α</gr>
+            <en>#</en>
+            <fr>#</fr>
+            <it>N.</it>
+            <ar>رقم مسلسل</ar>
+            <sv>#</sv>
+            <nl>#</nl>
+        </Auxwn>
+        <Sinthiki>
+            <gr>Συνθήκη</gr>
+            <en>Condition</en>
+            <fr>Condition</fr>
+            <it>Condizione</it>
+            <ar>الحالة</ar>
+            <sv>Tillstånd</sv>
+            <nl>Conditie</nl>
+        </Sinthiki>
+        <DOC_UNLOCKING>
+            <gr>Το δελτίο είναι διαθέσιμο σε άλλους χρήστες!</gr>
+            <en>The card is available to other users!</en>
+            <fr>La carte est à la disposition d'autres utilisateurs!</fr>
+            <it>La scheda è utilizzata da un altro utente!</it>
+            <ar> البطاقة متاحة لمستخدمين أخرين !</ar>
+            <sv>Blanketten är tillgänglig för andra användare!</sv>
+            <nl>De kaart is beschikbaar voor andere gebruikers!</nl>
+        </DOC_UNLOCKING>
+        <CAN_NOT_REMOVE_INSTITUTION>
+            <gr>Δεν μπορείτε να διαγράψετε τον επιλεγμένο Φορέα. Χρησιμοποιείται από άλλα Δελτία.</gr>
+            <en>You can not delete the selected Institution. It is being used from other Cards.</en>
+            <fr>Vous ne pouvez pas supprimer l'établissement choisi. Il est employé d'autres cartes.</fr>
+            <it>Non è possibile cancellare l'ente selezionato. E' utilizzato in altre schede.</it>
+            <ar>لا يمكنكم شطب الجهة المختارة . يُستخدم من بطاقات أخرى  </ar>
+            <sv>Du kan inte radera den valda institutionen. Den används i andra blanketter.</sv>
+            <nl>U kunt de geselecteerde instelling niet verwijderen. Het is in gebruik door andere kaarten.</nl>
+        </CAN_NOT_REMOVE_INSTITUTION>
+        <id>
+            <gr>Κωδικός</gr>
+            <en>Id</en>
+            <fr>Id</fr>
+            <it>Codice utente</it>
+            <ar>كود</ar>
+            <sv>Id</sv>
+            <nl>Id</nl>
+        </id>
+        <Ελλάδα>
+            <gr>Ελλάδα</gr>
+            <en>Greece</en>
+            <fr>Greece</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Grekland</sv>
+            <nl>Griekenland</nl>
+        </Ελλάδα>
+        <Αίγυπτος>
+            <gr>Αίγυπτος</gr>
+            <en>Egypt</en>
+            <fr>Egypt</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Egypten</sv>
+            <nl>Egypte</nl>
+        </Αίγυπτος>
+        <Τουρκία>
+            <gr>Τουρκία</gr>
+            <en>Turkey</en>
+            <fr>Turkey</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Turkiet</sv>
+            <nl>Turkije</nl>
+        </Τουρκία>
+        <Ιταλία>
+            <gr>Ιταλία</gr>
+            <en>Italy</en>
+            <fr>Italy</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Italien</sv>
+            <nl>Italië</nl>
+        </Ιταλία>
+        <Γαλλία>
+            <gr>Γαλλία</gr>
+            <en>France</en>
+            <fr>France</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Frankrike</sv>
+            <nl>Frankrijk</nl>
+        </Γαλλία>
+        <Σουηδία>
+            <gr>Σουηδία</gr>
+            <en>Sweden</en>
+            <fr>here...</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Sverige</sv>
+            <nl>Zweden</nl>
+        </Σουηδία>
+        <Νορβηγία>
+            <gr>Νορβηγία</gr>
+            <en>Norway</en>
+            <fr>here...</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Norge</sv>
+            <nl>Noorwegen</nl>
+        </Νορβηγία>
+        <Φινλανδία>
+            <gr>Φινλανδία</gr>
+            <en>Finland</en>
+            <fr>here...</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Finland</sv>
+            <nl>Finland</nl>
+        </Φινλανδία>
+
+        <Πληροφορίες>
+            <gr>Πληροφορίες</gr>
+            <en>Information</en>
+            <fr>L'information</fr>
+            <it>Informazioni</it>
+            <ar>معلومات</ar>
+            <sv>Information</sv>
+            <nl>Informatie</nl>
+        </Πληροφορίες>
+        <REJECTED_NO_COMMENT>
+            <gr>[Δεν υπάρχει σχόλιο]</gr>
+            <en>[No comment]</en>
+            <fr>[Aucun commentaire]</fr>
+            <it>[non esiste commento]</it>
+            <ar>[ لا تعليق ]</ar>
+            <sv>[Inga kommentarer]</sv>
+            <nl>[Geen opmerkingen]</nl>
+        </REJECTED_NO_COMMENT>
+        <Energopoiisi>
+            <gr>Ενεργοποίηση</gr>
+            <en>Activate</en>
+            <fr>Activez</fr>
+            <it>Attivazione</it>
+            <ar>تشغيل</ar>
+            <sv>Aktivera</sv>
+            <nl>Activeren</nl>
+        </Energopoiisi>
+        <ProsthikiKritiriou>
+            <gr>Προσθήκη κριτηρίου</gr>
+            <en>Add Criterion</en>
+            <fr>Ajout de critère</fr>
+            <it>Aggiungi criterio</it>
+            <ar>إضافة المعيار</ar>
+            <sv>Lägg till kriterium</sv>
+            <nl>Voeg criterium toe</nl>
+        </ProsthikiKritiriou>
+        <ProsthikiExodou>
+            <gr>Προσθήκη Εξόδου</gr>
+            <en>Add Output</en>
+            <fr>Ajoutez le Rendement</fr>
+            <it>Aggiungi uscita</it>
+            <ar>إضافة الخروج</ar>
+            <sv>Lägg till data</sv>
+            <nl>Voeg output toe</nl>
+        </ProsthikiExodou>
+        <address>
+            <gr>Διεύθυνση</gr>
+            <en>Address</en>
+            <fr>Adresse</fr>
+            <it>Indirizzo</it>
+            <ar>عنوان</ar>
+            <sv>Adress</sv>
+            <nl>Adres</nl>
+        </address>
+        <Dikaiwmata>
+            <gr>Δικαιώμάτα</gr>
+            <en>Rights</en>
+            <fr>Droits</fr>
+            <it>Diritti</it>
+            <ar>إدارة الحقوق</ar>
+            <sv>Höger</sv>
+            <nl>Rechten</nl>
+        </Dikaiwmata>
+        <DiaxeirisiDikaiwmatwn>
+            <gr>Διαχείριση δικαιωμάτων</gr>
+            <en>Admin rights</en>
+            <fr>Administration des droits</fr>
+            <it>Gestione diritti</it>
+            <ar>إدارة الحقوق</ar>
+            <sv>Administratörsrättigheter</sv>
+            <nl>Beheerdersrechten</nl>
+        </DiaxeirisiDikaiwmatwn>
+        <admin>
+            <gr>Διαχειριστής Φορέα</gr>
+            <en> Org. Administrator</en>
+            <fr>Org. Administrateur</fr>
+            <it>Gestore</it>
+            <ar>مدير</ar>
+            <sv>Organisationens Administratör</sv>
+            <nl>Systeembeheerder organisatie</nl>
+        </admin>
+        <createAdmin>
+            <gr>Δημιουργήστε τον Διαχειριστή του Φορέα</gr>
+            <en>Create the Organization Administrator</en>
+            <fr>Créer l'administrateur de l'organisation</fr>
+            <it>Creare il Organization Administrator</it>
+            <ar>إنشاء منظمة مسؤول</ar>
+            <sv>Skapa organisationen Administratör</sv>
+            <nl>Maak de Organisatie Administrator</nl>
+        </createAdmin>
+        <ΨηφιακόΑρχείο>
+            <gr>Ψηφιακό Αρχείο</gr>
+            <en>Archive</en>
+            <fr>Archive digitale</fr>
+            <it>Archivio digitale</it>
+            <ar>ملف رقمى</ar>
+            <sv>Arkiv</sv>
+            <nl>Archief</nl>
+        </ΨηφιακόΑρχείο>
+        <PromptMessage>
+            <gr>Θέλετε οπωσδήποτε να συνεχίσετε;</gr>
+            <en>Are you sure you want to  proceed?</en>
+            <fr>Êtes-vous sûr vous voulez-vous supprimer l\'inscription?</fr>
+            <it>Sei sicuro di voler cancellare l'iscrizione?</it>
+            <ar>هل تريد حقاً شطب التسجيل ؟</ar>
+            <sv>Är du säker på att du vill radera posten?</sv>
+            <nl>Weet u zeker dat u wilt doorgaan?</nl>
+        </PromptMessage>
+        <DiagrafiEggrafis>
+            <gr>Θέλετε οπωσδήποτε να διαγράψετε την εγγραφή;</gr>
+            <en>Are you sure you want to delete this record?</en>
+            <fr>Êtes-vous sûr de vouloir continuer?</fr>
+            <it>Sei sicuro di voler procedere?</it>
+            <ar>هل أنت متأكد أنك تريد المتابعة؟</ar>
+            <sv>Är du säker på att du vill fortsätta?</sv>
+            <nl>Weet u zeker dat u dit record wilt verwijderen?</nl>
+        </DiagrafiEggrafis>
+        <RestoreMSG>
+            <gr>Θέλετε οπωσδήποτε να γίνει αυτή η ανάκτηση; Θα σβηστούν όσα δεδομένα έχετε αποθηκεύσει μετά τις </gr>
+            <en>Are you sure you want to make this recovery? This will delete all the data you have stored after </en>
+            <fr>Êtes-vous sûr de vouloir faire cette reprise? Cela supprimera toutes les données que vous avez enregistré après </fr>
+            <it>Sei sicuro di voler fare questo recupero? Questa operazione eliminerà tutti i dati memorizzati dopo </it>
+            <ar>هل انت متأكد من انك تريد ان تجعل هذا الانتعاش؟ هذا وسوف تحذف جميع البيانات المخزنه لديك بعد</ar>
+            <sv>Är du säker på att du vill göra den här återställningen? Det här kommer att radera all data du har sparat efter </sv>
+            <nl>Weet u zeker dat u dit wilt herstellen? Dit zal alle data verwijderen die u heeft bewaard na</nl>
+        </RestoreMSG>
+        <ParatirisiIfistamenisKatastasis>
+            <gr>Παρατήρηση Υφιστάμενης Κατάστασης</gr>
+            <en>Assessment of Actual Condition</en>
+            <fr>Examen état Actuel</fr>
+            <it>Osservazione dello stato attuale</it>
+            <ar>ملاحظة الوضع القائم</ar>
+            <sv>Bedömning av tillstånd</sv>
+            <nl>Conditie</nl>
+        </ParatirisiIfistamenisKatastasis>
+        <Epistrofi>
+            <gr>Επιστροφή</gr>
+            <en>Back</en>
+            <fr>Retour</fr>
+            <it>Torna indietro</it>
+            <ar>عودة</ar>
+            <sv>Bakåt</sv>
+            <nl>Terug</nl>
+        </Epistrofi>
+        <Welcom>
+            <gr>Καλώς ήλθατε κ. </gr>
+            <en>Welcome  </en>
+            <fr>Bienvenue </fr>
+            <it>Benvenuti </it>
+            <ar>أهلاً وسهلاً</ar>
+            <sv>Välkommen </sv>
+            <nl>Welkom </nl>
+        </Welcom>
+        <ΕίδοςΒιβλιογραφίας>
+            <gr>Είδος Βιβλιογραφίας</gr>
+            <en>Bibliography Type</en>
+            <fr>Type de bibliographie</fr>
+            <it>Tipo di bibliografia</it>
+            <ar>نوع المراجع</ar>
+            <sv>Bibliografityp</sv>
+            <nl>Bibliografie type</nl>
+        </ΕίδοςΒιβλιογραφίας>
+        <TautotitaDeltiou>
+            <gr>Ταυτότητα Δελτίου</gr>
+            <en>Card Identity</en>
+            <fr>Fiche Identité</fr>
+            <it>Identità scheda</it>
+            <ar>هوية البطاقة </ar>
+            <sv>Blankettidentitet</sv>
+            <nl>Kaart identiteit</nl>
+        </TautotitaDeltiou>
+        <Κατηγορία>
+            <gr>Κατηγορία</gr>
+            <en>Category</en>
+            <fr>Catégorie</fr>
+            <it>Categoria</it>
+            <ar>فئة</ar>
+            <sv>Kategori</sv>
+            <nl>Categorie</nl>
+        </Κατηγορία>
+        <Epilogi>
+            <gr>Επιλογή</gr>
+            <en>Select</en>
+            <fr>Choisissez</fr>
+            <it>Seleziona</it>
+            <ar>إختيار</ar>
+            <sv>Välj</sv>
+        </Epilogi>
+        <EpilexteEperwtisi>
+            <gr>Επιλέξτε Επερώτηση</gr>
+            <en>Select Query</en>
+            <fr>Choisissez La Question</fr>
+            <it>Seleziona domanda</it>
+            <ar>إختيار السؤال</ar>
+            <sv>urvalsfråga</sv>
+            <nl>Kies Query</nl>
+        </EpilexteEperwtisi>
+        <EpilexteApo8hkeymenhEperwtisi>
+            <gr>Επιλέξτε Αποθηκευμένη Επερώτηση</gr>
+            <en>Select Saved Query</en>
+            <fr>Sélectionnez Question Saved</fr>
+            <it>Scegli una domanda Salvato</it>
+            <ar>حدد السؤال المحفوظة</ar>
+            <sv>Välj sparad fråga</sv>
+            <nl>Selecteer Opgeslagen Query</nl>
+        </EpilexteApo8hkeymenhEperwtisi>
+        <Taxinomisi>
+            <gr>Ταξινόμηση</gr>
+            <en>Classification</en>
+            <fr>Classification</fr>
+            <it>Classificazione</it>
+            <ar>تصنيف</ar>
+            <sv>Klassificering</sv>
+            <nl>Classificatie</nl>
+        </Taxinomisi>
+        <Kleisimo>
+            <gr>Κλείσιμο</gr>
+            <en>Close</en>
+            <fr>Fermer</fr>
+            <it>Chiudi</it>
+            <ar>إغلاق</ar>
+            <sv>Stäng</sv>
+            <nl>Sluiten</nl>
+        </Kleisimo>
+        <ΤιμήΚωδικού>
+            <gr>Τιμή Κωδικού</gr>
+            <en>Code Value</en>
+            <fr>Valeur de code</fr>
+            <it>Valore codice</it>
+            <ar>قيمة الرقم الكودى</ar>
+            <sv>Kodvärde</sv>
+            <nl>Code-waarde</nl>
+        </ΤιμήΚωδικού>
+        <Sxolio>
+            <gr>Σχόλιο-Λόγος</gr>
+            <en>Comment</en>
+            <fr>Commentaire</fr>
+            <it>Commento-discorso</it>
+            <ar>تعليق </ar>
+            <sv>Kommentar</sv>
+            <nl>Commentaar</nl>
+        </Sxolio>
+        <Meri>
+            <gr>Μέρη</gr>
+            <en>Components</en>
+            <fr>Parties</fr>
+            <it>Parti</it>
+            <ar>اجزاء</ar>
+            <sv>Komponenter</sv>
+            <nl>Componenten</nl>
+        </Meri>
+        <Kataskeui>
+            <gr>Κατασκευή</gr>
+            <en>Construction</en>
+            <fr>Construction</fr>
+            <it>Costruzione</it>
+            <ar>إنشاء</ar>
+            <sv>Konstruktion</sv>
+            <nl>Constructie</nl>
+        </Kataskeui>
+        <SinexeiaEpexergasias>
+            <gr>Συνέχεια επεξεργασίας</gr>
+            <en>Continue editing</en>
+            <fr>Continuier le traitement</fr>
+            <it>Continua elaborazione</it>
+            <ar>مواصلة المعالجة</ar>
+            <sv>Fortsätt redigera</sv>
+            <nl>Verder bewerken</nl>
+        </SinexeiaEpexergasias>
+        <SinexeiaEisagwgis>
+            <gr>Συνέχεια εισαγωγής</gr>
+            <en>Continue importing</en>
+            <fr>Continuier l' importation</fr>
+            <it>Continua introduzione</it>
+            <ar>مواصلة الدخول</ar>
+            <sv>Fortsätt importera</sv>
+            <nl>Ga door met importeren</nl>
+        </SinexeiaEisagwgis>
+        <Ακρώνυμο>
+            <gr>Ακρώνυμο</gr>
+            <en>Initials</en>
+            <fr>Initiales</fr>
+            <it>Abbreviazione</it>
+            <ar>إختصار</ar>
+            <sv>Initialer</sv>
+            <nl>Voorletters</nl>
+        </Ακρώνυμο>
+        <Έδρα>
+            <gr>Έδρα</gr>
+            <en>Address</en>
+            <fr>Siège</fr>
+            <it>Sede </it>
+            <ar>مقر</ar>
+            <sv>Adress</sv>
+            <nl>Adres</nl>
+        </Έδρα>
+        <AntigrafiApo>
+            <gr>Αντιγραφή από</gr>
+            <en>Copy from</en>
+            <fr>Copie de</fr>
+            <it>Copia da</it>
+            <ar>نسخ من</ar>
+            <sv>Kopiera från</sv>
+            <nl>Kopiëren van</nl>
+        </AntigrafiApo>
+        <Κράτος>
+            <gr>Χώρα</gr>
+            <en>Country</en>
+            <fr>Etat</fr>
+            <it>Paese</it>
+            <ar>دولة</ar>
+            <sv>Land</sv>
+            <nl>Land</nl>
+        </Κράτος>
+        <Dimiourgia>
+            <gr>Δημιουργία</gr>
+            <en>Create</en>
+            <fr>Creation</fr>
+            <it>Crea</it>
+            <ar>إنشاء</ar>
+            <sv>Skapa</sv>
+            <nl>Creëren</nl>
+        </Dimiourgia>
+        <DimiourgiaNeas>
+            <gr>Δημιουργία Νέας</gr>
+            <en>Create New</en>
+            <fr>Ajoutez nouvelle</fr>
+            <it>Crea nuova</it>
+            <ar>إنشاء  جديد</ar>
+            <sv>Skapa ny</sv>
+            <nl>Maak nieuwe</nl>
+        </DimiourgiaNeas>
+        <DimiourgiaNeas>
+            <gr>Δημιουργία Νέας</gr>
+            <en>Create New</en>
+            <fr>Créer nouveau</fr>
+            <it>Crea nuova</it>
+            <ar>إنشاء  جديد</ar>
+            <sv>Skapa ny</sv>
+            <nl>Maak nieuwe</nl>
+        </DimiourgiaNeas>
+        <Δημιουγός>
+            <gr>Δημιουργός</gr>
+            <en>Creator</en>
+            <fr>Créateur</fr>
+            <it>Creatore</it>
+            <ar>منشىء</ar>
+            <sv>Skapare</sv>
+            <nl>Vervaardiger</nl>
+        </Δημιουγός>
+        <Kritiria>
+            <gr>Κριτήρια</gr>
+            <en>Criteria</en>
+            <fr>Critères</fr>
+            <it>Criteri</it>
+            <ar>معايير</ar>
+            <sv>Kriterier</sv>
+            <nl>Criteria</nl>
+        </Kritiria>
+        <EpiloghPediwnEksodou>
+            <gr>Επιλογή Πεδίων Εξόδου</gr>
+            <en>Select Output Fields</en>
+            <fr>Sélectionner les champs de sortie</fr>
+            <it>Selezionare Campi di uscita</it>
+            <ar>حدد حقول الإخراج</ar>
+            <sv>Välj utdatafält</sv>
+            <nl>Selecteer Output Fields</nl>
+        </EpiloghPediwnEksodou>
+        <Apenergopoiisi>
+            <gr>Απενεργοποίηση</gr>
+            <en>Deactivate</en>
+            <fr>Mettez hors tension</fr>
+            <it>Disattiva</it>
+            <ar>إنهاء</ar>
+            <sv>Inaktivera</sv>
+            <nl>Deactiveer</nl>
+        </Apenergopoiisi>
+        <DiakosmosMnimiou>
+            <gr>Διάκοσμος Μνημείου</gr>
+            <en>Decoration</en>
+            <fr>Décoration</fr>
+            <it>Decorazione monumento</it>
+            <ar>زخرفة الأثر</ar>
+            <sv>Utsmyckning</sv>
+            <nl>Decoratie</nl>
+        </DiakosmosMnimiou>
+        <Diagrafi>
+            <gr>Διαγραφή</gr>
+            <en>Delete</en>
+            <fr>Effacement</fr>
+            <it>Cancella</it>
+            <ar>شطب</ar>
+            <sv>Ta bort</sv>
+            <nl>Verwijder</nl>
+        </Diagrafi>
+        <Diagrafi>
+            <gr>Διαγραφή</gr>
+            <en>Delete</en>
+            <fr>Suppression</fr>
+            <it>Cancella</it>
+            <ar>شطب</ar>
+            <sv>Ta bort</sv>
+            <nl>Verwijder</nl>
+        </Diagrafi>
+        <DiagrafiKritiriou>
+            <gr>Διαγραφή κριτηρίου</gr>
+            <en>Delete Criterion</en>
+            <fr>Effacement de critère</fr>
+            <it>Cancella criterio</it>
+            <ar>شطب المعيار</ar>
+            <sv>Ta bort kriteria </sv>
+            <nl>Delete Criterium</nl>     
+        </DiagrafiKritiriou>
+        <DiagrafiExodou>
+            <gr>Διαγραφή Εξόδου</gr>
+            <en>Delete Output</en>
+            <fr>Effacement de Rendement</fr>
+            <it>Cancella uscita</it>
+            <ar>شطب الخروج</ar>
+            <sv>Ta bort utdata</sv>
+            <nl>Verwijder output</nl>
+        </DiagrafiExodou>
+        <DiagrafiEperotisis>
+            <gr>Διαγραφή Επερώτησης</gr>
+            <en>Delete Query</en>
+            <fr>Suppression du question</fr>
+            <it>Cancella domanda</it>
+            <ar>شطب السؤال</ar>
+            <sv>Ta bort fråga</sv>
+            <nl>Verwijder zoekopdracht</nl>
+        </DiagrafiEperotisis>
+        <StixiaPerigrafis>
+            <gr>Στοιχεία Περιγραφής</gr>
+            <en>Description</en>
+            <fr>Description</fr>
+            <it>Dati descrizione</it>
+            <ar>عناصر الوصف</ar>
+            <sv>Beskrivning</sv>
+            <nl>Beschrijving</nl>
+        </StixiaPerigrafis>
+        <ShortDescription>
+            <gr>Σύντομη Περιγραφής</gr>
+            <en>Short Description</en>
+            <fr>Description Courte</fr>
+            <it>Descrizione Breve</it>
+            <ar>وصف قصير</ar>
+            <sv>Kort Beskrivning</sv>
+            <nl>Korte Beschrijving</nl>
+        </ShortDescription>
+        <AnalitikiTekmiriosi>
+            <gr>Αναλυτική Τεκμηρίωση</gr>
+            <en>Detailed Documentation</en>
+            <fr>Documentation analytique</fr>
+            <it>Documentazione analitica</it>
+            <ar>توثيق تفصيلى</ar>
+            <sv>Detaljerad dokumentation</sv>
+            <nl>Gedetailleerde documentatie</nl>
+        </AnalitikiTekmiriosi>
+        <Tekmiria>
+            <gr>Τεκμήρια</gr>
+            <en>Documentation</en>
+            <fr>Documents</fr>
+            <it>Documentazione </it>
+            <ar>توثيق</ar>
+            <sv>Dokumentation</sv>
+            <nl>Documentatie</nl>
+        </Tekmiria>
+        <Epexergasia>
+            <gr>Επεξεργασία</gr>
+            <en>Edit</en>
+            <fr>Édit</fr>
+            <it>Elabora</it>
+            <ar>معالجة</ar>
+            <sv>Redigera</sv>
+            <nl>Wijzig</nl>
+        </Epexergasia>
+        <Anaktisi>
+            <gr>Ανάκτηση</gr>
+            <en>Restore</en>
+            <fr>Restaurer</fr>
+            <it>Ripristino</it>
+            <ar>استعادة</ar>
+            <sv>Återställ</sv>
+            <nl>Herstellen</nl>
+        </Anaktisi>
+        <sintaktis>
+            <gr>Συντάκτης</gr>
+            <en>Editor</en>
+            <fr>Rédacteur</fr>
+            <it>Redattore</it>
+            <ar>المحرر</ar>
+            <sv>Redaktör</sv>
+            <nl>Editor</nl>
+        </sintaktis>
+        <Κωδικός_ΕΚΒΜΜ>
+            <gr>Κωδικός ΕΚΒΜΜ</gr>
+            <en>EKBMM Code</en>
+            <fr>Code de EKBMM</fr>
+            <it>Codice CEMBPB</it>
+            <ar>الرقم الكودى للمركز الأوربى للأثار البيزنطية وما بعد البيزنطية</ar>
+            <sv>EKBMM Kod</sv>
+            <nl>EKBMM code</nl>
+        </Κωδικός_ΕΚΒΜΜ>
+        <email>
+            <gr>Ηλ. Ταχυδρομείο</gr>
+            <en>Email</en>
+            <fr>Email</fr>
+            <it>Posta elettronica</it>
+            <ar>البريد الإلكترونى</ar>
+            <sv>E-mail</sv>
+            <nl>E-mail</nl>
+        </email>
+        <EMPTY_FIELD_CodeValue>
+            <gr>Δε συμπληρώσατε το πεδίο: ΤιμήΚωδικού</gr>
+            <en>Empty field: Code Value</en>
+            <fr>Champ vide :  Valeur de code</fr>
+            <it>Non è stato compilato il campo: Valore codice</it>
+            <ar>لم تملأ خانة : قيمة الكود</ar>
+            <sv>Tomt fält: Kod Värde</sv>
+            <nl>Leeg veld: Code Waarde</nl>
+        </EMPTY_FIELD_CodeValue>
+        <EMPTY_FIELD_Country>
+            <gr>Δε συμπληρώσατε το πεδίο: Χώρα</gr>
+            <en>Emplty field: Country</en>
+            <fr>Champ vide : Pays</fr>
+            <it>Non è stato compilato il campo: Paese</it>
+            <ar>لم تملأ خانة : البلد</ar>
+            <sv>Tomt fält: Land</sv>
+            <nl>Leeg veld: Land</nl>
+        </EMPTY_FIELD_Country>
+        <EMPTY_FIELD_initials>
+            <gr>Δε συμπληρώσατε το πεδίο: Ακρώνυμο</gr>
+            <en>Emplty field: Initials</en>
+            <fr>Champ vide Initiales</fr>
+            <it>Abbreviazione</it>
+            <ar>إختصالم تملأ خانة ر</ar>
+            <sv>Tomt fält:¨Initialer</sv>
+            <nl>Leeg veld: Voorletters</nl>
+        </EMPTY_FIELD_initials>
+        <EMPTY_FIELD_FirstName>
+            <gr>Δε συμπληρώσατε το πεδίο: Όνομα</gr>
+            <en>Emplty field: Firstname</en>
+            <fr>Champ vide:  Nom</fr>
+            <it>Non è stato compilato il campo: Nome</it>
+            <ar>لم تملأ خانة : الإسم</ar>
+            <sv>Tomt fält: Förnamn</sv>
+            <nl>Leeg veld: Voornaam</nl>
+        </EMPTY_FIELD_FirstName>
+        <EMPTY_FIELD_Lang>
+            <gr>Δε συμπληρώσατε το πεδίο: Γλώσσα</gr>
+            <en>Emplty field: Lang</en>
+            <fr>Champ vide : Langue</fr>
+            <it>Non è stato compilato il campo: Lingua</it>
+            <ar>لم تملأ خانة : اللغة</ar>
+            <sv>Tomt fält: Språk</sv>
+            <nl>Leeg veld: Taal</nl>
+        </EMPTY_FIELD_Lang>
+        <EMPTY_FIELD_LastName>
+            <gr>Δε συμπληρώσατε το πεδίο: Επώνυμο</gr>
+            <en>Emplty field: Lastname</en>
+            <fr>Champ vide: Prénom</fr>
+            <it>Non è stato compilato il campo: Cognome</it>
+            <ar>لم تملأ خانة : اللقب</ar>
+            <sv>Tomt fält: Efternamn</sv>
+            <nl>Leeg veld: Achternaam</nl>
+        </EMPTY_FIELD_LastName>
+        <EMPTY_FIELD_MainCurrentName>
+            <gr>Δε συμπληρώσατε το πεδίο: Κύρια Τρέχουσα Ονομασία</gr>
+            <en>Emplty field: Main Current Name</en>
+            <fr>Champ vide :  Nom Courant Principal</fr>
+            <it>Non è stato compilato il campo: Principale nome attuale</it>
+            <ar>لم تملأ خانة : الإسم  الرئيسى القائم</ar>
+            <sv>Tomt fält: Nuvarande huvudnamn</sv>
+            <nl>Leeg veld: Huidige naam</nl>
+        </EMPTY_FIELD_MainCurrentName>
+        <EMPTY_FIELD_OrgName>
+            <gr>Δε συμπληρώσατε το πεδίο: Επωνυμία Φορέα</gr>
+            <en>Emplty field: Org Name</en>
+            <fr>Champ vide :  nom d'organization</fr>
+            <it>Non è stato compilato il campo: Nome dell'Organismo</it>
+            <ar>لم تملأ خانة : إسم الجهة</ar>
+            <sv>Tomt fält: Organisationsnamn</sv>
+            <nl>Leeg veld: Naam Organisatie</nl>
+        </EMPTY_FIELD_OrgName>
+        <EMPTY_FIELD_Password>
+            <gr>Δε συμπληρώσατε το πεδίο: Κωδικός Πρόσβασης</gr>
+            <en>Emplty field: Password</en>
+            <fr>Champ vide: mot de passe</fr>
+            <it>Non è stato compilato il campo: Codice d'accesso</it>
+            <ar>لم تملأ خانة : كود الدخول</ar>
+            <sv>Tomt fält: Lösenord</sv>
+            <nl>Leeg veld: Wachtwoord</nl>
+        </EMPTY_FIELD_Password>
+        <EMPTY_FIELD_UserName>
+            <gr>Δε συμπληρώσατε το πεδίο: Όνομα Χρήστη</gr>
+            <en>Emplty field: Username</en>
+            <fr>Champ vide: nom d'utilisateur</fr>
+            <it>Non è stato compilato il campo: Nome utente</it>
+            <ar>لم تملأ خانة : إسم المستخدم </ar>
+            <sv>Tomt fält: Användarnamn</sv>
+            <nl>Leeg veld: Gebruikersnaam</nl>
+        </EMPTY_FIELD_UserName>
+        <en>
+            <gr>Αγγλικά</gr>
+            <en>English</en>
+            <fr>Anglais</fr>
+            <it>Inglese</it>
+            <ar>إنجليزية </ar>
+            <sv>Engelska</sv>
+            <nl>Engels</nl>
+        </en>
+        <gr>
+            <gr>Ελληνικά</gr>
+            <en>Greek</en>
+            <fr>Grecque</fr>
+            <it>Greco</it>
+            <ar>يونانية</ar>
+            <sv>Grekisk</sv>
+            <nl>Grieks</nl>
+        </gr>
+        <Eisodos>
+            <gr>Είσοδος</gr>
+            <en>Enter</en>
+            <fr>Entrez</fr>
+            <it>Entra</it>
+            <ar>دخول</ar>
+            <sv>Enter</sv>
+            <nl>Enter</nl>
+        </Eisodos>
+        <ApotelesmataKaiEktelestikeSe>
+            <gr> εκτελέστηκε σε </gr>
+            <en> executed in </en>
+            <fr> exécuté dedans </fr>
+            <it> eseguito in </it>
+            <ar> تم التنفيذ فى </ar>
+            <sv> utförd i </sv>
+            <nl> uitgevoerd in </nl>
+        </ApotelesmataKaiEktelestikeSe>
+        <Ektelesi>
+            <gr>Εκτέλεση</gr>
+            <en>Execution</en>
+            <fr>Exécution</fr>
+            <it>Esegui</it>
+            <ar>تنفيذ</ar>
+            <sv>Utförd</sv>
+            <nl>Uitvoering</nl>
+        </Ektelesi>
+        <Pedio>
+            <gr>Πεδίο</gr>
+            <en>Field</en>
+            <fr>Champ</fr>
+            <it>Campo</it>
+            <ar>مجال</ar>
+            <sv>Fält</sv>
+            <nl>Veld</nl>
+        </Pedio>
+        <EpiloghPediouKrithriou>
+            <gr>Επιλογή Πεδίου Κριτηρίου</gr>
+            <en>Select Criteria Field</en>
+            <fr>Sélectionnez le champ Critères</fr>
+            <it>Selezionare il campo Criteri</it>
+            <ar>تحديد معايير الحقل</ar>
+            <sv>Välj Kriterier Field</sv>
+            <nl>Selecteer Criteria Veld</nl>
+        </EpiloghPediouKrithriou>
+        <OnomaArxiou>
+            <gr>Όνομα αρχείου</gr>
+            <en>File Name</en>
+            <fr>Nom de fichier</fr>
+            <it>Nome file</it>
+            <ar>إسم الملف</ar>
+            <sv>Filnamn</sv>
+            <nl>Bestandsnaam</nl>
+        </OnomaArxiou>
+        <OnomaArxeiou>
+            <gr>Όνομα αρχείου</gr>
+            <en>Filename</en>
+            <fr>Nom de fichier</fr>
+            <it>Nome file</it>
+            <ar>إسم الملف</ar>
+            <sv>Filnamn</sv>
+            <nl>Bestandsnaam</nl>
+        </OnomaArxeiou>
+        <URI_ID>
+            <gr>URI id</gr>
+            <en>URI id</en>
+            <fr>URI id</fr>
+            <it>URI id</it>
+            <ar>URI id</ar>
+            <sv>URI id</sv>
+            <nl>URI id</nl>
+        </URI_ID>
+        <Oloklirwsi>
+            <gr>Ολοκλήρωση</gr>
+            <en>Finish</en>
+            <fr>Achèvement</fr>
+            <it>Fine</it>
+            <ar>إنجاز</ar>
+            <sv>Finska</sv>
+            <nl>Afmaken</nl>
+        </Oloklirwsi>
+        <firstname>
+            <gr>Όνομα</gr>
+            <en>Firstname</en>
+            <fr>Nom</fr>
+            <it>Nome</it>
+            <ar>إسم </ar>
+            <sv>Förnamn</sv>
+            <nl>Voornaam</nl>
+        </firstname>
+        <fr>
+            <gr>Γαλλικά</gr>
+            <en>French</en>
+            <fr>Français</fr>
+            <it>Francese</it>
+            <ar>فرنسية</ar>
+            <sv>Fransk</sv>
+            <nl>Frans</nl>
+        </fr>
+        <Gallika>
+            <gr>Γαλλικά</gr>
+            <en>French</en>
+            <fr>Français</fr>
+            <it>Francese</it>
+            <ar>فرنسية</ar>
+            <sv>Fransk</sv>
+            <nl>Frans</nl>
+        </Gallika>
+        <Ονοματεπώνυμο>
+            <gr>Ονοματεπώνυμο</gr>
+            <en>Fullname</en>
+            <fr>Nom et prénom</fr>
+            <it>Nome e cognome</it>
+            <ar>الإسم واللقب</ar>
+            <sv>Namn</sv>
+            <nl>Volledige naam</nl>
+        </Ονοματεπώνυμο>
+        <Genikes>
+            <gr>Δημόσιες</gr>
+            <en>Public</en>
+            <fr>Public</fr>
+            <it>Pubblico</it>
+            <ar>جمهور</ar>
+            <sv>Allmän</sv>
+            <nl>Publiek</nl>
+        </Genikes>
+        <Ellinika>
+            <gr>Ελληνικά</gr>
+            <en>Greek</en>
+            <fr>Grec</fr>
+            <it>Greco</it>
+            <ar>يونانية</ar>
+            <sv>Grekisk</sv>
+            <nl>Grieks</nl>
+        </Ellinika>
+        <episkeptis>
+            <gr>Επισκέπτης</gr>
+            <en>Guest</en>
+            <fr>Visiteur</fr>
+            <it>Visitatore</it>
+            <ar>زائر</ar>
+            <sv>Gäst</sv>
+            <nl>Gast</nl>
+        </episkeptis>
+        <Apokripsi>
+            <gr>Απόκρυψη</gr>
+            <en>Hide</en>
+            <fr>Dissimulation</fr>
+            <it>Nascondi</it>
+            <ar>إخفاء</ar>
+            <sv>Göm</sv>
+            <nl>Verbergen</nl>
+        </Apokripsi>
+        <IstorikaGegonota>
+            <gr>Ιστορικά Γεγονότα</gr>
+            <en>Historical Events</en>
+            <fr>Événements Historiques</fr>
+            <it>Avvenimenti storici</it>
+            <ar>أحداث تاريخية</ar>
+            <sv>Historiska  händelser</sv>
+            <nl>Historische gebeurtenissen</nl>
+        </IstorikaGegonota>
+        <Info>
+            <gr>Πληροφορίες</gr>
+            <en>Info</en>
+            <fr>Info</fr>
+            <it>Informazioni</it>
+            <ar>معلومات</ar>
+            <sv>Info</sv>
+            <nl>Info</nl>
+        </Info>
+        <Epigrafi>
+            <gr>Επιγραφή</gr>
+            <en>Inscription</en>
+            <fr>Inscription</fr>
+            <it>Iscrizione</it>
+            <ar>نص كتابى</ar>
+            <sv>Inskription</sv>
+            <nl>Opschrift</nl>
+        </Epigrafi>
+        <Οργανισμός>
+            <gr>Οργανισμός</gr>
+            <en>Institution</en>
+            <fr>Organisation</fr>
+            <it>Organismo</it>
+            <ar>هيئة</ar>
+            <sv>Institution</sv>
+            <nl>Instelling</nl>
+        </Οργανισμός>
+        <AdminOrganization>
+            <gr>Φορέας</gr>
+            <en>Institution</en>
+            <fr>Organisation</fr>
+            <it>Organismo</it>
+            <ar>جهة</ar>
+            <sv>Institution</sv>
+            <nl>Instelling</nl>
+        </AdminOrganization>
+        <INTERNAL_ERROR>
+            <gr>Σφάλμα συστήματος. Επικοινωνήστε με το διαχειριστή του συστήματος.</gr>
+            <en>Internal error. Contact with the administrator of the system.</en>
+            <fr>Erreur interne. Contact avec l'administrateur du système.</fr>
+            <it>Errore del sistema. Contattare l'amministratore del sistema.</it>
+            <ar>خطأ فى النظام . برجاء الإتصال بالمسئول عن النظام </ar>
+            <sv>Internt fel. Kontakta systemadministratören.</sv>
+            <nl>Interne fout. Neem contact op met de beheerder van het systeem.</nl>
+        </INTERNAL_ERROR>
+        <Epembasi>
+            <gr>Επέμβαση</gr>
+            <en>Intervention</en>
+            <fr>Intervention</fr>
+            <it>Intervento</it>
+            <ar>تدخل</ar>
+            <sv>Besiktning</sv>
+            <nl>Interventie</nl>
+        </Epembasi>
+        <lang>
+            <gr>Γλώσσα</gr>
+            <en>Language</en>
+            <fr>Langue</fr>
+            <it>Lingua</it>
+            <ar>لغة</ar>
+            <sv>Språk</sv>
+            <nl>Taal</nl>
+        </lang>
+        <Deltiolang>
+            <gr>Γλώσσα Δελτίου</gr>
+            <en>Lang</en>
+            <fr>Langue</fr>
+            <it>Lingua della scheda</it>
+            <ar>لغة البطاقة</ar>
+            <sv>Språk</sv>
+            <nl>Taal</nl>
+        </Deltiolang>
+        <lastname>
+            <gr>Επώνυμο</gr>
+            <en>Lastname</en>
+            <fr>Nom de famille</fr>
+            <it>Cognome</it>
+            <ar>لقب</ar>
+            <sv>Efternamn</sv>
+            <nl>Achternaam</nl>
+        </lastname>
+        <Name>
+            <gr>Ονομασία</gr>
+            <en>Name</en>
+            <fr>Nom</fr>
+            <it>Nome</it>
+            <ar>اسم</ar>
+            <sv>Namn</sv>
+            <nl>Naam</nl>
+        </Name>
+
+        <LoginPageTitle>
+            <gr>Φόρμα Εισαγωγής - Ευρωπαϊκό Κέντρο Βυζαντινών και Μεταβυζαντινών Μνημείων</gr>
+            <en>Login Form - The European Centre of Byzantine and Postbyzantine Monuments</en>
+            <fr>Forme d'importation - Centre européen de monuments byzantins et post-byzantins</fr>
+            <it>Modulo di inserimento - Centro europeo per i monumenti bizantini e post-bizantini</it>
+            <ar>نموذج الدخول ـ المركز الأوربى للأثار البيزنطية وما بعد البيزنطية</ar>
+            <sv>Logga Form - Europeiskt centrum för bysantinska och Postbyzantine monument</sv>
+            <nl>Login Form - Het Europees Centrum van Byzantijnse en Post Byzantijnse Monumenten</nl>
+        </LoginPageTitle>
+        <PrimaryInsertFieldAP>
+            <gr>Κύρια Τρέχουσα Ονομασία</gr>
+            <en>Main Current Name</en>
+            <fr>Principal nom courant </fr>
+            <it>Principale nome attuale</it>
+            <ar>الإسم الرئيسى الجارى</ar>
+            <sv>Nuvarande huvudnamn</sv>
+            <nl>Belangrijkste huidige naam</nl>
+        </PrimaryInsertFieldAP>
+        <PrimaryInsertFieldKAP>
+            <gr>Ονομασία Αντικειμένου </gr>
+            <en>Object Name</en>
+            <fr>Principal nom courant </fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålsnamn </sv>
+            <nl>Objectnaam</nl>
+        </PrimaryInsertFieldKAP>
+        <PrimaryInsertFieldRoute>
+            <gr>Τίτλος</gr>
+            <en>Title</en>
+            <fr>Titre</fr>
+            <it>Titolo</it>
+            <ar>العنوان</ar>
+            <sv>Titel</sv>
+            <nl>Titel</nl>
+        </PrimaryInsertFieldRoute>
+        <PrimaryInsertFieldGame>
+            <gr>Τίτλος</gr>
+            <en>Title</en>
+            <fr>Titre</fr>
+            <it>Titolo</it>
+            <ar>العنوان</ar>
+            <sv>Titel</sv>
+            <nl>Titel</nl>
+        </PrimaryInsertFieldGame>
+        <PrimaryInsertFieldStudy>
+            <gr>Τίτλος</gr>
+            <en>Title</en>
+            <fr>Titre</fr>
+            <it>Titolo</it>
+            <ar>العنوان</ar>
+            <sv>Titel</sv>
+            <nl>Titel</nl>
+        </PrimaryInsertFieldStudy>
+        <ΚύριαΤρέχουσαΟνομασίαAP>
+            <gr>Κύρια Τρέχουσα Ονομασία</gr>
+            <en>Main Current Name</en>
+            <fr>Principal nom courant </fr>
+            <it>Principale nome attuale</it>
+            <ar>الإسم الرئيسى الجارى</ar>
+            <sv>Nuvarande huvudnamn</sv>
+            <nl>Belangrijkste huidige naam</nl>
+        </ΚύριαΤρέχουσαΟνομασίαAP>
+        <ΚύριαΤρέχουσαΟνομασίαKAP>
+            <gr>Ονομασία Αντικειμένου </gr>
+            <en>Object Name</en>
+            <fr>Principal nom courant </fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålsnamn </sv>
+            <nl>Objectnaam</nl>
+        </ΚύριαΤρέχουσαΟνομασίαKAP>
+        <ΚύριαΤρέχουσαΟνομασία>
+            <gr>Κύρια Τρέχουσα Ονομασία</gr>
+            <en>Main Current Name</en>
+            <fr>Principal nom courant</fr>
+            <it>Principale nome attuale</it>
+            <ar>الإسم الرئيسى الجارى</ar>
+            <sv>Nuvarande huvudnamn</sv>
+            <nl>Belangrijkste huidige naam</nl>
+        </ΚύριαΤρέχουσαΟνομασία>
+        <MetrisisDiastaseon>
+            <gr>Μετρήσεις Διαστάσεων</gr>
+            <en>Measurements</en>
+            <fr>Monument Dimension Data</fr>
+            <it>Misurazione delle dimensioni</it>
+            <ar>قياس الأبعاد</ar>
+            <sv>Mått</sv>
+            <nl>Afmetingen</nl>
+        </MetrisisDiastaseon>
+        <MnimonikoOnoma>
+            <gr>Μνημονικό όνομα</gr>
+            <en>Mnemonic Name</en>
+            <fr>Nom Mnémonique</fr>
+            <it>Nome mnemonico</it>
+            <ar>إسم الأثر</ar>
+            <sv>Mnemonic namn</sv>
+            <nl>Mnemonische naam</nl>
+        </MnimonikoOnoma>
+        <MnimonikoOnomaEperwthshs>
+            <gr>Μνημονικό Όνομα Επερώτησης</gr>
+            <en>Query Mnemonic Name</en>
+            <fr>Question Nom Mnémonique</fr>
+            <it>Domanda Nome Mnemonico</it>
+            <ar>سؤال اسم الأثر</ar>
+            <sv>Fråga Mnemonic Namn</sv>
+            <nl>Query Mnemonic Naam</nl>
+        </MnimonikoOnomaEperwthshs>
+        <Κωδικός_Μνημείου>
+            <gr>Κωδικός Μνημείου</gr>
+            <en>Monument Code</en>
+            <fr>Code de monument</fr>
+            <it>Codice monumento</it>
+            <ar>الرقم الكودى للأثر</ar>
+            <sv>Monument kod</sv>
+            <nl>Monument code</nl>
+        </Κωδικός_Μνημείου>
+        <SisxetisisMnimiou>
+            <gr>Συσχετίσεις Μνημείου</gr>
+            <en>Monument Cross-References</en>
+            <fr>Monument Correlation Data</fr>
+            <it>Correlazioni monumento</it>
+            <ar>مراجع مرتبطة بالأثر </ar>
+            <sv>Monument korsreferenser</sv>
+            <nl>Monument kruisverwijzingen</nl>
+        </SisxetisisMnimiou>
+        <PerigrafiMnimiou>
+            <gr>Περιγραφή Μνημείου</gr>
+            <en>Monument Description</en>
+            <fr>Description monument</fr>
+            <it>Descrizione monumento</it>
+            <ar>وصف الأثر</ar>
+            <sv>Monument beskrivning</sv>
+            <nl>Monumentbeschrijving</nl>
+        </PerigrafiMnimiou>
+        <IstoriaMnimiou>
+            <gr>Ιστορία Μνημείου</gr>
+            <en>Monument History</en>
+            <fr>Monument History Data</fr>
+            <it>Storia del monumento</it>
+            <ar>تاريخ الأثر</ar>
+            <sv>Monument historia</sv>
+            <nl>Monument geschiedenis</nl>
+        </IstoriaMnimiou>
+        <TautotitaMnimiou>
+            <gr>Ταυτότητα Μνημείου</gr>
+            <en>Monument Identity</en>
+            <fr>Identité monument</fr>
+            <it>Identità monumento</it>
+            <ar>هوية الأثر</ar>
+            <sv>Monument identitet</sv>
+            <nl>Monument identiteit</nl>
+        </TautotitaMnimiou>
+        <EpipleonExodoi>
+            <gr>Επιπλέον Έξοδοι</gr>
+            <en>More Output</en>
+            <fr>Plus De Rendement</fr>
+            <it>Altre uscite</it>
+            <ar>مخرجات إضافية</ar>
+            <sv>Mer output</sv>
+            <nl>Meer output</nl>
+        </EpipleonExodoi>
+        <Onomasia>
+            <gr>Ονομασία</gr>
+            <en>Name</en>
+            <fr>Nom de monument</fr>
+            <it>Nome</it>
+            <ar>إسم </ar>
+            <sv>Namn</sv>
+            <nl>Naam</nl>
+        </Onomasia>
+        <Ονομασία>
+            <gr>Ονομασία</gr>
+            <en>Name</en>
+            <fr>Nom</fr>
+            <it>Nome</it>
+            <ar>إسم </ar>
+            <sv>Namn</sv>
+            <nl>Naam</nl>
+        </Ονομασία>
+        <NeosOros>
+            <gr>Νέος Όρος</gr>
+            <en>New Term</en>
+            <fr>Nouvel Terme</fr>
+            <it>Nuovo termine</it>
+            <ar>مصطلح جديد</ar>
+            <sv>Ny Term</sv>
+            <nl>Nieuwe term</nl>
+        </NeosOros>
+        <NeaMetafrasi>
+            <gr>Νέα Μετάφραση</gr>
+            <en>New Translation</en>
+            <fr>Nouvelle Traduction</fr>
+            <it>Nuova traduzione</it>
+            <ar>ترجمة جديدة </ar>
+            <sv>Ny översättning</sv>
+            <nl>Nieuwe vertaling</nl>
+        </NeaMetafrasi>
+        <Telestis>
+            <gr>Τελεστής</gr>
+            <en>Operator</en>
+            <fr>Opérateur</fr>
+            <it>Operatore</it>
+            <ar>منفذ</ar>
+            <sv>Operator</sv>
+            <nl>Beheerder</nl>
+        </Telestis>
+        <orgname>
+            <gr>Επωνυμία Φορέα</gr>
+            <en>Org Name</en>
+            <fr>Nom d’ organisation</fr>
+            <it>Nome Organismo</it>
+            <ar>إسم الجهة</ar>
+            <sv>Organisationsnamn</sv>
+            <nl>Organisatienaam</nl>
+        </orgname>
+        <Επωνυμία>
+            <gr>Επωνυμία Φορέα</gr>
+            <en>Org Name</en>
+            <fr>Nom d’ organisation</fr>
+            <it>Nome Organismo</it>
+            <ar>إسم الجهة</ar>
+            <sv>Organisationsnamn</sv>
+            <nl>Organisatienaam</nl>
+        </Επωνυμία>
+        <HAS_DEPENDANTS>
+            <gr>Άλλες καταχωρήσεις (Δελτία ή Οντότητες) εξαρτώνται από τη συγκεκριμένη εγγραφή.</gr>
+            <en>Other entries (Cards or Entities) depend on this particular record.</en>
+            <fr>D’autres enregistrements (Fiches ou Entités) dépendent de cet élément de données.</fr>
+            <it>Altre registrazioni (Schede o entità) dipendono da questa specifica iscrizione.</it>
+            <ar>مداخلات أخرى ( بطاقات أوكيانات ) تعتمد على التسجيل المحدد.</ar>
+            <sv>Andra inmatningar (enhetsblanketter) är beroende av denna post.</sv>
+            <nl>Andere gegevens (Kaarten of Entiteiten) zijn afhankelijk van dit record.</nl>
+        </HAS_DEPENDANTS>
+        <HAS_PUBLISHED_DEPENDANTS>
+            <gr>Άλλες δημοσιευμένες καταχωρήσεις (Δελτία ή Οντότητες) εξαρτώνται από τη συγκεκριμένη εγγραφή.</gr>
+            <en>Other published entries (Cards or Entities) depend on this particular record.</en>
+            <fr>D’autres enregistrements publiés (Fiches ou Entités) dépendent de cet élément de données.</fr>
+            <it>Altre registrazioni pubblicate (Schede o entità) dipendono da questa specifica iscrizione.</it>
+            <ar>مداخلات أخرى منشورة ( بطاقات أو كيانات ) تعتمد على التسجيل المحدد </ar>
+            <sv>Andra publicerade inmatningar (enhetsblanketter) är beroende av denna post.</sv>
+            <nl>Andere gepubliceerde gegevens (Kaarten of Entiteiten) zijn afhankelijk van dit record.</nl>
+        </HAS_PUBLISHED_DEPENDANTS>
+        <Exodos>
+            <gr>Έξοδος</gr>
+            <en>Output</en>
+            <fr>Sortie</fr>
+            <it>Uscita</it>
+            <ar>خروج</ar>
+            <sv>Output</sv>
+            <nl>Output</nl>
+        </Exodos>
+        <Kiriotita>
+            <gr>Κυριότητα</gr>
+            <en>Ownership</en>
+            <fr>Propriété</fr>
+            <it>Proprietà</it>
+            <ar>ملكية</ar>
+            <sv>Ägarskap</sv>
+            <nl>Eigendom</nl>
+        </Kiriotita>
+        <Selida>
+            <gr>Σελίδα</gr>
+            <en>Page</en>
+            <fr>Page</fr>
+            <it>Pagina</it>
+            <ar>صفحة</ar>
+            <sv>Sida</sv>
+            <nl>Pagina</nl>
+        </Selida>
+        <Parametros>
+            <gr>Παράμετρος</gr>
+            <en>Parameter</en>
+            <fr>Paramètre</fr>
+            <it>Parametro</it>
+            <ar>محدد</ar>
+            <sv>Variabel</sv>
+            <nl>Parameter</nl>
+        </Parametros>
+        <password>
+            <gr>Κωδικός Πρόσβασης</gr>
+            <en>Password</en>
+            <fr>Mot de passe</fr>
+            <it>Codice d'accesso</it>
+            <ar>الرقم الكودى للدخول </ar>
+            <sv>Lösenord</sv>
+            <nl>Wachtwoord</nl>
+        </password>
+        <FIELD_Password_NOT_VERIFIED>
+            <gr>Η Επιβεβαίωση Κωδικού Πρόσβασης δεν ταιριάζει με τον Κωδικό Πρόσβασης</gr>
+            <en>Password Verify does not match with Password</en>
+            <fr>Le mot de passe vérifient n'assortit pas avec le mot de passe</fr>
+            <it>La conferma del codice d'accesso non corrisponde al codice d'accesso stesso</it>
+            <ar>تأكيد الرقم الكودى للدخول لا يتفق   مع الرقم الكودى</ar>
+            <sv>Fel lösenord</sv>
+            <nl>Wachtwoorden komen niet overeen</nl>
+        </FIELD_Password_NOT_VERIFIED>
+        <pending>
+            <gr>Υπό δημοσίευση</gr>
+            <en>Pending for publishing</en>
+            <fr>Sous publication</fr>
+            <it>In via di pubblicazione</it>
+            <ar>تحت النشر</ar>
+            <sv>Redo för publicering</sv>
+            <nl>In afwachting voor publicatie</nl>
+        </pending>
+        <Prosopikes>
+            <gr>Ιδιωτικές</gr>
+            <en>Local</en>
+            <fr>Local</fr>
+            <it>Locale</it>
+            <ar>محلي</ar>
+            <sv>Lokal</sv>
+            <nl>Lokaal</nl>
+        </Prosopikes>
+        <EgirosAri8mosSelidas>
+            <gr>Παρακαλώ επιλέξτε κάποιον έγκυρο αριθμό σελίδας</gr>
+            <en>Please select a valid page number</en>
+            <fr>Veuillez choisir un numéro de page valide</fr>
+            <it>Selezionare un numero di pagina valido</it>
+            <ar>برجاء إختيار رقم صفحة سارى</ar>
+            <sv>Välj ett giltigt sidnummer</sv>
+            <nl>Selecteer een geldig paginanummer</nl>
+        </EgirosAri8mosSelidas>
+        <EktupwsimhMorfiListas>
+            <gr>Εκτυπώσιμη μορφή λίστας</gr>
+            <en>Printable version of list</en>
+            <fr>Version imprimable de liste</fr>
+            <it>Stampa lista</it>
+            <ar>جدول قابل للطبع</ar>
+            <sv>Utskrivbar version av lista</sv>
+            <nl>Afdrukbare versie van de lijst</nl>
+        </EktupwsimhMorfiListas>
+        <Prostasia>
+            <gr>Προστασία</gr>
+            <en>Protection</en>
+            <fr>Protection</fr>
+            <it>Tutela</it>
+            <ar>حماية </ar>
+            <sv>Skydd</sv>
+            <nl>Bescherming</nl>
+        </Prostasia>
+        <Dimosieusi>
+            <gr>Δημοσίευση</gr>
+            <en>Publish</en>
+            <fr>Publication</fr>
+            <it>Pubblicazione</it>
+            <ar>نشر</ar>
+            <sv>Publicera</sv>
+            <nl>Publiceren</nl>
+        </Dimosieusi>
+        <DimosieusiLabel>
+            <gr>ΔΗΜΟΣΙΕΥΣΗ</gr>
+            <en>PUBLISH</en>
+            <fr>PUBLICATION</fr>
+            <it>PUUBBLICAZIONE</it>
+            <ar>نشر</ar>
+            <sv>PUBLICERA</sv>
+            <nl>PUBLICEREN</nl>
+        </DimosieusiLabel>
+        <Dimosieusi>
+            <gr>Δημοσίευση</gr>
+            <en>Publish</en>
+            <fr>Publication</fr>
+            <it>Pubblicazione</it>
+            <ar>نشر</ar>
+            <sv>Publicera</sv>
+            <nl>Publiceren</nl>
+        </Dimosieusi>
+        <Eisagwgh_Eksagwgh>
+            <gr>ΕΙΣΑΓΩΓΗ/ΕΞΑΓΩΓΗ</gr>
+            <en>IMPORT/EXPORT</en>
+            <fr>IMPORT/EXPORT</fr>
+            <it>IMPORT/EXPORT</it>
+            <ar>IMPORT/EXPORT</ar>
+            <sv>IMPORT/EXPORT</sv>
+            <nl>IMPORT/EXPORT</nl>
+        </Eisagwgh_Eksagwgh>
+        <EksagwghXML>
+            <gr>Εξαγωγή σε XML</gr>
+            <en>Export to XML</en>
+            <fr>Exporter au format XML</fr>
+            <it>Esportazione in XML</it>
+            <ar>تصدير إلى XML</ar>
+            <sv>Exportera till XML</sv>
+            <nl>Exporteren naar XML</nl>
+        </EksagwghXML>
+        <EksagwghRDF>
+            <gr>Εξαγωγή σε RDF</gr>
+            <en>Export to RDF</en>
+            <fr>Exporter au format RDF</fr>
+            <it>Esportazione in RDF</it>
+            <ar>تصدير إلى RDF</ar>
+            <sv>Exportera till RDF</sv>
+            <nl>Exporteren naar RDF</nl>
+        </EksagwghRDF>
+        <ExportVoc>
+            <gr>Εξαγωγή Λεξιλογίου</gr>
+            <en>Export Vocabulary</en>
+            <fr>Exporter Vocabulaire</fr>
+            <it>Esportazione Vocabolario</it>
+            <ar>تصدير المفردات</ar>
+            <sv>Exportera Ordförråd</sv>
+            <nl>Exporteren Woordenschat</nl>
+        </ExportVoc>
+        <ImportVoc>
+            <gr>Εισαγωγή Λεξιλογίου</gr>
+            <en>Import Vocabulary</en>
+            <fr>Vocabulaire Importation</fr>
+            <it>Importa Vocabolario</it>
+            <ar>تصدير المفردات</ar>
+            <sv>Importera Ordförråd</sv>
+            <nl>Import Woordenschat</nl>
+        </ImportVoc>
+        <EksagwghProtipu>
+            <gr>Εξαγωγή Προτύπου</gr>
+            <en>Export Template</en>
+            <fr>Export Template</fr>
+            <it>Esporta modello</it>
+            <ar>استيراد المفردات</ar>
+            <sv>Exportera Mall</sv>
+            <nl>Exporteren Template</nl>
+        </EksagwghProtipu>
+        <EisagwghXML>
+            <gr>Εισαγωγή από XML</gr>
+            <en>Import from XML</en>
+            <fr>Importation à partir de XML</fr>
+            <it>Importa da XML</it>
+            <ar>الاستيراد من XML</ar>
+            <sv>Importera från XML</sv>
+            <nl>Importeren van XML</nl>
+        </EisagwghXML>
+        <published>
+            <gr>Δημοσιευμένο</gr>
+            <en>Published</en>
+            <fr>Publié</fr>
+            <it>Pubblicato</it>
+            <ar>منشور</ar>
+            <sv>Publicerad</sv>
+            <nl>Gepubliceerd</nl>
+        </published>
+        <ΕκδοτικόςΟίκος>
+            <gr>Εκδοτικός Οίκος</gr>
+            <en>Publisher</en>
+            <fr>Maison d'édition</fr>
+            <it>Casa editrice</it>
+            <ar>دار النشر</ar>
+            <sv>Utgivare</sv>
+            <nl>Uitgever</nl>
+        </ΕκδοτικόςΟίκος>
+        <Eperotisi>
+            <gr>Αναζήτηση</gr>
+            <en>Search</en>
+            <fr>Rechercher</fr>
+            <it>Ricerca</it>
+            <ar>البحث</ar>
+            <sv>Sök</sv>
+            <nl>Zoek</nl>
+        </Eperotisi>
+        <FormaEperotisis>
+            <gr>Φόρμα Επερώτησης</gr>
+            <en>Query Form</en>
+            <fr>Forme du question</fr>
+            <it>Modulo di domanda</it>
+            <ar>نموذج للسؤال</ar>
+            <sv>Frågeformulär</sv>
+            <nl>Zoekformulier</nl>
+        </FormaEperotisis>
+        <ParametriEperotisis>
+            <gr>Παράμετροι Επερώτησης</gr>
+            <en>Query Parameters</en>
+            <fr>Paramètres du question</fr>
+            <it>Parametri della domanda</it>
+            <ar>محددات السؤال</ar>
+            <sv>Frågeparameter</sv>
+            <nl>Zoekparameters</nl>
+        </ParametriEperotisis>
+        <EperotisiSe>
+            <gr>Επερώτηση Σε</gr>
+            <en>Query To</en>
+            <fr>Question à</fr>
+            <it>Domanda a</it>
+            <ar>سؤال عن</ar>
+            <sv>Fråga till</sv>
+            <nl>Zoekopdracht naar</nl>
+        </EperotisiSe>
+        <EperotisiSe>
+            <gr>Επερώτηση σε</gr>
+            <en>Query To</en>
+            <fr>Question à</fr>
+            <it>Domanda a</it>
+            <ar>سؤال عن</ar>
+            <sv>Fråga till</sv>
+            <nl>Zoekopdracht naar</nl>
+        </EperotisiSe>
+        <Read>
+            <gr>Ανάγνωση</gr>
+            <en>Read</en>
+            <fr>Lecture</fr>
+            <it>Leggi</it>
+            <ar>قراءة</ar>
+            <sv>Läs</sv>
+            <nl>Lezen</nl>
+        </Read>
+        <AporipsiDimosieusis>
+            <gr>Απόρριψη δημοσίευσης</gr>
+            <en>Reject publish</en>
+            <fr>Rejet de publication</fr>
+            <it>Pubblicazione rifiutata</it>
+            <ar>رفض النشر</ar>
+            <sv>Avvisa publicering</sv>
+            <nl>Weigeren te publiceren</nl>
+        </AporipsiDimosieusis>
+        <AitisiDimosieusis>
+            <gr>Αίτηση για δημοσίευση</gr>
+            <en>Request for publishing</en>
+            <fr>Demande pour publication</fr>
+            <it>Domanda di pubblicazione</it>
+            <ar>طلب للنشر</ar>
+            <sv>Begäran om publicering</sv>
+            <nl>Verzoek om te publiceren</nl>
+        </AitisiDimosieusis>
+        <ApotelesmaEperotisis>
+            <gr>Αποτελέσματα Επερώτησης</gr>
+            <en>Result of Query</en>
+            <fr>Résultat de question</fr>
+            <it>Risultati della domanda </it>
+            <ar>نتائج السؤال</ar>
+            <sv>Resultat av fråga</sv>
+            <nl>Zoekresultaat</nl>
+        </ApotelesmaEperotisis>
+        <Epestrepse>
+            <gr>επέστρεψε</gr>
+            <en>returned</en>
+            <fr>retourné</fr>
+            <it>Torna indietro</it>
+            <ar>عاد</ar>
+            <sv>återkom</sv>
+            <nl>geretourneerde</nl>
+        </Epestrepse>
+        <Dikaiwma>
+            <gr>Δικαίωμα</gr>
+            <en>Right</en>
+            <fr>Droit</fr>
+            <it>Diritto</it>
+            <ar>حق</ar>
+            <sv>Rättighet</sv>
+            <nl>Recht</nl>
+        </Dikaiwma>
+        <role>
+            <gr>Ρόλος</gr>
+            <en>Role</en>
+            <fr>Rôle</fr>
+            <it>Ruolo</it>
+            <ar>دور</ar>
+            <sv>Roll</sv>
+            <nl>Rol</nl>
+        </role>
+        <Apothikeusi>
+            <gr>Αποθήκευση</gr>
+            <en>Save</en>
+            <fr>Stockage</fr>
+            <it>Salva</it>
+            <ar>حفظ</ar>
+            <sv>Spara</sv>
+            <nl>Bewaren</nl>
+        </Apothikeusi>
+        <ApothikeusiEperotisis>
+            <gr>Αποθήκευση επερώτησης</gr>
+            <en>Save Query</en>
+            <fr>Stockage du question</fr>
+            <it>Salva domanda</it>
+            <ar>حفظ السؤال</ar>
+            <sv>Spara fråga</sv>
+            <nl>Zoekopdracht opslaan</nl>
+        </ApothikeusiEperotisis>
+        <EpileksteProta>
+            <gr>Επιλέξτε πρώτα</gr>
+            <en>Select a value</en>
+            <fr>Choisissez une valeur</fr>
+            <it>Seleziona prima</it>
+            <ar>الإختيار أولاً</ar>
+            <sv>Välj ett värde</sv>
+            <nl>Selecteer een waarde</nl>
+        </EpileksteProta>
+        <Emfanisi>
+            <gr>Εμφάνιση</gr>
+            <en>Show</en>
+            <fr>Exposition</fr>
+            <it>Visualizza</it>
+            <ar>ظهور</ar>
+            <sv>Visa</sv>
+            <nl>Tonen</nl>
+        </Emfanisi>
+        <HAS_TRANS_DEPENDANTS>
+            <gr>Κάποιες καταχωρήσεις μεταφράσεων εξαρτώνται από τη συγκεκριμένη εγγραφή.</gr>
+            <en>Some entries of translations depent on this particular record.</en>
+            <fr>Certaines entrées des traduction depent sur cet inscription particulier.</fr>
+            <it>Alcuni inserimenti di traduzioni dipendono da questa iscrizione</it>
+            <ar>  .تعتمد بعض تسجيلات الترجمة  على القيد المحدد </ar>
+            <sv>Vissa översättningar är beroende av detta register.</sv>
+            <nl>Sommige inzendingen van de vertalingen zijn afhankelijk van deze plaat.</nl>
+        </HAS_TRANS_DEPENDANTS>
+        <EpilogiDeltiouApo>
+            <gr>Επιλογή δελτίου προέλευσης</gr>
+            <en>Source Card Selection</en>
+            <fr>Sélectionner la langue originale de la fiche</fr>
+            <it>Seleziona scheda di provenienza</it>
+            <ar>إختيار بطاقة المصدر</ar>
+            <sv>Val av blankett</sv>
+            <nl>Bron kaart selectie</nl>
+        </EpilogiDeltiouApo>
+        <KatastasiDiatirisis>
+            <gr>Κατάσταση Διατήρησης</gr>
+            <en>State of Preservation</en>
+            <fr>État Conservation</fr>
+            <it>Stato di conservazione</it>
+            <ar>حالة الحفظ</ar>
+            <sv>Bevarandetillstånd</sv>
+            <nl>Staat van bewaring</nl>
+        </KatastasiDiatirisis>
+        <AdminStatus>
+            <gr>Κατάσταση</gr>
+            <en>Status</en>
+            <fr>Situation</fr>
+            <it>Stato </it>
+            <ar>الحالة</ar>
+            <sv>Status</sv>
+            <nl>Status</nl>
+        </AdminStatus>
+        <Kataxwrisi>
+            <gr>Καταχώρηση</gr>
+            <en>Store Value</en>
+            <fr>Inscription</fr>
+            <it>Regitrazione</it>
+            <ar>تسجيل</ar>
+            <sv>Spara värde</sv>
+            <nl>Waarde opslaan</nl>
+        </Kataxwrisi>
+        <ApothikeumenesEperotisis>
+            <gr>Αποθηκευμένες επερωτήσεις</gr>
+            <en>Stored Queries</en>
+            <fr>Questions Stockées</fr>
+            <it>Domande salvate</it>
+            <ar>أسئلة محفوظة</ar>
+            <sv>Sparade frågor</sv>
+            <nl>Opgeslagen zoekopdrachten</nl>
+        </ApothikeumenesEperotisis>
+        <Subject>
+            <gr>Θέμα</gr>
+            <en>Subject</en>
+            <fr>Sujet</fr>
+            <it>Tema</it>
+            <ar>موضوع من الأرشيف</ar>
+            <sv>Ämne</sv>
+            <nl>Onderwerp</nl>
+        </Subject>
+        <ΘέμαΑρχειακούΣτοιχείου>
+            <gr>Θέμα Αρχειακού Στοιχείου</gr>
+            <en>Subject</en>
+            <fr>Sujet</fr>
+            <it>Tema dato d'archivio</it>
+            <ar>موضوع من الأرشيف</ar>
+            <sv>Ämne</sv>
+            <nl>Onderwerp</nl>
+        </ΘέμαΑρχειακούΣτοιχείου>
+        <PeribalonXoros>
+            <gr>Περιβάλλων Χώρος</gr>
+            <en>Surrounding Space</en>
+            <fr>Espace Environnant</fr>
+            <it>Area circostante</it>
+            <ar>المكان المحيط</ar>
+            <sv>Omgivning</sv>
+            <nl>Omliggende ruimte</nl>
+        </PeribalonXoros>
+        <TexnikiExetasi>
+            <gr>Τεχνική Εξέταση</gr>
+            <en>Technical Examination</en>
+            <fr>Examens Techniques</fr>
+            <it>Analisi tecnica</it>
+            <ar>فحص فنى</ar>
+            <sv>Teknisk bedömning</sv>
+            <nl>Technisch onderzoek</nl>
+        </TexnikiExetasi>
+        <TermExists>
+            <gr>Ο όρος υπάρχει ήδη: </gr>
+            <en>Term already exists: </en>
+            <fr>Le terme existe déjà: </fr>
+            <it>Il termine è già presente: </it>
+            <ar> : المصطلح موجود بالفعل  </ar>
+            <sv>Termen finns redan: </sv>
+            <nl>Term bestaat al: </nl>
+        </TermExists>
+        <TERM_ADD_SUCCESS>
+            <gr>Ο όρος καταχωρήθηκε με επιτυχία.</gr>
+            <en>Term was successfuly added.</en>
+            <fr>Le terme a été ajoutée avec succès.</fr>
+            <it>Il termine è stato inserito con successo.</it>
+            <ar> .تم تسجيل المصطلح بنجاح </ar>
+            <sv>Termen lades till.</sv>
+            <nl>Term is toegevoegd.</nl>
+        </TERM_ADD_SUCCESS>
+        <TERM_UPDATE_SUCCESS>
+            <gr>Ο όρος ενημερώθηκε με επιτυχία.</gr>
+            <en>Term was successfuly updated.</en>
+            <fr>Le terme a été mis à jour avec succès.</fr>
+            <it>Il termine è stato aggiornato con successo.</it>
+            <ar> .تم تحديث المصطلح بنجاح </ar>
+            <sv>Termen uppdaterades.</sv>
+            <nl>Term is bijgewerkt.</nl>
+        </TERM_UPDATE_SUCCESS>
+        <Oroi>
+            <gr>Όρος</gr>
+            <en>Term</en>
+            <fr>Terme</fr>
+            <it>Τermine</it>
+            <ar>مصطلح</ar>
+            <sv>Term</sv>
+            <nl>Algemene voorwaarden</nl>
+        </Oroi>
+        <DOC_IS_PUBLISHED>
+            <gr>Το δελτίο είναι δημοσιευμένο.</gr>
+            <en>The card  is published.</en>
+            <fr>La fiche est publiée.</fr>
+            <it>La scheda è pubblicata.</it>
+            <ar>البطاقة منشورة.</ar>
+            <sv>Blanketten är publicerad.</sv>
+            <nl>De kaart is gepubliceerd.</nl>
+        </DOC_IS_PUBLISHED>
+        <LathosStoValidation>
+            <gr>Το δελτίο δεν μπορεί να αποθηκευτεί, παρακαλώ ελέγξτε το επιλεγμένο πεδίο</gr>
+            <en>The card can not be saved, please check the selected tag</en>
+            <fr>Le fiche ne peut pas être stocké, je prie vous contrôlez le champ choisi</fr>
+            <it>La scheda non può essere salvata, controllare il campo selezionato</it>
+            <ar>لا يمكن حفظ البطاقة ، برجاء مراجعة المجال المختار</ar>
+            <sv>Blanketten kan inte sparas, kontrollera valt fält.</sv>
+            <nl>De kaart kan niet bewaard worden. Controleer de geselecteerde tag</nl>
+        </LathosStoValidation>
+        <IS_EDITED_BY_USER>
+            <gr>Το δελτίο είναι αντικείμενο επεξεργασίας από κάποιον άλλο χρήστη.</gr>
+            <en>The card is currently being edited by another user.</en>
+            <fr>Cette fiche est en cours de traitement par un autre utilisateur.</fr>
+            <it>La scheda  è in corso di elaborazione da parte di un altro utente</it>
+            <ar> .يتم معالحة البطاقة بواسطة مستخدم أخر</ar>
+            <sv>Blanketten används för tillfället av en annan användare. </sv>
+            <nl>De kaart wordt momenteel bewerkt door een andere gebruiker.</nl>
+        </IS_EDITED_BY_USER>
+        <DOC_IS_PENDING>
+            <gr>Το δελτίο είναι υπό δημοσίευση.</gr>
+            <en>The card is pending publication.</en>
+            <fr>La fiche est en cours de publication.</fr>
+            <it>La scheda è in via di pubblicazione.</it>
+            <ar> .البطاقة بصدد النشر </ar>
+            <sv>Blanketten är i avvaktan för publicering.</sv>
+            <nl>De kaart is in afwachting van publicatie.</nl>
+        </DOC_IS_PENDING>
+        <PageTitle>
+            <gr>Ευρωπαϊκό Κέντρο Βυζαντινών και Μεταβυζαντινών Μνημείων</gr>
+            <en>The European Centre of Byzantine and Postbyzantine Monuments</en>
+            <fr>Centre européen de monuments byzantins et post-byzantins</fr>
+            <it>Centro europeo monumenti bizantini e post-bizantini</it>
+            <ar>المركز الأوربى للأثار البيزنطية وما بعد البيزنطية</ar>
+            <sv>Det europeiska centret för bysantinska och postbysantinska monument.</sv>
+            <nl>Het Europese Centrum van Byzantijnse en Postbyzantijnse Monumenten</nl>
+        </PageTitle>
+        <EperotisiDiagrafiAnepitixos>
+            <gr>Η επερώτηση δε διαγράφθηκε επιτυχώς</gr>
+            <en>The Query delete failed</en>
+            <fr>La question n' est pas supprimée</fr>
+            <it>La domanda non è stata cancellata correttamente</it>
+            <ar>لم يتم شطب السؤال بنجاح </ar>
+            <sv>Frågan kunde inte raderas</sv>
+            <nl>De zoekopdracht is niet verwijderd</nl>
+        </EperotisiDiagrafiAnepitixos>
+        <ToErotimaSasGia>
+            <gr>Το ερώτημα σας για</gr>
+            <en>The Query for</en>
+            <fr>La question pour</fr>
+            <it>La tua domanda per</it>
+            <ar>سؤالكم عن</ar>
+            <sv>Frågan om</sv>
+            <nl>De zoekopdracht naar</nl>
+        </ToErotimaSasGia>
+        <EperotisiDenApothikeutikeEpitixos>
+            <gr>Η επερώτηση δεν αποθηκεύτηκε επιτυχώς</gr>
+            <en>The Query save failed</en>
+            <fr>La question n' est pas stockee</fr>
+            <it>La domanda non è stata salvata correttamente</it>
+            <ar>لم يتم حفظ السؤال بنجاح</ar>
+            <sv>Frågan kunde inte sparas</sv>
+            <nl>De zoekopdracht is niet bewaard</nl>
+        </EperotisiDenApothikeutikeEpitixos>
+        <EperotisiDiagrafiEpitixos>
+            <gr>Η επερώτηση διαγράφθηκε επιτυχώς</gr>
+            <en>The Query was deleted succesfully</en>
+            <fr>La question a été supprimée</fr>
+            <it>La domanda è stata cancellata correttamente</it>
+            <ar>تم شطب السؤال بنجاح</ar>
+            <sv>Frågan raderades</sv>
+            <nl>De zoekopdracht is verwijderd</nl>
+        </EperotisiDiagrafiEpitixos>
+        <EperotisiApothikeutikeEpitixos>
+            <gr>Η επερώτηση αποθηκεύτηκε επιτυχώς</gr>
+            <en>The Query was saved succesfully</en>
+            <fr>La question a été sauvée succesfully</fr>
+            <it>La domanda è stata correttamente salvata</it>
+            <ar>تم حفظ السؤال بنجاح </ar>
+            <sv>Frågan sparades.</sv>
+            <nl>De zoekopdracht is bewaard</nl>
+        </EperotisiApothikeutikeEpitixos>
+        <SYB_DOC_EXIST>
+            <gr>Το επιλεγμένο μνημείο έχει ήδη εισαχθεί.</gr>
+            <en>The selected monument has already been imported.</en>
+            <fr>Le monument choisi a été déjà importé.</fr>
+            <it>Il monumento selezionato è già inserito.</it>
+            <ar>.تم إدخال الأثر المختار </ar>
+            <sv>Det valda monumentet är redan importerat.</sv>
+            <nl>Het geselecteerde monument is al geïmporteerd.</nl>
+        </SYB_DOC_EXIST>
+        <DenBrethikanArxeia>
+            <gr>Δεν βρέθηκαν αποτελέσματα που να ικανοποιούν τα κριτήρια αναζήτησης.</gr>
+            <en>There are no results satisfying the searching criteria.</en>
+            <fr>Il n'y a aucun résultat satisfaisant les critères de recherche.</fr>
+            <it>Non sono stati trovati risultati che soddisfino i criteri di ricerca.</it>
+            <ar> .لا توجد نتائج تتوافق مع معايير البحث </ar>
+            <sv>Det finns inga träffar utifrån din fråga.</sv>
+            <nl>Er zijn geen resultaten die voldoen aan de zoekcriteria</nl>
+        </DenBrethikanArxeia>
+        <USER_EXIST>
+            <gr>Υπάρχει ήδη χρήστης με το συγκεκριμένο όνομα χρήστη</gr>
+            <en>There is already a user with this username</en>
+            <fr>Il y a déjà un utilisateur avec ce nom d'utilisateur</fr>
+            <it>E' già presente un utente con questo nome utente</it>
+            <ar>يوجد بالفعل مستخدم بهذا الإسم</ar>
+            <sv>Det finns redan en användare med detta namn</sv>
+            <nl>Er bestaat al een gebruiker met deze gebruikersnaam</nl>
+        </USER_EXIST>
+        <ORG_EXIST>
+            <gr>Υπάρχει ήδη φορέας με το συγκεκριμένο ακρώνυμο</gr>
+            <en>There is already an oragnization with this initials</en>
+            <fr>Il ya déjà un joueur avec ce sigle</fr>
+            <it>Esiste già un giocatore con questo acronimo</it>
+            <ar>هناك بالفعل لاعبا مع هذا المختصر</ar>
+            <sv>Det finns redan en spelare med denna akronym</sv>
+            <nl>Er bestaat al een organisatie met deze organisatienaam</nl>
+        </ORG_EXIST>
+        <USER_NOT_FOUND>
+            <gr>Δεν υπάρχει χρήστης με το συγκεκριμένο όνομα χρήστη (ή id)</gr>
+            <en>There is not any user with this username (or id)</en>
+            <fr>Il n'y a pas aucun utilisateur avec ce nom d'utilisateur (ou identification)</fr>
+            <it>Utente con questo nome (o id) non trovato </it>
+            <ar>.  ( لا يوجد مستخدم  بهذا الإسم  ( أو الهوية </ar>
+            <sv>Det finns ingen användare med detta namn eller id</sv>
+            <nl>Er is geen gebruiker met deze gebruikersnaam (of id)</nl>
+        </USER_NOT_FOUND>
+        <LighWra>
+            <gr>Η ενέργεια αυτή ίσως χρειαστεί λίγη ώρα για να ολοκληρωθεί</gr>
+            <en>This action may take some time to complete</en>
+            <fr>Cette action peut prendre un certain temps d'accomplir</fr>
+            <it>Quest'azione sarà portata a termine in breve tempo</it>
+            <ar> . يستلزم بعض الوقت لإنجاز هذا العمل</ar>
+            <sv>Denna åtgärd kan ta en stund att genomföra</sv>
+            <nl>Er is geen gebruiker met deze gebruikersnaam (of id)</nl>
+        </LighWra>
+        <Τίτλος>
+            <gr>Τίτλος</gr>
+            <en>Title</en>
+            <fr>Titre</fr>
+            <it>Titolo</it>
+            <ar>العنوان</ar>
+            <sv>Titel</sv>
+            <nl>Titel</nl>
+        </Τίτλος>
+        <Metafrasi>
+            <gr>Μετάφραση</gr>
+            <en>Translate</en>
+            <fr>Traduction</fr>
+            <it>Traduzione</it>
+            <ar>ترجمة</ar>
+            <sv>Översätt</sv>
+            <nl>Vertalen</nl>
+        </Metafrasi>
+        <MetafrasiApo>
+            <gr>Μετάφραση από</gr>
+            <en>Translate from</en>
+            <fr>Traduction de</fr>
+            <it>Traduzione da</it>
+            <ar>ترجمة من</ar>
+            <sv>Översätt från</sv>
+            <nl>Vertalen van</nl>
+        </MetafrasiApo>
+        <TRANS_ADD_SUCCESS>
+            <gr>Η μετάφραση καταχωρήθηκε με επιτυχία.</gr>
+            <en>Translation was successfuly added.</en>
+            <fr>La traduction a été ajoutée avec succès.</fr>
+            <it>La traduzione è stata inserita con successo.</it>
+            <ar>تم تسجيل الترجمة بنجاح </ar>
+            <sv>Översättningen lades till.</sv>
+            <nl>De vertaling is toegevoegd.</nl>
+        </TRANS_ADD_SUCCESS>
+        <TRANS_UPDATE_SUCCESS>
+            <gr>Η μετάφραση ενημερώθηκε με επιτυχία.</gr>
+            <en>Translation was successfuly updated.</en>
+            <fr>La traduction a été mis à jour avec succès.</fr>
+            <it>La traduzione è stata aggiornata con successo.</it>
+            <ar>تم تحديث الترجمة بنجاح </ar>
+            <sv>Översättningen uppdaterades.</sv>
+            <nl>De vertaling is bijgewerkt.</nl>
+        </TRANS_UPDATE_SUCCESS>
+        <TautotitaKAP>
+            <gr>Ταυτότητα Αντικειμένου</gr>
+            <en>Object Identity</en>
+            <fr>Identité Objet</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålsidentitet</sv>
+            <nl>Object identieit</nl>
+        </TautotitaKAP>
+        <AnalitikiTekmiriosiAntikeimenou>
+            <gr>Αναλυτική Τεκμηριώση</gr>
+            <en>Detailed Documentation</en>
+            <fr>Documentation Analytique</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Detaljerad Dokumentation</sv>
+            <nl>Gedetailleerde documentatie</nl>
+        </AnalitikiTekmiriosiAntikeimenou>
+        <TekmiriaKinitou>
+            <gr>Τεκμήρια</gr>
+            <en>Documentation</en>
+            <fr>Documents</fr>
+            <it>Documentazione</it>
+            <ar>توثيق</ar>
+            <sv>Dokumentation</sv>
+            <nl>Documentatie</nl>
+        </TekmiriaKinitou>
+        <DiaxeirisiAntikeimenou>
+            <gr>Διαχείριση</gr>
+            <en>Management</en>
+            <fr>Gestion</fr>
+            <it>Gestione</it>
+            <ar>إدارة</ar>
+            <sv>Hantering</sv>
+            <nl>Beheer</nl>
+        </DiaxeirisiAntikeimenou>
+        <AlliEisagogi>
+            <gr>Άλλη Εισαγωγή</gr>
+            <en>Other Insertion</en>
+            <fr>Autre Insertion</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Annat Inlägg</sv>
+            <nl>Andere toevoeging</nl>
+        </AlliEisagogi>
+        <Apoktisi>
+            <gr>Απόκτηση</gr>
+            <en>Acquisition</en>
+            <fr>Acquisition</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Förvärv</sv>
+            <nl>Verwerving</nl>
+        </Apoktisi>
+        <Theseis>
+            <gr>Θέσεις</gr>
+            <en>Positions</en>
+            <fr>Positions</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Placering</sv>
+            <nl>Posities</nl>
+        </Theseis>
+        <Daneismos>
+            <gr>Δανεισμός</gr>
+            <en>Loan</en>
+            <fr>Prêt</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Lån</sv>
+            <nl>Uitleen</nl>
+        </Daneismos>
+        <PerigrafiAntikeimenou>
+            <gr>Περιγραφή Αντικειμένου</gr>
+            <en>Object Description</en>
+            <fr>Description Objet</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålsbeskrivning</sv>
+            <nl>Objectbeschrijving</nl>
+        </PerigrafiAntikeimenou>
+        <IstoriaAntikeimenou>
+            <gr>Ιστορία Αντικειμένου</gr>
+            <en>Object History</en>
+            <fr>Histoire Objet</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålshistoria</sv>
+            <nl>Objectgeschiedenis</nl>
+        </IstoriaAntikeimenou>
+        <SisxetisisAntikeimenou>
+            <gr>Συσχετίσεις Αντικειμένου</gr>
+            <en>Object Cross-References</en>
+            <fr>Corrélations d'Objet</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremål Korsreferenser</sv>
+            <nl>Object kruisverwijzingen</nl>
+        </SisxetisisAntikeimenou>
+        <OnomasiaAntikeimenou>
+            <gr>Ονομασία</gr>
+            <en>Name</en>
+            <fr>Nom</fr>
+            <it>Nome</it>
+            <ar>إسم </ar>
+            <sv>Namn</sv>
+            <nl>Naam</nl>
+        </OnomasiaAntikeimenou>
+        <EidosKinitou>
+            <gr>Είδος Αντικειμένου</gr>
+            <en>Object Kind</en>
+            <fr>Type d'Objet</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Föremålstyp</sv>
+            <nl>Objectsoort</nl>
+        </EidosKinitou>
+        <Apeikonisi>
+            <gr>Κόσμηση</gr>
+            <en>Decoration</en>
+            <fr>Décoration</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Utsmyckning</sv>
+            <nl>Decoratie</nl>
+        </Apeikonisi>
+        <Simansi>
+            <gr>Σήμανση</gr>
+            <en>Markings</en>
+            <fr>Marquage</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Märkning</sv>
+            <nl>Opschrift</nl>
+        </Simansi>
+        <Metrisi>
+            <gr>Μέτρηση</gr>
+            <en>Measurement</en>
+            <fr>Mesure</fr>
+            <it>Misurazione</it>
+            <ar>قياس</ar>
+            <sv>Mätning</sv>
+            <nl>Afmeting</nl>
+        </Metrisi>
+
+        <ElegxosKatastasis>
+            <gr>Έλεγχος Κατάστασης</gr>
+            <en>Status Check</en>
+            <fr>Contrôle de Status</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Tillståndskontroll</sv>
+            <nl>Status controleren</nl>
+        </ElegxosKatastasis>
+
+
+        <Perisilogi>
+            <gr>Περισυλλογή</gr>
+            <en>Field Collection</en>
+            <fr>Découverte</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Fält Samling</sv>
+            <nl>Veldenverzameling</nl>
+        </Perisilogi>
+
+        <Katoxi>
+            <gr>Κατοχή</gr>
+            <en>Possession</en>
+            <fr>Possession</fr>
+            <it>here...</it>
+            <ar>here...</ar>
+            <sv>Ägo</sv>
+            <nl>Bezit</nl>
+        </Katoxi>
+        <Είδος>
+            <gr>Είδος</gr>
+            <en>Type</en>
+            <fr>Type</fr>
+            <it>Tipo</it>
+            <ar>نوع</ar>
+            <sv>Type</sv>
+            <nl>Type</nl>
+        </Είδος>
+        <Apodimosieusi>
+            <gr>Κατάργηση δημοσίευσης</gr>
+            <en>Unpublish</en>
+            <fr>Rétractation de publication</fr>
+            <it>Annulla pubblicazione</it>
+            <ar>إلغاء النشر</ar>
+            <sv>Avpublicera</sv>
+            <nl>Publiceren ongedaan maken</nl>
+        </Apodimosieusi>
+        <rejected>
+            <gr>Μη δημοσιευμένο</gr>
+            <en>Unpublished</en>
+            <fr>Non publié</fr>
+            <it>Non pubblicato</it>
+            <ar>غير منشور</ar>
+            <sv>Opublicerat</sv>
+            <nl>Niet gepubliceerd</nl>
+        </rejected>
+        <unpublished>
+            <gr>Μη δημοσιευμένο</gr>
+            <en>Unpublished</en>
+            <fr>Non publié</fr>
+            <it>Non pubblicato</it>
+            <ar>غير منشور</ar>
+            <sv>Opublicerat</sv>
+            <nl>Niet gepubliceerd</nl>
+        </unpublished>
+        <Xrisi>
+            <gr>Χρήση</gr>
+            <en>Use</en>
+            <fr>Fonction</fr>
+            <it>Uso</it>
+            <ar>إستخدام</ar>
+            <sv>Använda</sv>
+            <nl>Gebruiken</nl>
+        </Xrisi>
+        <userrole>
+            <gr>Ρόλος Χρήστη</gr>
+            <en>User Role</en>
+            <fr>Rôle D'Utilisateur</fr>
+            <it>Ruolo utente</it>
+            <ar>دور المستخدم</ar>
+            <sv>Användarroll</sv>
+            <nl>Gebruikersrol</nl>
+        </userrole>
+        <username>
+            <gr>Όνομα Χρήστη</gr>
+            <en>Username</en>
+            <fr>Nom d'utilisateur</fr>
+            <it>Nome utente</it>
+            <ar>إسم المستخدم</ar>
+            <sv>Användarnamn</sv>
+            <nl>Gebruikersnaam</nl>
+        </username>
+        <date>
+            <gr>Ημερομηνία</gr>
+            <en>Date</en>
+            <fr>Date</fr>
+            <it>Data</it>
+            <ar>التاريخ</ar>
+            <sv>Datum</sv>
+            <nl>Datum</nl>
+        </date>
+        <time>
+            <gr>Ώρα</gr>
+            <en>Time</en>
+            <fr>Temps</fr>
+            <it>Tempo</it>
+            <ar>الوقت</ar>
+            <sv>Tid</sv>
+            <nl>Tijd</nl>
+        </time>
+        <Xristes>
+            <gr>Χρήστες</gr>
+            <en>Users</en>
+            <fr>Utilisateurs</fr>
+            <it>Utenti</it>
+            <ar>مستخدمون</ar>
+            <sv>Användare</sv>
+            <nl>Gebruikers</nl>
+        </Xristes>
+        <User>
+            <gr>Χρήστης</gr>
+            <en>User</en>
+            <fr>Utilisateur</fr>
+            <it>Utente</it>
+            <ar>مستخدم</ar>
+            <sv>Användare</sv>
+            <nl>Gebruiker</nl>
+        </User>
+        <Timi>
+            <gr>Τιμή</gr>
+            <en>Value</en>
+            <fr>Valeur</fr>
+            <it>Valore</it>
+            <ar>قيمة</ar>
+            <sv>Värde</sv>
+            <nl>Waarde</nl>
+        </Timi>
+        <passwordV>
+            <gr>Επιβεβαίωση Κωδικού Πρόσβασης</gr>
+            <en>Verify Password</en>
+            <fr>Confirmation du mot de passe</fr>
+            <it>Conferma codice accesso</it>
+            <ar>تأكيد الرقم الكودى للدخول</ar>
+            <sv>Bekräfta lösenord</sv>
+            <nl>Bevestig wachtwoord</nl>
+        </passwordV>
+        <Proboli>
+            <gr>Προβολή</gr>
+            <en>View</en>
+            <fr>Projection</fr>
+            <it>Visualizza</it>
+            <ar>عرض</ar>
+            <sv>Visa</sv>
+            <nl>Beeld</nl>
+        </Proboli>
+        <Lexilogio>
+            <gr>ΛΕΞΙΛΟΓΙΟ</gr>
+            <en>VOCABULARY</en>
+            <fr>VOCABULAIRE</fr>
+            <it>LESSICO</it>
+            <ar>مفردات </ar>
+            <sv>ORDLISTA</sv>
+            <nl>Woordenlijst</nl>
+        </Lexilogio>
+        <MeKritiriaAnazitisis>
+            <gr>με κριτήρια αναζήτησης</gr>
+            <en>with the searching criteria</en>
+            <fr>avec les critères de recherche</fr>
+            <it>con criteri di ricerca</it>
+            <ar>بمعايير بحث</ar>
+            <sv>med sökkriteriet</sv>
+            <nl>met de zoekcriteria</nl>
+        </MeKritiriaAnazitisis>
+        <Write>
+            <gr>Επεξεργασία</gr>
+            <en>Write</en>
+            <fr>Écrir</fr>
+            <it>Elabora</it>
+            <ar>معالجة</ar>
+            <sv>Skriv</sv>
+            <nl>Schrijven</nl>
+        </Write>
+        <UserInvalid>
+            <gr>Λάθος 'Όνομα Χρήστη' ή λάθος 'Κωδικός Πρόσβασης'</gr>
+            <en>Wrong 'Username' or 'Password'</en>
+            <fr>Erreur 'nom d'utilisateur' ou erreur 'code de pass'</fr>
+            <it>Nome utente o codice d'accesso errato</it>
+            <ar>" خطأ فى " إسم المستخدم " أو فى " الرقم الكودى للدخول </ar>
+            <sv>Fel 'Användarnamn' eller 'Llösenord'</sv>
+            <nl>Verkeerde 'Gebruikersnaam' of 'Wachtwoord'</nl>
+        </UserInvalid>
+        <IS_EDITED_BY_YOU>
+            <gr>Επεξεργάζεστε ήδη το συγκεκριμένο δελτίο.</gr>
+            <en>You are currently editing this card.</en>
+            <fr>Vous travaillez déjà sur cette fiche.</fr>
+            <it>Stai già elaborando questa scheda.</it>
+            <ar> .تقوم بمعالجة البطاقة المعنية</ar>
+            <sv>Du redigerar för närvarande denna blankett.</sv>
+            <nl>U bewerkt momenteel deze card.</nl>
+        </IS_EDITED_BY_YOU>
+        <SinexeiaEisagwgisMsg>
+            <gr>Μπορείτε να συνεχίσετε στην εισαγωγή του μνημείου,
+                αλλά το υπάρχον μνημείο θα χαθεί.
+            </gr>
+            <en>You can continue importing this monument,
+                but the existing monument will be lost.
+            </en>
+            <fr>Vous pouvez continuer d'importer ce monument, 
+                mais le monument existant sera perdu.
+            </fr>
+            <it>Continuando nell'inserimento del monumento, i dati relativi al monumento attualmente presenti andranno persi.</it>
+            <ar>        .تستطيع إستكمال إدخال الأثر، ولكن سوف يُفقد الأثر القائم </ar>
+            <sv>Du kan fortsätta importera detta monument, men den befintliga monumentet kommer att förloras.</sv>
+            <nl>U kunt doorgaan met het importeren van dit monument, maar het bestaande monument zal verloren gaan.</nl>
+        </SinexeiaEisagwgisMsg>
+        <CANNOT_DELETE_IS_EDITED>
+            <gr>Δε μπορείτε να διαγράψετε το δελτίο, επειδή είναι αντικείμενο επεξεργασίας από κάποιο χρήστη.</gr>
+            <en>You cannot delete this card, because it is being edited by another user.</en>
+            <fr>Vous ne pouvez pas supprimer cette fiche car elle est en cours de traitement par un autre utilisateur.</fr>
+            <it>Non è possibile cancellare la scheda perché è in corso di elaborazione da parte di altro utente.</it>
+            <ar> .لايمكنكم شطب البطاقة ، نظراً لإستخدامها من مستخدم أخر </ar>
+            <sv>Du kan inte radera denna blankett, eftersom den redigeras av en annan användare.</sv>
+            <nl>U kunt deze kaart niet verwijderen omdat het bewerkt wordt door een andere gebruiker.</nl>
+        </CANNOT_DELETE_IS_EDITED>
+        <CANNOT_DELETE>
+            <gr>Δε μπορείτε να διαγράψετε την εγγραφή.</gr>
+            <en>You cannot delete this record.</en>
+            <fr>Vous ne pouvez pas supprimer cet inscription.</fr>
+            <it>Non è possibile cancellare l'iscrizione.</it>
+            <ar>لا يمكنكم شطب التسجيل</ar>
+            <sv>Du kan inte radera detta register.</sv>
+            <nl>U kunt dit record niet verwijderen.</nl>
+        </CANNOT_DELETE>
+        <NoTerm>
+            <gr>Δε συμπληρώσατε κάποιον όρο.</gr>
+            <en>You did not fill any term.</en>
+            <fr>Vous n\'avez rempli aucun terme.</fr>
+            <it>Non è stato compilato qualche termine.</it>
+            <ar>لم تسجل مصطلح م.ا</ar>
+            <sv>Du fyllde inte i någon term.</sv>
+            <nl>U heeft geen term(en) ingevoerd.</nl>
+        </NoTerm>
+        <DID_NOT_CHOOSE_DOC>
+            <gr>Δεν επιλέξατε κάποιο δελτίο.</gr>
+            <en>You did not select any card.</en>
+            <fr>Vous n’avez sélectionné aucune fiche.</fr>
+            <it>Non è stata scelta una scheda</it>
+            <ar> .لم يتم إختيار إحدى البطاقات</ar>
+            <sv>Du valde ingen blankett.</sv>
+            <nl>U heeft geen kaart geselecteerd.</nl>
+        </DID_NOT_CHOOSE_DOC>
+        <CANNOT_EDIT>
+            <gr>Δεν έχετε δικαίωμα επεξεργασίας για τη συγκεκριμένη εγγραφή.</gr>
+            <en>You do not have the right to edit this record.</en>
+            <fr>Vous n'avez pas le droit d'éditer cet inscription.</fr>
+            <it>Non è consentita l'elaborazione di questa iscrizione</it>
+            <ar> .ليس لديكم حق معالجة القيد المحدد </ar>
+            <sv>Du har inte rättighet att redigera detta register.</sv>
+            <nl>U beschikt niet over de juiste rechten om dit record te bewerken.</nl>
+        </CANNOT_EDIT>
+        <ACCESS_DENIED>
+            <gr>Δεν έχετε δικαίωμα για αυτήν την ενέργεια.</gr>
+            <en>You do not have the right to perform this action.</en>
+            <fr>Vous n'avez pas le droit d'effectuer cette action.</fr>
+            <it>Questa azione non è consentita</it>
+            <ar> .ليس لديكم حق القيام بهذا الإجراء </ar>
+            <sv>Du har inte rättighet att utföra denna åtgärd.</sv>
+            <nl>U beschikt over de juiste rechten om deze actie uit te voeren.</nl>
+        </ACCESS_DENIED>
+        <SinexeiaEpexergasiasMsg>
+            <gr>Μπορείτε να συνεχίσετε στην επεξεργασία του δελτίου,
+                αλλά τυχόν αλλαγές από την προηγούμενη επεξεργασία
+                μπορεί να χαθούν αν δεν τις είχατε αποθηκεύσει.
+            </gr>
+            <en>You may continue editing this card,
+                but changes made during last editing
+                may be lost if you had not saved.
+            </en>
+            <fr>Vous pouvez continuer à travailler sur cette fiche
+                mais vous risquez de perdre les modifications précédemment 
+                effectuées si vous ne les avez pas sauvegardées.
+            </fr>
+            <it>Continuando l'elaborazione della scheda, i cambiamenti eventualmente apportati nella precedente elaborazione possono andare persi se non erano stati salvati.</it>
+            <ar>.تستطيع إستكمال معالجة البطاقة ولكن ستفقد التغييرات الناتجة عن معالجة سابقة ما لم بتم حفظها </ar>
+            <sv>Du kan fortsätta redigera detta kort,
+                                 men förändringar som gjorts under senaste redigering
+                                 kan gå förlorat om du inte hade sparat.
+            </sv>
+            <nl>
+                U kunt doorgaan met het bewerken van deze kaart,
+                                 maar wijzigingen die tijdens laatste bewerking
+                                 kunnen verloren gaan als u niet had gered.
+            </nl>
+        </SinexeiaEpexergasiasMsg>
+        <AitisiDimosieusisConfirm>
+            <gr>Ζητήσατε να δημοσιευτεί το δελτίο. Θέλετε να συνεχιστεί η διαδικασία;</gr>
+            <en>You requested to publish this card.\nDo you want to proceed?</en>
+            <fr>Vous avez demandé à ce que cette fiche soit publiée.\nVoulez-vous continuer?</fr>
+            <it>Hai richiesto la pubblicazione della scheda. Vuoi continuare la procedura?</it>
+            <ar>طلبت  نشر البطاقة . هل ترغب فى الإستمرار ؟</ar>
+            <sv>Du vill publicera denna blankett.\nVill du fortsätta?</sv>
+            <nl>U heeft verzocht deze kaart te publiceren. Wilt u doorgaan?</nl>
+        </AitisiDimosieusisConfirm>
+        <ACTION_SUCCESS>
+            <gr>Η ενέργειά σας ολοκληρώθηκε με επιτυχία.</gr>
+            <en>Your action completed successfully.</en>
+            <fr>Votre action a accompli avec succès.</fr>
+            <it>L'operazione è stata portata a termine con successo.</it>
+            <ar>   . تحقق العمل بنجاح </ar>
+            <sv>Din förfrågan genomfördes med gott resultat.</sv>
+            <nl>Uw actie is met succes voltooid.</nl>
+        </ACTION_SUCCESS>
+        <URI_ID>
+            <gr>Το URI id του δελτίου σας είναι: </gr>
+            <en>The URI id of your card is: </en>
+            <fr>L'identifiant URI de votre carte est: </fr>
+            <it>L'id URI della tua carta è: </it>
+            <ar>معرف URI للبطاقة هو:</ar>
+            <sv>URI id kortet är: </sv>
+            <nl>De URI id van uw kaart is: </nl>
+        </URI_ID>
+        <SeExelixi>
+            <gr>Η ενέργειά σας είναι σε εξέλιξη. Παρακαλώ περιμένετε...</gr>
+            <en>Your action is in progress. Please wait...</en>
+            <fr>Votre action est en marche. Svp attente...</fr>
+            <it>L'operazione è in corso. Si prega di atendere...</it>
+            <ar> . جارى العمل . إنتظر من فضلك </ar>
+            <sv>Arbete pågår. Vänta...</sv>
+            <nl>Uw actie wordt uitgevoerd. Even geduld aub...</nl>
+        </SeExelixi>
+        <REQUEST_SUCCESS>
+            <gr>Η αίτησή σας πραγματοποιήθηκε με επιτυχία.</gr>
+            <en>Your request completed successfully.</en>
+            <fr>Votre demande a accompli avec succès.</fr>
+            <it>La richiesta è andata a buon fine.</it>
+            <ar> .تم تسجيل طلبكم بنجاح </ar>
+            <sv>Din förfrågan genomfördes med gott resultat.</sv>
+            <nl>Uw verzoek is met succes voltooid.</nl>
+        </REQUEST_SUCCESS>
+        <Agglika>
+            <gr>Αγγλικά</gr>
+            <en>English</en>
+            <fr>Anglais</fr>
+            <it>Inglese</it>
+            <ar>إنجليزية </ar>
+            <sv>Engelska</sv>
+            <nl>Engels</nl>
+        </Agglika>
+        <Italika>
+            <gr>Ιταλικά</gr>
+            <en>Italian</en>
+            <fr>Italian</fr>
+            <it>Italiano</it>
+            <ar>الإيطالية </ar>
+            <sv>Italiensk</sv>
+            <nl>Italiaans</nl>
+        </Italika>
+        <it>
+            <gr>Ιταλικά</gr>
+            <en>Italian</en>
+            <fr>Italian</fr>
+            <it>Italiano</it> 
+            <ar>الإيطالية </ar>
+            <sv>Italiensk</sv>
+            <nl>Italiaans</nl>
+        </it>
+        <Arabika>
+            <gr>Αραβικά</gr>
+            <en>Arabic</en>
+            <fr>Arabic</fr>
+            <it>Arabo</it>
+            <ar>العربية</ar>
+            <sv>Arabiska</sv>
+            <nl>Arabisch</nl>
+        </Arabika>
+        <ar>
+            <gr>Αραβικά</gr>
+            <en>Arabic</en>
+            <fr>Arabic</fr>
+            <it>Arabo</it>
+            <ar>العربية</ar>
+            <sv>Arabiska</sv>
+            <nl>Arabisch</nl>
+        </ar>
+        <Sweden>
+            <gr>Σουηδικά</gr>
+            <en>Swedish</en>
+            <fr>Suédois</fr>
+            <it>Svedese</it>
+            <ar>السويدية</ar>
+            <sv>Svenskt</sv>
+            <nl>Zweeds</nl>
+        </Sweden>
+        <sv>
+            <gr>Σουηδικά</gr>
+            <en>Swedish</en>
+            <fr>Suédois</fr>
+            <it>Svedese</it>
+            <ar>السويدية</ar>
+            <sv>Svenskt</sv>
+            <nl>Zweeds</nl>
+        </sv>
+        <Dutch>
+            <gr>Ολλανδικά</gr>
+            <en>Dutch</en>
+            <fr>Νéerlandais</fr>
+            <it>Οlandese</it>
+            <ar>هولندي</ar>
+            <sv>Ηolländska</sv>
+            <nl>Nederlands</nl>
+        </Dutch>
+        <nl>
+            <gr>Ολλανδικά</gr>
+            <en>Dutch</en>
+            <fr>Νéerlandais</fr>
+            <it>Οlandese</it>
+            <ar>هولندي</ar>
+            <sv>Ηolländska</sv>
+            <nl>Nederlands</nl>
+        </nl>
+        <nofreespace>
+            <gr>Δεν υπάρχει αρκετός ελεύθερος χώρος στον υπολογιστή σας για να πραγματοποιήσετε αυτή την ενέργεια.</gr>
+            <en>There is not enough free space on your computer to perform this operation.</en>
+            <fr>Il n'ya pas assez d'espace libre sur votre ordinateur pour effectuer cette opération.</fr>
+            <it>Non c'è abbastanza spazio libero sul tuo computer per effettuare questa operazione.</it>
+            <ar>لا يوجد ما يكفي من المساحه الخاليه على جهاز الكمبيوتر الخاص بك لاجراء هذه العملية.</ar>
+            <sv>Du har inte tillräckligt med minne på din dator för att uföra denna åtgärd.</sv>
+            <nl>Er is niet voldoende schijfruimte op uw computer om deze bewerking uit te voeren.</nl>
+        </nofreespace>
+        <backupMsg>
+            <gr>Πρόκειται να δημιουργήσετε αντίγραφο συστήματος. Η διαδικασία θα διαρκέσει μερικά λεπτά. Θέλετε να συνεχίσετε;</gr>
+            <en>You are about to create a backup. This process will take several minutes. Do you want to continue?</en>
+            <fr>Vous êtes sur le point de créer une sauvegarde. Ce processus prendra plusieurs minutes. Voulez-vous continuer?</fr>
+            <it>Stai per creare una copia di backup. Questo processo richiederà diversi minuti. Vuoi continuare?</it>
+            <ar>أنت على وشك انشاء نسخة احتياطية. هذه العملية ستستغرق عدة دقائق. هل تريد المتابعة؟</ar>
+            <sv>Du håller på att skapa en backup. Denna process kommer ta flera minuter. Vill du fortsätta?</sv>
+            <nl>U staat op het punt een back-up te maken. Dit zal enkele minuten duren. Wilt u doorgaan?</nl>
+        </backupMsg>
+        <NextPage>
+            <gr>Επόμενη Σελίδα</gr>
+            <en>Next Page</en>
+            <fr>Page Suivante</fr>
+            <it>Pagina Successiva</it>
+            <ar>الصفحة التالية</ar>
+            <sv>Nästa Sida</sv>
+            <nl>Volgende pagina</nl>
+        </NextPage>
+        <PrevPage>
+            <gr>Προηγούμενη Σελίδα</gr>
+            <en>Previous Page</en>
+            <fr>Page Précédente</fr>
+            <it>Pagina Precedente</it>
+            <ar>الصفحة السابقة</ar>
+            <sv>Föregående Sida</sv>
+            <nl>Vorige Pagina</nl>
+        </PrevPage>
+        <LastPage>
+            <gr>Τελευταία Σελίδα</gr>
+            <en>Last Page</en>
+            <fr>Dernière page</fr>
+            <it>Ultima Pagina</it>
+            <ar>الصفحة الأخيرة</ar>
+            <sv>Sista Sidan</sv>
+            <nl>Laatste Pagina</nl>
+        </LastPage>
+        <Go>
+            <gr>Μετάβαση Σε</gr>
+            <en>Go</en>
+            <fr>Aller</fr>
+            <it>Andare</it>
+            <ar>ذهاب</ar>
+            <sv>Go</sv>
+            <nl>Jump In</nl>
+        </Go>
+        <FirstPage>
+            <gr>Πρώτη Σελίδα</gr>
+            <en>First Page</en>
+            <fr>Première Page</fr>
+            <it>Prima Pagina</it>
+            <ar>أول صفحة</ar>
+            <sv>Första Sidan</sv>
+            <nl>Eerste pagina</nl>
+        </FirstPage>
+        <DiagrafiPrompt>
+            <gr>Θέλετε οπωσδήποτε να διαγράψετε την επερώτηση:</gr>
+            <en>Do you really want to delete the query:</en>
+            <fr>Voulez-vous vraiment supprimer la requête:</fr>
+            <it>Vuoi davvero eliminare la query:</it>
+            <ar>هل تريد حقا حذف الاستعلام:</ar>
+            <sv>Vill du verkligen ta bort frågan:</sv>
+            <nl>Wil je echt wilt de query verwijderen:</nl>
+        </DiagrafiPrompt>
+        <Erwtimatiko>
+            <gr>;</gr>
+            <en>?</en>
+            <fr>?</fr>
+            <it>?</it>
+            <ar>?</ar>
+            <sv>?</sv>
+            <nl>?</nl>
+        </Erwtimatiko>
+        <EMPTY_FIELD_MnemonicName>
+            <gr>Δε συμπληρώσατε το πεδίο: Μνημονικό Όνομα</gr>
+            <en>You did not fill the field: Mnemonic Name</en>
+            <fr>Non entré sur le terrain: Nom Mnémonique</fr>
+            <it>Non è entrato in campo: Nome Mnemonico</it>
+            <ar>لم تدخل هذا المجال: اسم ذاكري</ar>
+            <sv>Inte kommit in på: Mnemonic Name</sv>
+            <nl>U vulde het veld: Mnemonic Naam</nl>
+        </EMPTY_FIELD_MnemonicName>
+        <QUERY_EXIST>
+            <gr>Υπάρχει ήδη επερώτηση με το ίδιο 'Μνημονικό Όνομα'</gr>
+            <en>There is already a query with the same 'Mnemonic Name'</en>
+            <fr>Il existe déjà une requête avec le 'Nom Mnémonique «même</fr>
+            <it>C'è già una query con il 'nome mnemonico' lo stesso</it>
+            <ar>هناك بالفعل استعلام مع 'اسم متعلق بالذاكرة' نفسه</ar>
+            <sv>Det finns redan en fråga med samma "Mnemonic namn"</sv>
+            <nl>Er is al een query met hetzelfde 'Mnemonic Naam'</nl>
+        </QUERY_EXIST>
+        <QUERY_ΝΟΤ_EXIST>
+            <gr>Δεν υπάρχει ερώτηση με τέτοιο 'Μνημονικό Όνομα'</gr>
+            <en>There is no query with that 'Mnemonic Name'</en>
+            <fr>Il n'ya pas de requête à cette 'Nom Mnémonique'</fr>
+            <it>Non c'è che query con 'Nome Mnemonic'</it>
+            <ar>ليس هناك استعلام مع أن 'اسم متعلق بالذاكرة '</ar>
+            <sv>Det finns ingen fråga med att 'Mnemonic namn'</sv>            
+            <nl>Er is geen query met dat 'Mnemonic Naam'</nl>           
+        </QUERY_ΝΟΤ_EXIST>
+        <EMPTY_FIELD_TargetCollection>
+            <gr>Δεν επιλέξατε 'Συλλογή' όπου θα γίνει η επερώτηση</gr>
+            <en>You did not select the 'Collection' to query</en>
+            <fr>Vous n'avez pas sélectionné la «collection» d'interroger</fr>
+            <it>Non è stata selezionata la 'Collection' di interrogare</it>
+            <ar>أنت لم اختر 'مجموعة' للاستعلام</ar>
+            <sv>Du har inte välja "Collection" för att söka</sv>
+            <nl>U hebt niet de optie 'Collection' op te vragen</nl>
+        </EMPTY_FIELD_TargetCollection>
+        <ViewDependencies>
+            <gr>Δείτε τις Εξαρτήσεις</gr>
+            <en>View Dependencies</en>
+            <fr>View Dependencies</fr>
+            <it>Vista Dipendenze</it>
+            <ar>عرض التبعيات</ar>
+            <sv>Visa Beroenden</sv>
+            <nl>Bekijk Afhankelijkheden</nl>
+        </ViewDependencies>
+        <DependenciesTitle>
+            <gr>Εξαρτήσεις</gr>
+            <en>Dependencies</en>
+            <fr>Dependencies</fr>
+            <it>Dipendenze</it>
+            <ar>تبعيات</ar>
+            <sv>Beroenden</sv>
+            <nl>Afhankelijkheden</nl>
+        </DependenciesTitle>
+        
+        <ForgetPass>
+            <gr>Ξεχάσατε τον κωδικό πρόσβασης;</gr>
+            <en>Forgot your Password?</en>
+            <fr>Vous avez oublié votre mot de passe?</fr>
+            <it>Hai dimenticato la tua password?</it>
+            <ar>نسيت كلمة المرور</ar>
+            <sv>Har du glömt ditt lösenord?</sv>
+            <nl>Wachtwoord vergeten?</nl>
+        </ForgetPass>
+        <EmailPrompt>
+            <gr>Εισάγετε το email σας για την επαναφορά του κωδικού πρόσβασης</gr>
+            <en>Enter your email address to reset your password:</en>
+            <fr>Entrez votre adresse courriel pour réinitialiser votre mot de passe:</fr>
+            <it>Inserisci il tuo indirizzo email per reimpostare la password:</it>
+            <ar>أدخل عنوان بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك:</ar>
+            <sv>Fyll i din e-postadress för att återställa ditt lösenord:</sv>
+            <nl>Vul uw email adres om uw wachtwoord opnieuw in te stellen:</nl>
+        </EmailPrompt>
+        <NotValidEmail>
+            <gr>Ο κωδικός πρόσβασης δεν είναι έγκυρος.</gr>
+            <en>You have entered an invalid email address!</en>
+            <fr>Vous avez entré une adresse email valide!</fr>
+            <it>Hai inserito un indirizzo email valido!</it>
+            <ar>لقد قمت بإدخال عنوان البريد الإلكتروني غير صالح!</ar>
+            <sv>Du har angett en ogiltig e-postadress!</sv>
+            <nl>U heeft een ongeldig e-mailadres ingevoerd!</nl>
+        </NotValidEmail>
+        <emailSubject>
+            <gr>systemName-Επαναφορά Κωδικού Πρόσβασης</gr>
+            <en>systemName-Reset Password</en>
+            <fr>systemName-Réinitialiser le mot de</fr>
+            <it>systemName-Reset Password</it>
+            <ar>إعادة تعيين كلمة المرور</ar>
+            <sv>systemName-Återställ lösenord</sv>
+            <nl>systemName-Reset Password</nl>
+        </emailSubject>
+        <emailSubject_SignUp>
+            <gr>systemName-Εγγραφή</gr>
+            <en>systemName-Sign up</en>
+            <fr>systemName-Signer</fr>
+            <it>systemName-Iscriviti</it>
+            <ar>systemName-الاشتراك</ar>
+            <sv>systemName-Anmäl dig</sv>
+            <nl>systemName-Registreren</nl>
+        </emailSubject_SignUp>
+        <emailContext>
+            <gr>Γεια σας,? Η επαναφορά του κωδικού πρόσβασης ολοκληρώθηκε. Ο νέος σας κωδικός είναι: ? Παρακαλώ αλλάξτε τον κωδικό πρόσβασης την πρώτη φορά που θα εισέλθετε στο σύστημα. ?? Μην απαντήσετε σε αυτό το email. ?</gr>
+            <en>Hello,? Your password is reset. Your new password is: ? Please change this password the first time you login. ??  Do not reply to this email. ?</en>
+            <fr>Bonjour,? Votre mot de passe est réinitialisé. Votre nouveau mot de passe:? S'il vous plaît changer ce mot de passe la première fois que vous vous connectez. ? Ne répondez pas à cet e-mail. ?</fr>
+            <it>Ciao,? È reimpostare la password. La tua nuova password è:? Si prega di modificare questa password la prima volta che si effettua il login. ? Non rispondere a questa email. ?</it>
+            <ar>مرحبا،؟ تتم إعادة تعيين كلمة السر الخاصة بك. كلمة السر الجديدة هي:؟ الرجاء تغيير كلمة المرور هذه هي المرة الأولى التي تدخل فيها. ؟ عدم الرد على هذا البريد الإلكتروني. ؟</ar>
+            <sv>Hej,? Ditt lösenord återställs. Ditt nya lösenord är:? Vänligen ändra detta lösenord första gången du loggar in. ? Svara inte på detta mail. ?</sv>
+            <nl>Hallo,? Uw wachtwoord is gereset. Uw nieuwe wachtwoord is:? Gelieve dit wachtwoord te wijzigen de eerste keer dat u inlogt. ? Antwoord niet op deze e-mail. ?</nl>
+        </emailContext>
+        <emailContext_SignUp>
+            <gr>Γεια σας,? Καλώς ήρθατε στο  systemName.Ο λογαριασμός σας έχει δημιουργηθεί. Το όνομα χρήστη σας  είναι: ?Επισκεφτείτε το  * για εισαγωγή. Μην απαντήσετε σε αυτό το email.. ?</gr>
+            <en>Hello,? Welcome to systemName. Your account is created. Your username is: ? Visit* to login. ??  Do not reply to this email. ?</en>
+            <fr>Bonjour,? Bienvenue à la systemName. Votre compte est créé. Votre nom d'utilisateur est:? Visitez * pour vous connecter. ? Ne répondez pas à cet e-mail. ?</fr>
+            <it>Ciao,? Benvenuti a systemName. Viene creato il tuo account. Il tuo nome utente è:? Visita * per effettuare il login. ? Non rispondere a questa email. ?</it>
+            <ar>مرحبا،؟ مرحبا بكم في التجميعي. يتم إنشاء حسابك. اسم المستخدم الخاص بك هو:؟ * زيارة للدخول. ؟ عدم الرد على هذا البريد الإلكتروني. ؟</ar>
+            <sv>Hej,? Välkommen till systemName. Ditt konto har skapats. Ditt användarnamn är:? Besök * logga in. ? Svara inte på detta mail. ?</sv>
+            <nl>Hallo,? Welkom bij systemName. Uw account is aangemaakt. Uw gebruikersnaam is:? Bezoek * om in te loggen. ? Antwoord niet op deze e-mail. ?</nl>
+        </emailContext_SignUp>
+        <NoUserEmail>
+            <gr>Δεν υπάρχει εγγεγραμμένος χρήστης με αυτό το email.</gr>
+            <en>No user exists with this email. Please try again.</en>
+            <fr>Aucun utilisateur existe avec cet email. S'il vous plaît essayez de nouveau.</fr>
+            <it>Nessun utente esiste con questa e-mail. Riprova.</it>
+            <ar>لا يوجد مستخدم مع هذا البريد الإلكتروني. يرجى المحاولة مرة أخرى.</ar>
+            <sv>Ingen användare finns med denna e-post. Försök igen.</sv>
+            <nl>Er bestaat geen gebruiker met dit e-mail. Probeer het opnieuw.</nl>
+        </NoUserEmail>
+        <ReturnLogin>
+            <gr>Επιστροφή στην  σελίδα εισαγωγής.</gr>
+            <en>Return to Login Page</en>
+            <fr>Retour à la page de connexion</fr>
+            <it>Ritorno alla pagina di login</it>
+            <ar>رتان إلى تسجيل الدخول الصفحة</ar>
+            <sv>Återgå till Login sida</sv>
+            <nl>Retun naar Inlogpagina</nl>
+        </ReturnLogin>
+        <NewPassSend>
+            <gr>Ο νέος κωδικός πρόσβασης έχει σταλεί στο email σας.</gr>
+            <en>The new password is sent to your email.</en>
+            <fr>Le nouveau mot de passe est envoyé à votre adresse email.</fr>
+            <it>La nuova password viene inviato al tuo indirizzo email.</it>
+            <ar>يتم إرسال كلمة المرور الجديدة إلى البريد الإلكتروني الخاص بك.</ar>
+            <sv>Det nya lösenordet skickas till din e-post.</sv>
+            <nl>Het nieuwe wachtwoord te naar uw e-mail gestuurd.</nl>
+        </NewPassSend>
+        <EMPTY_FIELD_Email>
+            <gr>Δε συμπληρώσατε το πεδίο: Εμαιλ</gr>
+            <en>Emplty field: Email</en>
+            <fr>Champ vide:  Email</fr>
+            <it>Non è stato compilato il campo: Email</it>
+            <ar>لم تملأ خانة : الإسم</ar>
+            <sv>Tomt fält: Email</sv>
+            <nl>Leeg veld: Email</nl>
+        </EMPTY_FIELD_Email>
+        <Email_EXIST>
+            <gr>Υπάρχει ήδη χρήστης με το συγκεκριμένο όνομα εμαιλ</gr>
+            <en>There is already a user with this email</en>
+            <fr>Il existe déjà un utilisateur avec ce courriel</fr>
+            <it>Esiste già un utente con questa email</it>
+            <ar>هناك بالفعل مستخدم مع هذا البريد الإلكتروني</ar>
+            <sv>Det finns redan en användare med den här e-post</sv>
+            <nl>Er is al een gebruiker met dit e-mail</nl>
+        </Email_EXIST>       
+        <source_schema>
+            <en>Source Schema</en>
+        </source_schema>
+        <target_schema>
+            <en>Target Schema</en>
+        </target_schema>
+        <general_description>
+            <en>General Description</en>
+        </general_description>
+        <PrimaryInsertFieldMapping>
+            <gr>Τίτλος</gr>
+            <en>Title</en>
+            <fr>Titre</fr>
+            <it>Titolo</it>
+            <ar>العنوان</ar>
+            <sv>Titel</sv>
+            <nl>Titel</nl>
+        </PrimaryInsertFieldMapping>
+        <oldPassword>
+            <gr>Τρέχων Κωδικός</gr>
+            <en>Current Password</en>
+            <fr>Mot de passe actuel</fr>
+            <it>Password attuale</it>
+            <ar>كلمة المرور الحالية</ar>
+            <sv>Aktuellt lösenord</sv>
+            <nl>Huidig ​​wachtwoord</nl>
+        </oldPassword>
+        <newPassword>
+            <gr>Νέος Κωδικός</gr>
+            <en>New Password</en>
+            <fr>Nouveau mot de passe</fr>
+            <it>Nuova password</it>
+            <ar>كلمة المرور الجديدة</ar>
+            <sv>Nytt lösenord</sv>
+            <nl>Nieuw wachtwoord</nl>
+        </newPassword>
+        <notEmptyFields>
+            <gr>Τα πεδία που σημειώνονται με * δεν πρέπει να είναι κενά.</gr>
+            <en>Fields noted with * should not be empty.</en>
+            <fr>Les champs ont noté avec * ne doit pas être vide.</fr>
+            <it>I campi rilevato con * non dovrebbe essere vuoto.</it>
+            <ar>وأشار الحقول مع * يجب أن لا يكون فارغا.</ar>
+            <sv>Fält noterade med * får inte vara tomma.</sv>
+            <nl>Velden aangegeven met een * mogen niet leeg zijn.</nl>
+        </notEmptyFields>
+        <PASSNPTMATCH>
+            <gr>Ο τρέχων κωδικός δεν είναι σωστός.</gr>
+            <en>The current password is not correct.</en>
+            <fr>Le mot de passe actuel n'est pas correcte.</fr>
+            <it>La password corrente non è corretta.</it>
+            <ar>كلمة المرور الحالية غير صحيحة.</ar>
+            <sv>Den aktuella lösenordet är felaktigt.</sv>
+            <nl>Het huidige wachtwoord is niet correct.</nl>
+        </PASSNPTMATCH>
+        <EMPTY_FIELD>
+            <gr>Δε συμπληρώσατε το πεδίο: </gr>
+            <en>Emplty field: </en>
+            <fr>Champ vide :  </fr>
+            <it>Non è stato compilato il campo: </it>
+            <ar>لم تملأ خانة : الإسم  الرئيسى القائم</ar>
+            <sv>Tomt fält: </sv>
+            <nl>Leeg veld: </nl>
+        </EMPTY_FIELD>
+        <operator_or>
+            <gr>ή</gr>
+            <en>or</en>
+            <fr>ou</fr>
+            <it>o</it>
+            <ar>أو</ar>
+            <sv>eller</sv>
+            <nl>of</nl>
+        </operator_or>   
+        <SignUp>
+            <gr>Εγγραφή</gr>
+            <en>Sign Up</en>
+            <fr>Inscription</fr>
+            <it>Iscriviti</it>
+            <ar>افتح حسابًا في فيس بوك</ar>
+            <sv>Gå med</sv>
+            <nl>Registreren</nl>
+        </SignUp>  
+        <SignIn>
+            <gr>Σύνδεση</gr>
+            <en>Log In</en>
+            <fr>Connexion</fr>
+            <it>Accedi</it>
+            <ar>تسجيل الدخول</ar>
+            <sv>Logga in</sv>
+            <nl>Aanmelden</nl>
+        </SignIn> 
+        <wentWorng>
+            <gr>Κάτι πήγε στραβά. Παρακαλά ξανά δοκιμάστε.</gr>
+            <en>Something went wrong. Please try again.</en>
+            <fr>Quelque chose s'est mal passé. S'il vous plaît essayez de nouveau.</fr>
+            <it>Qualcosa è andato storto. Riprova.</it>
+            <ar>ذهب شيئا خاطئا. يرجى المحاولة مرة أخرى.</ar>
+            <sv>Något gick fel. Försök igen.</sv>
+            <nl>Er ging iets mis. Probeer het opnieuw.</nl>
+        </wentWorng>
+        <newHelp>
+            <gr>Κάντε κλικ για να δημιουργήσετε μία καινούργια εγγραφή</gr>
+            <en>Click here to create a new record</en>
+            <fr>Cliquez ici pour créer un nouveau record</fr>
+            <it>Clicca qui per creare un nuovo record</it>
+            <ar>انقر هنا لإنشاء سجل جديد</ar>
+            <sv>Klicka här för att skapa en ny post</sv>
+            <nl>Klik hier om een ​​nieuw record te maken</nl>
+        </newHelp>
+        <viewHelp>
+            <gr>Κάντε κλικ σε μια γραμμή από τον πίνακα και στη συνέχεια, κάντε κλικ εδώ για προβολή</gr>
+            <en>Click a row from the table and then click here to view</en>
+            <fr>Cliquez sur une ligne de la table, puis cliquez ici pour voir</fr>
+            <it>Fare clic su una riga della tabella e poi clicca qui per vedere</it>
+            <ar>فوق صف من الجدول ثم انقر هنا لمشاهدة</ar>
+            <sv>Klicka på en rad i tabellen och sedan klicka här för att se</sv>
+            <nl>Klik op een rij van de tabel en klik vervolgens hier om te bekijken</nl>
+        </viewHelp> 
+        <editHelp>
+            <gr>Kάντε κλικ σε μια γραμμή από τον πίνακα και στη συνέχεια, κάντε κλικ εδώ για επεξεργασία</gr>
+            <en>Click a row from the table and then click here to edit</en>
+            <fr>Cliquez sur une ligne de la table, puis cliquez ici pour éditer</fr>
+            <it>Fare clic su una riga della tabella e quindi fare clic qui per modificare</it>
+            <ar>فوق صف من الجدول ثم انقر هنا لتعديل</ar>
+            <sv>Klicka på en rad i tabellen och sedan klicka här för att redigera</sv>
+            <nl>Klik op een rij van de tabel en klik vervolgens hier te bewerken</nl>
+        </editHelp>
+        <deleteHelp>
+            <gr>Kάντε κλικ σε μια γραμμή από τον πίνακα και στη συνέχεια, κάντε κλικ εδώ για διαγραφή</gr>
+            <en>Click a row from the table and then click here to delete</en>
+            <fr>Cliquez sur une ligne de la table, puis cliquez ici pour supprimer</fr>
+            <it>Fare clic su una riga della tabella e poi clicca qui per cancellare</it>
+            <ar>فوق صف من الجدول ثم انقر هنا لحذف</ar>
+            <sv>Klicka på en rad i tabellen och sedan klicka här för att ta bort</sv>
+            <nl>Klik op een rij uit de tabel en klik hier om te verwijderen</nl>
+        </deleteHelp>
+        <exportHelp>
+            <gr>Κάντε κλικ ώστε να έξαγετε ένα XML αρχείο</gr>
+            <en>Click here to a export an XML file</en>
+            <fr>Cliquez ici pour une exportation d'un fichier XML</fr>
+            <it>Clicca qui per un'esportazione in un file XML</it>
+            <ar>انقر هنا لتصدير ملف XML</ar>
+            <sv>Klicka här för en export en XML-fil</sv>
+            <nl>Klik hier om een ​​uitvoer van een XML-bestand</nl>
+        </exportHelp>               
+        <myMappings>
+            <en>My Mappings</en>
+        </myMappings>
+        <myMapsHelp>
+            <en>The mappings that I have the right to edit.</en>
+        </myMapsHelp>
+        <emailSubject_PendingRequest>
+            <gr>systemName-Αίτηση για δημοσίευση</gr>
+            <en>systemName-Request for publish</en>
+            <fr>systemName-Demande de publication.</fr>
+            <it>systemName-Richiesta di pubblicazione.</it>
+            <ar>طلب للنشر.</ar>
+            <sv>systemName-Begäran om publicering</sv>
+            <nl>systemName-Verzoek voor publicatie</nl>
+        </emailSubject_PendingRequest>
+        <emailContext_PendingRequest>
+            <gr>Γεια σας, ?Ο χρήστης : έχει ζητήσει τη δημοσιεύσει του εγγράφου με ID :.</gr>
+            <en>Hello, ? User : has requested the publishment of the XML with ID :.</en>
+            <fr>Bonjour,? Utilisateur: a demandé à la publishment du XML avec ID:.</fr>
+            <it>Ciao,? User: ha chiesto la publishment di XML con ID:.</it>
+            <ar>مرحبا،؟ مستخدم: لقد طلبت من publishment XML مع الرقم:</ar>
+            <sv>Hej,? Användare: har begärt publishment av XML med ID.</sv>
+            <nl>Hallo,? Gebruiker: heeft de huwelijksafkondiging van de XML met ID gevraagd:.</nl>
+        </emailContext_PendingRequest>
+        
+        <!--Storage messages-->
+        <succ_Backup_Message>
+            <gr>Η δημιουργία αντιγράφου συστήματος πραγματοποιήθηκε με επιτυχία!</gr>
+            <en>Backup completed successfully!</en>
+            <fr>Backup achevé avec succès!</fr>
+            <it>Backup completato con successo!</it>
+            <ar>الاحتياطيه بنجا</ar>            
+            <sv>##Backup completed successfully!</sv>
+            <nl>Back-up is voltooid.!</nl>
+        </succ_Backup_Message>
+        <succ_Restore_Message>
+            <gr>Η Ανάκτηση αντιγράφου συστήματος πραγματοποιήθηκε με επιτυχία!</gr>
+            <en>Restore completed successfully!</en>
+            <fr>Restaurer achevé avec succès!</fr>
+            <it>Ripristino completato con successo!</it>
+            <ar>استعادة بنجاح</ar>
+            <sv>##Restore completed successfully!</sv>
+            <nl>Restore is voltooid.!</nl>
+        </succ_Restore_Message>
+        <error_Backup_Message>
+            <gr>Παρουσιάστηκε κάποιο σφάλμα κατά τη δημιουργία αντιγράφου συστήματος!</gr>
+            <en>Backup Failed!</en>
+            <fr>Impossible de sauvegarde!</fr>
+            <it>Di backup non riuscita!</it>
+            <ar>فشل النسخ الاحتياط</ar>
+            <sv>##Backup Failed!</sv>
+            <nl>Back-up mislukt!</nl>
+        </error_Backup_Message>
+        <error_Restore_Message>
+            <gr>Παρουσιάστηκε κάποιο σφάλμα κατά τη ανάκτηση αντιγράφου συστήματος!</gr>
+            <en>Restore Failed!</en>
+            <fr>Échec de restauration!</fr>
+            <it>Impossibile ripristinare!</it>
+            <ar>استعادة فشلت</ar>
+            <sv>##Restore Failed!</sv>
+            <nl>Herstellen mislukt!</nl>
+        </error_Restore_Message>
+        <error_BackupImg_Message>
+            <gr>Παρουσιάστηκε κάποιο σφάλμα κατά την αντιγραφή των εικόνων!</gr>
+            <en>Backup Images Failed!</en>
+            <fr>Impossible de sauvegarde des images!</fr>
+            <it>Immagini di backup non riuscita!</it>
+            <ar>استعادة فشلت</ar>
+            <sv>##Backup Images Failed!</sv>
+            <nl>Backup Images mislukt!</nl>
+        </error_BackupImg_Message>
+        <error_RestoreImg_Message>
+            <gr>Παρουσιάστηκε κάποιο σφάλμα κατά την ανάκτηση των εικόνων!</gr>
+            <en>Restore Images Failed!</en>
+            <fr>Échec de restauration des images!</fr>
+            <it>Ripristinare immagini non riuscita!</it>
+            <ar>استعادة فشلت</ar>
+            <sv>##Restore Images Failed!</sv>
+            <nl>##Restore Images Failed!</nl>
+        </error_RestoreImg_Message>
+        <splashMessage>
+            <gr>Δημιουργία υποδέντρου. Παρακαλώ περιμένετε...</gr>
+            <en>Creating subtree. Please wait...</en>
+            <fr>Création de sous-arbre. Svp attente...</fr>
+            <it>Creazione di sottostruttura. Si prega di atendere...</it>
+            <ar>انشاء الشجرة الفرعية. الرجاء الانتظا</ar>
+            <sv>Skapa underträd. Var god vänta ...</sv>
+            <nl>Het creëren van substructuur. Even geduld aub ...</nl>
+        </splashMessage>
+        <backupSplashMessage>
+            <gr>Δημιουργία αντιγράφου συστήματος. Παρακαλώ περιμένετε μερικά λεπτά...</gr>
+            <en>Creating Backup. Please wait...</en>
+            <fr>Création de sauvegarde. Svp attente...</fr>
+            <it>Crea backup. Si prega di atendere...</it>
+            <ar>>ايجاد الاحتياطيه. الرجاء الانتظ</ar>
+            <sv>Skapa säkerhetskopia. Var god vänta ...</sv>
+            <nl>Het maken van back-up. Even geduld aub ...</nl>
+        </backupSplashMessage>
+        <restoreSplashMessage>
+            <gr>Ανάκτηση αντιγράφου συστήματος. Παρακαλώ περιμένετε μερικά λεπτά...</gr>
+            <en>Restoring Backup. Please wait...</en>
+            <fr>Restauration d'une sauvegarde. Svp attente...</fr>
+            <it>Ripristina Backup. Si prega di atendere...</it>
+            <ar>استعادة النسخ الاحتياطي. الرجاء الانتظ</ar>
+            <sv>Återställa Backup. Var god vänta ...</sv>
+            <nl>Restoring Backup. Please wait...</nl>
+        </restoreSplashMessage>
+        <backupMessage>
+            <gr>Η Δημιουργία αντιγράφου συστήματος ολοκληρώθηκε με επιτυχία.</gr>
+            <en>Backup completed successfully.</en>
+            <fr>Sauvegarde terminée avec succès.</fr>
+            <it>Di backup completato con successo.</it>
+            <ar>الاحتياطيه بنجا</ar>
+            <sv>Backup slutförts.</sv>
+            <nl>Back-up is voltooid.</nl>
+        </backupMessage>
+        <restoreMessage>
+            <gr>Η Ανάκτηση αντιγράφου συστήματος ολοκληρώθηκε με επιτυχία.</gr>
+            <en>Restore completed successfully.</en>
+            <fr>Restaurer achevé avec succès.</fr>
+            <it>Ripristinare completato con successo.</it>
+            <ar>استعادة بنجاح</ar>
+            <sv>Återställ slutförts.</sv>
+            <nl>Restore is voltooid.</nl>
+        </restoreMessage>
+        <Cancel>
+            <gr>Ακύρωση</gr>
+            <en>Cancel</en>
+            <fr>Annuler</fr>
+            <it>Cancellare</it>
+            <ar>إلغاء</ar>
+            <sv>Annullera</sv>
+            <nl>Annuleren</nl>
+        </Cancel>
+        
+    </context>
+    <footer>
+        <text1>
+            <!--gr>©2006 ΙΤΕ-ΙΠ</gr>
+            <en>©2006 FORTH-ICS</en>
+            <fr>©2006 FORTH-ICS</fr-->
+            <gr>&lt;i&gt;FIMS&lt;/i&gt; </gr>
+            <en>&lt;i&gt;FIMS&lt;/i&gt; </en>
+            <fr>&lt;i&gt;FIMS&lt;/i&gt; </fr>
+            <it>&lt;i&gt;FIMS&lt;/i&gt; </it>
+            <ar>&lt;i&gt;FIMS&lt;/i&gt; </ar>
+            <sv>&lt;i&gt;FIMS&lt;/i&gt; </sv>
+            <nl>&lt;i&gt;FIMS&lt;/i&gt; </nl>
+        </text1>
+        <text2>
+            <gr>- Copyright © </gr>
+            <en>- Copyright © </en>
+            <fr>- Copyright © </fr>
+            <it>- Copyright © </it>
+            <ar>- Copyright © </ar>
+            <sv>- Copyright © </sv>
+            <nl>- Copyright © </nl>
+        </text2>
+        <text3>
+            <gr>FORTH-ICS</gr>
+            <en>FORTH-ICS</en>
+            <fr>FORTH-ICS</fr>
+            <it>FORTH-ICS</it>
+            <ar>FORTH-ICS</ar>
+            <sv>FORTH-ICS</sv>
+            <nl>FORTH-ICS</nl>
+        </text3>
+        <text4>
+            <gr>. All rights reserved.</gr>
+            <en>. All rights reserved.</en>
+            <fr>. All rights reserved.</fr>
+            <it>. All rights reserved.</it>
+            <ar>. All rights reserved.</ar>
+            <sv>. All rights reserved.</sv>
+            <nl>. All rights reserved.</nl>
+        </text4>
+    </footer>
+</locale>

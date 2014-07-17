@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2014 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Georgios Samaritakis, Konstantina Konsolaki.
+
+This file is part of the Mapping Memory Manager project.
+
+-->
+
+<?xml-stylesheet type="text/xsl" href="crm_mapping-v2.0.xsl"?>
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.9" source_type="XPATH" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
+	<info>
+		<title>LIDO to CIDOC (version 2.0)</title>
+		<general_description> ***PUBLISHED TO CIDOC SITE*** The mapping was implemented within the ATHENA project (www.athenaeurope.org). The ATHENA project is bringing together relevant stakeholders and content owners from museums and other cultural institutions all over Europe, evaluating and integrating specific tools, based on a common agreed set of standards and guidelines to create harmonised access to their content.
+	UPDATE : Mapping file updated according to Gerald de Jong, DELVING, June 2013.</general_description>
+		<source_info>
+			<source_schema version="0.7" schema_file="lido-v0.7.xsd" type="ER">LIDO</source_schema>
+			<source_collection>Deutsches Dokumentationszentrum für Kunstgeschichte - Bildarchiv Foto Marburg (http://www.fotomarburg.de/)</source_collection>
+		</source_info>
+		<target_info>
+			<target_schema schema_file="../cidoc_crm_v5.1-draft-2013May.rdfs" type="rdfs" version="5.1">CIDOC-CRM</target_schema>
+			<target_collection></target_collection>
+		</target_info>
+		<mapping_info>
+			<mapping_created_by_org>FORTH-ICS (www.ics.forth.gr) </mapping_created_by_org>
+			<mapping_created_by_person>Kutraki Mary (kutraki@ics.forth.gr), Martin Doerr (martin@ics.forth.gr) </mapping_created_by_person>
+			<in_collaboration_with>Regine Stein, stein@zib.de, Gerald de Jong,DELVING,gerald@delving.eu </in_collaboration_with>
+		</mapping_info>
+		<example_data_info>
+			<example_data_from>Deutsches Dokumentationszentrum für Kunstgeschichte - Bildarchiv Foto Marburg  (http://www.fotomarburg.de/)</example_data_from>
+			<example_data_contact_person>Regine Stein, stein@zib.de</example_data_contact_person>
+			<example_data_source_record xml_link="example-lido-v0.7.xml" html_link="example-lido-v0.7.html">example-lido-v0.7.xml</example_data_source_record>
+			<example_data_target_record></example_data_target_record>
+		</example_data_info>
+	</info>
+	<namespaces>
+		<namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"></namespace>
+	</namespaces>
+	<mappings>
+		<mapping>
+			<domain>
+				<source_node>lido</source_node>
+				<target_node>
+					<entity>
+						<type>E19_Physical_Object</type>
+						<instance_generator name="PhysicalObject">
+							<arg name="nameOfMuseum">//lido:lido/lido:descriptiveMetadata/lido:objectIdentificationWrap/lido:repositoryWrap/lido:repositorySet/lido:repositoryName/lido:legalBodyName/lido:appellationValue/text()</arg>
+							<arg name="entry">//lido:lido/lido:descriptiveMetadata/lido:objectIdentificationWrap/lido:repositoryWrap/lido:repositorySet/lido:workID/text()</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+				<comments>
+					<comment type="">
+						<rationale>The collection we refer here contains only material mobile objects and does not describe immaterial objects independently from their carrier.</rationale>
+						<alternatives> We assume that this collection may contain natural objects. If this does not hold, we should use *E22_Man-Made_Object*</alternatives>
+						<typical_mistakes></typical_mistakes>
+						<local_habits></local_habits>
+						<link_to_cook_book>Material and Immaterial objects in Collections</link_to_cook_book>
+						<example>
+							<example_source><![CDATA[ <lido:lidoRecID lido:type="local">BFM-00120252</lido:lidoRecID> ]]></example_source>
+							<example_target><![CDATA[ <rdfs:Class rdf:about="E19.Physical_Object"/> ]]></example_target>
+						</example>
+						<comments_last_update date="2012-10-28" person="Dimitris Agelakis, agelakis@ics.forth.gr"></comments_last_update>
+					</comment>
+				</comments>
+			</domain>
+			<link>
+				<path>
+					<source_relation>lidoRecID</source_relation>
+					<target_relation>
+						<relationship>P70i_is_documented_in</relationship>
+					</target_relation>
+					<comments>
+						<comment type="">
+							<rationale>test range</rationale>
+							<alternatives></alternatives>
+							<typical_mistakes></typical_mistakes>
+							<local_habits></local_habits>
+							<link_to_cook_book></link_to_cook_book>
+							<example>
+								<example_source></example_source>
+								<example_target></example_target>
+							</example>
+							<comments_last_update date="" person=""></comments_last_update>
+						</comment>
+					</comments>
+				</path>
+				<range>
+					<source_node>lido:lidoRecID</source_node>
+					<target_node>
+						<entity>
+							<type>E31_Document</type>
+							<instance_generator name="PhysicalThing"></instance_generator>
+						</entity>
+					</target_node>
+					<comments>
+						<comment type="">
+							<rationale>test range</rationale>
+							<alternatives></alternatives>
+							<typical_mistakes></typical_mistakes>
+							<local_habits></local_habits>
+							<link_to_cook_book></link_to_cook_book>
+							<example>
+								<example_source></example_source>
+								<example_target></example_target>
+							</example>
+							<comments_last_update date="" person=""></comments_last_update>
+						</comment>
+					</comments>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>category</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:category</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>objectWorkType/term</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:objectWorkType/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>objectWorkType/conceptID</source_relation>
+					<target_relation>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:objectWorkType/lido:conceptID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>classification/term</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:classification/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>classification/conceptID</source_relation>
+					<target_relation>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:classification/lido:conceptID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>titleSet/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P1_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:titleSet/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E41_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>titleSet/sourceAppellation</source_relation>
+					<target_relation>
+						<relationship>P1_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:titleSet/lido:sourceAppellation</source_node>
+					<target_node>
+						<entity>
+							<type>E41_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>inscriptions</source_relation>
+					<target_relation>
+						<relationship>P65_shows_visual_item</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:inscriptions</source_node>
+					<target_node>
+						<entity>
+							<type>E36_Visual_Item</type>
+							<instance_generator name="Literal"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryName/legalBodyID</source_relation>
+					<target_relation>
+						<relationship>P50_has_current_keeper</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="Actors">
+								<arg name="authority">@lido:source</arg>
+								<arg name="identifier">text()</arg>
+								<arg name="name">../lido:legalBodyName/lido:appellationValue/text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryName/lido:legalBodyID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryName/legalBodyName/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P50_has_current_keeper</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">//lido:lido/nothing</arg>
+								<arg name="identifier">../lido:legalBodyID/text()</arg>
+								<arg name="name">text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P131_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryName/lido:legalBodyName/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E82_Actor_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryLocation/placeID</source_relation>
+					<target_relation>
+						<relationship>P55_has_current_location</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">../lido:namePlaceSet/lido:appellationValue/text()</arg>
+								<arg name="authority">@lido:source</arg>
+								<arg name="placeId">text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryLocation/lido:placeID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryLocation/namePlaceSet/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P55_has_current_location</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">text()</arg>
+								<arg name="authority">../../lido:placeID/@lido:source</arg>
+								<arg name="placeId">../../lido:placeID/text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P87_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryLocation/lido:namePlaceSet/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E44_Place_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryLocation/namePlaceSet/sourceAppellation</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryLocation/lido:namePlaceSet/lido:sourceAppellation</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayState</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayState</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayEdition</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayEdition</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>sourceStateEdition</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:sourceStateEdition</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>objectDescriptionSet/descriptiveNoteValue</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:objectDescriptionSet/lido:descriptiveNoteValue</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>objectDescriptionSet/sourceDescriptiveNote</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:objectDescriptionSet/lido:sourceDescriptiveNote</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayObjectMeasurements</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayObjectMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>measurementsSet</source_relation>
+					<target_relation>
+						<relationship>P43_has_dimension</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:measurementsSet</source_node>
+					<target_node>
+						<entity>
+							<type>E54_Dimension</type>
+							<instance_generator name="dimensionURI">
+								<arg>@lido:value</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>extentMeasurements</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:extentMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>qualifierMeasurements</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:qualifierMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayEvent</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayEvent</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventID</source_relation>
+					<target_relation>
+						<relationship>P12i_was_present_at</relationship>
+						<entity>
+							<type>E5_Event</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">@lido:source</arg>
+								<arg name="identifier">text()</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventType/term</source_relation>
+					<target_relation>
+						<relationship>P12i_was_present_at</relationship>
+						<entity>
+							<type>E5_Event</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../../lido:eventID/@lido:source</arg>
+								<arg name="identifier">../../lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventType/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventType/term</source_relation>
+					<target_relation>
+						<if>
+							<equals value="produced_by">../../lido:roleInEvent/lido:term/text()</equals>
+						</if>
+						<relationship>P108i_was_produced_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventType/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E12_Production</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../../lido:eventID/@lido:source</arg>
+								<arg name="identifier">../../lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventType/term</source_relation>
+					<target_relation>
+						<if>
+							<equals value="created_by">../../lido:roleInEvent/lido:term/text()</equals>
+						</if>
+						<relationship>P94i_was_created_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventType/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E65_Creation</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../../lido:eventID/@lido:source</arg>
+								<arg name="identifier">../../lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventType/term</source_relation>
+					<target_relation>
+						<if>
+							<equals value="used_for">../../lido:roleInEvent/lido:term/text()</equals>
+						</if>
+						<relationship>P16i_was_used_for</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventType/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E7_Activity</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../../lido:eventID/@lido:source</arg>
+								<arg name="identifier">../../lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventType/term</source_relation>
+					<target_relation>
+						<relationship>P12i_was_present_at</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventType/lido:term</source_node>
+					<target_node>
+						<if>
+							<equals value="Herstellung">text()</equals>
+						</if>
+						<entity>
+							<type>E12_Production</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../../lido:eventID/@lido:source</arg>
+								<arg name="identifier">../../lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displaySubject</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displaySubject</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>extentSubject</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:extentSubject</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectConcept/conceptID</source_relation>
+					<target_relation>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectConcept/lido:conceptID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectConcept/term</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectConcept/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectActor/displayActor</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P129_is_about</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectActor/lido:displayActor</source_node>
+					<target_node>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">../lido:actor/lido:actorID/@lido:source</arg>
+								<arg name="identifier">../lido:actor/lido:actorID/text()</arg>
+								<arg name="name">../lido:actor/lido:nameActorSet/lido:appellationValue/text()</arg>
+								<arg name="birthDate">../lido:actor/lido:vitalDatesActor/@lido:birthDate</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectDate/displayDate</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P129_is_about</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectDate/lido:displayDate</source_node>
+					<target_node>
+						<entity>
+							<type>E50_Date</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectEvent/displayEvent</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P129_is_about</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectEvent/lido:displayEvent</source_node>
+					<target_node>
+						<entity>
+							<type>E5_Event</type>
+							<instance_generator name="uriEvents">
+								<arg name="authority">../lido:event/lido:eventID/@lido:source</arg>
+								<arg name="identifier">../lido:event/lido:eventID/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectPlace/displayPlace</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P129_is_about</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectPlace/lido:displayPlace</source_node>
+					<target_node>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">text()</arg>
+								<arg name="authority">..//lido:placeID/@lido:source</arg>
+								<arg name="placeId">..//lido:placeID/text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../lido:place/lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectObject/displayObject</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectObject/lido:displayObject</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectObject/object/objectWebResource</source_relation>
+					<target_relation>
+						<relationship>P67i_is_referred_to_by</relationship>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectObject/lido:object/lido:objectWebResource</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>subjectObject/object/objectID</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E18_Physical_Thing</type>
+							<instance_generator name="uriPhysThing">
+								<arg>/text()</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectObject/lido:object/lido:objectID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>relatedWorkRelType</source_relation>
+					<target_relation>
+						<relationship>P46i_forms_part_of</relationship>
+						<entity>
+							<type>E18_Physical_Thing</type>
+							<instance_generator name="uriPhysThing"></instance_generator>
+						</entity>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:relatedWorkRelType</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>rightsType</source_relation>
+					<target_relation>
+						<relationship>P104_is_subject_to</relationship>
+						<entity>
+							<type>E30_Right</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+						</entity>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsType</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>recordID</source_relation>
+					<target_relation>
+						<relationship>P70i_is_documented_in</relationship>
+						<entity>
+							<type>E31_Document</type>
+							<instance_generator name="uriPhysThing"></instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:recordID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/repositoryName/legalBodyName</source_node>
+				<target_node>
+					<entity>
+						<type>E39_Actor</type>
+						<instance_generator name="uriForActors">
+							<arg name="authority">../lido:legalBodyID/@lido:source</arg>
+							<arg name="identifier">../lido:legalBodyID/text()</arg>
+							<arg name="name">lido:appellationValue/text()</arg>
+							<arg name="birthDate">//lido:lido/nothing</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>repositoryName/legalBodyWeblink</source_relation>
+					<target_relation>
+						<relationship>P129i_is_subject_of</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryName/lido:legalBodyWeblink</source_node>
+					<target_node>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info>
+										<constant>web_resource</constant>
+									</instance_info>
+									<instance_generator name="Type"></instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido:repositoryLocation</source_node>
+				<target_node>
+					<entity>
+						<type>E53_Place</type>
+						<instance_generator name="Place">
+							<arg name="placeName">lido:place/lido:namePlaceSet/lido:appellationValue/text()</arg>
+							<arg name="authority">lido:place/lido:placeID/@lido:source</arg>
+							<arg name="placeId">lido:place/lido:placeID/text()</arg>
+							<arg name="coordinates">//lido:lido/nothing</arg>
+							<arg name="spaces">lido:place/lido:partOfPlace</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>repositoryLocation/partOfPlace/placeID</source_relation>
+					<target_relation>
+						<relationship>P45_consists_of</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">../../lido:namePlaceSet/lido:appellationValue/text()</arg>
+								<arg name="authority">../../lido:placeID/@lido:source</arg>
+								<arg name="placeId">../../lido:placeID/text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryLocation/lido:partOfPlace/lido:placeID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>repositoryLocation/placeClassification/term</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:repositoryLocation/lido:placeClassification/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/measurementsSet</source_node>
+				<target_node>
+					<entity>
+						<type>E54_Dimension</type>
+						<instance_generator name="dimensionURI">
+							<arg>@lido:value</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>formatMeasurements</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:formatMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info><constant>Format</constant></instance_info>
+									
+									<instance_generator name="Type">
+										<arg>@lido:type</arg>
+									</instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>shapeMeasurements</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:shapeMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info><constant>Shape</constant></instance_info>
+									<instance_generator name="Type"></instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>scaleMeasurements</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:scaleMeasurements</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info><constant>Scale</constant></instance_info>
+									<instance_generator name="Type"></instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/event</source_node>
+				<target_node>
+					<entity>
+						<type></type>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>roleInEvent/term</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:roleInEvent/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>roleInEvent/term</source_relation>
+					<target_relation>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:roleInEvent/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventName/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P1_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventName/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E41_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventName/sourceAppellation</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventName/lido:sourceAppellation</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayActorInRole</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayActorInRole</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>actorID</source_relation>
+					<target_relation>
+						<relationship>P11_had_participant</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">@lido:source</arg>
+								<arg name="identifier">text()</arg>
+								<arg name="name">../lido:nameActorSet/lido:appellationValue[@lido:pref = "preferred"]/text()</arg>
+								<arg name="birthDate">../lido:vitalDatesActor/text()</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:actorID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>nameActorSet/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P11_had_participant</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">../../lido:actorID/@lido:source</arg>
+								<arg name="identifier">../../lido:actorID/text()</arg>
+								<arg name="name">../lido:appellationValue[@lido:pref = "preferred"]/text()</arg>
+								<arg name="birthDate">../../lido:vitalDatesActor/text()</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P131_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:nameActorSet/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E82_Actor_Appellation</type>
+							<instance_generator name="Appellation">
+								<arg>../lido:appellationValue[@lido:pref = "preferred"]/text()</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>nameActorSet/sourceAppellation</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:nameActorSet/lido:sourceAppellation</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>roleActor/term</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:roleActor/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>attributionQualifierActor</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:attributionQualifierActor</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>extentActor</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:extentActor</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>culture/term</source_relation>
+					<target_relation>
+						<relationship>P10_falls_within</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:culture/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E4_Period</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayDate</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayDate</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventDate/date/earliestDate</source_relation>
+					<target_relation>
+						<relationship>P4_has_time-span</relationship>
+						<entity>
+							<type>E52_Time-Span</type>
+							<instance_generator name="uriTimeSpan"></instance_generator>
+						</entity>
+						<relationship>P79_beginning_is_qualified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventDate/lido:date/lido:earliestDate</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventDate/date/latestDate</source_relation>
+					<target_relation>
+						<relationship>P4_has_time-span</relationship>
+						<entity>
+							<type>E52_Time-Span</type>
+							<instance_generator name="uriTimeSpan"></instance_generator>
+						</entity>
+						<relationship>P80_end_is_qualified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventDate/lido:date/lido:latestDate</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventPlace/displayPlace</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventPlace/lido:displayPlace</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventPlace/place/placeID</source_relation>
+					<target_relation>
+						<relationship>P7_took_place_at</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">../lido:namePlaceSet/lido:appellationValue/text()</arg>
+								<arg name="authority">@lido:source</arg>
+								<arg name="placeId">text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventPlace/lido:place/lido:placeID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventPlace/place/namePlaceSet/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P7_took_place_at</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">text()</arg>
+								<arg name="authority">../../lido:placeID/@lido:source</arg>
+								<arg name="placeId">../../lido:placeID/text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P87_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventPlace/lido:place/lido:namePlaceSet/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E44_Place_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventMethod/term</source_relation>
+					<target_relation>
+						<relationship>P32_used_general_technique</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventMethod/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>displayMaterialsTech</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:displayMaterialsTech</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>termMaterialsTech/term</source_relation>
+					<target_relation>
+						<relationship>P32_used_general_technique</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:termMaterialsTech/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>extentMaterialsTech</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:extentMaterialsTech</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventDescriptionSet/descriptiveNoteValue</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventDescriptionSet/lido:descriptiveNoteValue</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventDescriptionSet/sourceDescriptiveNote</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventDescriptionSet/lido:sourceDescriptiveNote</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/eventActor</source_node>
+				<target_node>
+					<entity>
+						<type>E39_Actor</type>
+						<instance_generator name="uriForActors">
+							<arg name="authority">lido:actorInRole/lido:actor/lido:actorID/@lido:source</arg>
+							<arg name="identifier">lido:actorInRole/lido:actor/lido:actorID/text()</arg>
+							<arg name="name">lido:actorInRole/lido:actor/lido:nameActorSet/lido:appellationValue[@lido:pref="preferred"]/text()</arg>
+							<arg name="birthDate">lido:actorInRole/lido:actor/lido:vitalDatesActor/text()</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>nationalityActor/term</source_relation>
+					<target_relation>
+						<relationship>P107i_is_current_or_former_member_of</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:nationalityActor/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E74_Group</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">../lido:nationalityActor/lido:concept/lido:conceptID/@lido:source</arg>
+								<arg name="identifier">../lido:nationalityActor/lido:concept/lido:conceptID/text()</arg>
+								<arg name="name">../lido:nationalityActor/lido:concept/lido:term/text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>nationalityActor/conceptID</source_relation>
+					<target_relation>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:nationalityActor/lido:conceptID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>vitalDatesActor</source_relation>
+					<target_relation>
+						<relationship>P11i_participated_in</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:vitalDatesActor</source_node>
+					<target_node>
+						<entity>
+							<type>E52_Time-Span</type>
+							<instance_generator name="uriTimeSpan"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>genderActor</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:genderActor</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/periodName</source_node>
+				<target_node>
+					<entity>
+						<type>E52_Time-Span</type>
+						<instance_generator name="uriTimeSpan">
+							<arg>lido:concept/lido:term/text()</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>eventDate/date/periodName/term</source_relation>
+					<target_relation>
+						<relationship>P4_has_time-span</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventDate/lido:date/lido:periodName/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E4_Period</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/eventPlace</source_node>
+				<target_node>
+					<entity>
+						<type>E53_Place</type>
+						<instance_generator name="Place">
+							<arg name="placeName">lido:place/lido:namePlaceSet/lido:appellationValue/text()</arg>
+							<arg name="authority">lido:place/lido:placeID/@lido:source</arg>
+							<arg name="placeId">lido:place/lido:placeID/text()</arg>
+							<arg name="coordinates">//lido:lido/nothing</arg>
+							<arg name="spaces">lido:place/lido:partOfPlace</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>eventPlace/place/partOfPlace/placeID</source_relation>
+					<target_relation>
+						<relationship>P45_consists_of</relationship>
+						<entity>
+							<type>E53_Place</type>
+							<instance_generator name="Place">
+								<arg name="placeName">../lido:namePlaceSet/lido:appellationValue/text()</arg>
+								<arg name="authority">../lido:placeID/@lido:source</arg>
+								<arg name="placeId">../lido:placeID/text()</arg>
+								<arg name="coordinates">//lido:lido/nothing</arg>
+								<arg name="spaces">../lido:partOfPlace</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventPlace/lido:place/lido:partOfPlace/lido:placeID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>eventPlace/place/placeClassification/term</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:eventPlace/lido:place/lido:placeClassification/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="Type"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/termMaterialsTech</source_node>
+				<target_node>
+					<entity>
+						<type>E55_Type</type>
+						<instance_generator name="Type"></instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>sourceMaterialsTech</source_relation>
+					<target_relation>
+						<relationship>P71i_is_listed_in</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:sourceMaterialsTech</source_node>
+					<target_node>
+						<entity>
+							<type>E32_Authority_Document</type>
+							<instance_generator name="uriPhysThing"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/object</source_node>
+				<target_node>
+					<entity>
+						<type>E18_Physical_Thing</type>
+						<instance_generator name="uriPhysThing"></instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>subjectObject/object/objectNote</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:subjectObject/lido:object/lido:objectNote</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/rights</source_node>
+				<target_node>
+					<entity>
+						<type>E30_Right</type>
+						<instance_generator name="uriConceptual">
+							<arg>lido:rightsType/text()</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>rightsDate/earliestDate</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsDate/lido:earliestDate</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>rightsDate/latestDate</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsDate/lido:latestDate</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>rightsDate/periodName/term</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsDate/lido:periodName/lido:term</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>rightsHolder/legalBodyID</source_relation>
+					<target_relation>
+						<relationship>P75i_is_possessed_by</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="">@lido:source</arg>
+								<arg name="">text()</arg>
+								<arg name="">../lido:legalBodyName/lido:appellationValue/text()</arg>
+								<arg name="">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsHolder/lido:legalBodyID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>rightsHolder/legalBodyName/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P75i_is_possessed_by</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">../../lido:legalBodyID/@lido:source</arg>
+								<arg name="identifier">../../lido:legalBodyID/text()</arg>
+								<arg name="name">text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P131_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsHolder/lido:legalBodyName/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E82_Actor_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>creditLine</source_relation>
+					<target_relation>
+						<relationship>P3_has_note</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:creditLine</source_node>
+					<target_node>
+						<entity>
+							<type>E62_String</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/rightsHolder</source_node>
+				<target_node>
+					<entity>
+						<type>E39_Actor</type>
+						<instance_generator name="uriForActors">
+							<arg name="authority">lido:legalBodyID/@lido:source</arg>
+							<arg name="identifier">lido:legalBodyID/text()</arg>
+							<arg name="name">lido:legalBodyName/lido:appellationValue/text()</arg>
+							<arg name="birthDate">//lido:lido/nothing</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>rightsHolder/legalBodyWeblink</source_relation>
+					<target_relation>
+						<relationship>P129i_is_subject_of</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:rightsHolder/lido:legalBodyWeblink</source_node>
+					<target_node>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info><constant>Web_resource</constant></instance_info>
+									<instance_generator name="Type">
+										<arg>@lido:formatResource</arg>
+									</instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/recordWrap</source_node>
+				<target_node>
+					<entity>
+						<type>E31_Document</type>
+						<instance_generator name="uriPhysThing">
+							<arg>lido:recordID/text()</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>recordType</source_relation>
+					<target_relation>
+						<relationship>P2_has_type</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:recordType</source_node>
+					<target_node>
+						<entity>
+							<type>E55_Type</type>
+							<instance_generator name="createLiteral"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>recordSource/legalBodyID</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">@lido:source</arg>
+								<arg name="identifier">text()</arg>
+								<arg name="name">../lido:legalBodyName/lido:appellationValue/text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P48_has_preferred_identifier</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:recordSource/lido:legalBodyID</source_node>
+					<target_node>
+						<entity>
+							<type>E42_Identifier</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+			<link>
+				<path>
+					<source_relation>recordSource/legalBodyName/appellationValue</source_relation>
+					<target_relation>
+						<relationship>P67_refers_to</relationship>
+						<entity>
+							<type>E39_Actor</type>
+							<instance_generator name="uriForActors">
+								<arg name="authority">../../lido:legalBodyID/@lido:source</arg>
+								<arg name="identifier">../../lido:legalBodyID/text()</arg>
+								<arg name="name">text()</arg>
+								<arg name="birthDate">//lido:lido/nothing</arg>
+							</instance_generator>
+						</entity>
+						<relationship>P131_is_identified_by</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:recordSource/lido:legalBodyName/lido:appellationValue</source_node>
+					<target_node>
+						<entity>
+							<type>E82_Actor_Appellation</type>
+							<instance_generator name="Appellation"></instance_generator>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+		<mapping>
+			<domain>
+				<source_node>lido/recordSource</source_node>
+				<target_node>
+					<entity>
+						<type>E39_Actor</type>
+						<instance_generator name="uriForActors">
+							<arg name="authority">lido:legalBodyID/@lido:source</arg>
+							<arg name="identifier">lido:legalBodyID/text()</arg>
+							<arg name="name">lido:legalBodyName/lido:appellationValue/text()</arg>
+							<arg name="birthDate">//lido:lido/nothing</arg>
+						</instance_generator>
+					</entity>
+				</target_node>
+			</domain>
+			<link>
+				<path>
+					<source_relation>recordSource/legalBodyWeblink</source_relation>
+					<target_relation>
+						<relationship>P129i_is_subject_of</relationship>
+					</target_relation>
+				</path>
+				<range>
+					<source_node>lido:recordSource/lido:legalBodyWeblink</source_node>
+					<target_node>
+						<entity>
+							<type>E73_Information_Object</type>
+							<instance_generator name="uriConceptual"></instance_generator>
+							<additional>
+								<relationship>P2_has_type</relationship>
+								<entity>
+									<type>E55_Type</type>
+									<instance_info><constant>Web_resource</constant></instance_info>
+									<instance_generator name="Type">
+										<arg>@lido:formatResource</arg>
+									</instance_generator>
+								</entity>
+							</additional>
+						</entity>
+					</target_node>
+				</range>
+			</link>
+		</mapping>
+	</mappings>
+	<admin>
+		<id>1</id>
+		<uri_id>http://cidoc_mappings.com/Mapping/1</uri_id>
+		<lang>en</lang>
+		<organization>1</organization>
+		<creator>admin</creator>
+		<saved>yes</saved>
+		<locked>no</locked>
+		<status>published</status>
+		<versions>
+			<versionId>1</versionId>
+			<versionUser>admin</versionUser>
+			<versionDate>2013-04-09 12:10:04</versionDate>
+		</versions>
+		<read>*</read>
+		<write>admin</write>
+		<info></info>
+	</admin>
+</x3ml>

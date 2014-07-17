@@ -1,0 +1,29 @@
+--------------------------
+3M project dependencies
+--------------------------
+jars:
+
+log4j-1.2.8.jar : The Apache Software License, Version 2.0
+commons-fileupload-1.2.1.jar : The Apache Software License, Version 2.0
+commons-io-2.3.jar : The Apache Software License, Version 2.0
+commons-pool-1.2.jar :  The Apache Software License, Version 2.0
+Jdbc2xml.jar: The Apache Software License, Version 2.0
+eXist.jar: LGPL 2.1
+poi-3.0.2-FINAL-20080204.jar: The Apache Software License, Version 2.0
+xalan-2.6.0.jar : CUP Parser Generator Copyright Notice, License, and Disclaimer & Apache Software License, Version 1.1
+relaxngDatatype.jar *: BSD-like license
+xercesImpl.jar : The Apache Software License, Version 2.0
+xmldb.jar: The Apache Software License, Version 2.0
+xmlrpc-1.2-patched.jar :  The Apache Software License, Version 2.0
+xsom-20110101-SNAPSHOT.jar * : CDDL v1.1 / GPL v2 with classpath exception dual license (https://xsom.java.net/)  
+JavaMailApi.jar : CDDL / GPL (CDDL license and the GPLv2 with Classpath Exception license) 
+
+javascript: 
+
+chosen.jquery.js ,chosen.jquery.min.js : MIT License
+wz_tooltip.js: LGPL
+jquery.min.js: MIT license
+audio_min.js:  MIT License
+
+* XSOM is covered by a dual license under CDDL (which basically allows you free use and redistribution with your application — but please do check the license for details) and GPL v2 with classpath exception (see the license.) relaxngDatatype.jar is covered by a BSD-like license. XSOM internally uses an URI class, which is copyrighted by Thai Open Source Center. Its license is here. 
+

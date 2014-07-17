@@ -1,0 +1,445 @@
+/*
+ * Copyright 2014 Institute of Computer Science,
+ * Foundation for Research and Technology - Hellas
+ *
+ * Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+ * by the European Commission - subsequent versions of the EUPL (the "Licence");
+ * You may not use this work except in compliance with the Licence.
+ * You may obtain a copy of the Licence at:
+ *
+ * http://ec.europa.eu/idabc/eupl
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed
+ * under the Licence is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the Licence for the specific language governing permissions and limitations
+ * under the Licence.
+ *
+ * Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+ * Tel:+30-2810-391632
+ * Fax: +30-2810-391638
+ * E-mail: isl@ics.forth.gr
+ * http://www.ics.forth.gr/isl
+ *
+ * Authors : Georgios Samaritakis, Konstantina Konsolaki.
+ *
+ * This file is part of the 3M webapp of Mapping Memory Manager project.
+ */
+
+
+A.paging {
+    font-size: 8pt; 
+    color: #998d69; 
+    text-decoration: none; 
+    font-weight:400; 
+    font-family: Verdana;
+}
+
+td.paging{
+    font-size: 8pt;
+    color: #998d69; 
+    text-decoration: none; 
+    font-weight:400;  
+    font-family: Verdana; 
+}
+
+td.pagingnew{
+    font-size: 9pt;
+    color: #620705;
+    text-decoration: none; 
+    font-weight:400; 
+    font-family: Verdana; 
+}
+
+A {
+    font-weight: bold; 
+    color: #222255; 
+    font-family: Verdana; 
+    text-decoration: none;
+}
+
+
+A:active {    
+    color: #222255; 
+    font-family: Verdana; 
+    text-decoration: none;
+}
+
+A:hover {
+    font-family: Verdana; 
+}
+
+/* Style added by samarita to fix border-color in Archive(IE)*/
+tr#resultRow td a img{
+    font-weight: bold; 
+    font-family: Verdana; 
+    text-decoration: none; 
+    border-color: #620705;
+}
+div.leftmenu{
+    font-weight: normal;
+    font-size: 9pt;
+    cursor: default;
+    color: #620705;
+    font-family: Verdana;
+}
+
+a.leftmenu {
+    font-weight: normal;
+    font-size: 9pt;
+    cursor: default;
+    color: #620705;
+    font-family: Verdana;
+    white-space:nowrap;   
+}
+
+.highlighted_leftmenu #leftmenu {
+    font-size: 9pt;
+    cursor: auto; 
+    color: #620705;
+    font-family: Verdana;
+    background-image: url("../images/bg_color1.gif");  
+
+}
+
+a.leftmenu:hover {
+    font-size: 9pt;
+    cursor: default;
+    color: rgb(0, 0, 0);
+    font-family: Verdana;
+    white-space:nowrap;
+    background-image: url("../images/bg_color1.gif");
+}
+
+a.leftmenu:active {
+    font-size: 9pt;
+    cursor: default;
+    color: #620705;
+    white-space:nowrap;
+    font-family: Verdana;
+    background-image: url("../images/bg_color1.gif");
+}
+
+A.action {
+    font-size: 8pt;
+    color: #000000;
+}
+A.action:active {
+    font-size: 8pt; 
+    color: #000000;
+}
+A.action:visited {
+    font-size: 8pt; 
+    color: #000000;
+}
+
+table.sortable {
+    border-right: #000000 0px solid; 
+    border-top: #000000 0px solid; 
+    background: #cccccc; 
+    border-left: #000000 0px solid; 
+    border-bottom: #000000 0px solid;
+
+}
+A.sortheader:link {
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Verdana;
+    text-decoration: none;
+}
+A.sortheader:visited {
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Verdana;
+    text-decoration: none;
+}
+A.sortheader:active {
+    font-weight: bold;
+    color: #ffffff; 
+    font-family: Verdana;
+    text-decoration: none;
+}
+A.sortheader:hover {
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Verdana;
+    text-decoration: underline;
+}
+BODY {
+    font-size: 9pt;
+    font-family:Verdana;
+}
+SELECT {
+    font-size: 9pt;
+    font-family:Verdana;
+}
+INPUT.button {
+    font-size: 9pt;
+    font-family:Verdana;
+}
+td.action {
+    border-right: #dddddd 1px solid;
+    border-top: #dddddd 1px solid;
+    border-left: #dddddd 1px solid;
+    border-bottom: #dddddd 1px solid;
+    font-size:10px;
+}
+td.highlighted_action {
+    border-right: #000000 1px solid; 
+    border-top: #000000 1px solid; 
+    background-image: url(../images/bg_color1.gif); 
+    border-left: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    font-size:10px;
+}
+
+table.leftmenu {
+    font-size: 12pt;
+    background: #ddcfa1;
+    cursor: default;
+    color: #000000;
+    font-family: Verdana; 
+}
+
+.highlighted_leftmenu {
+    font-size: 9pt;
+    cursor: default;
+    color: #620705;
+    font-family: Verdana; 
+    background-image: url(../images/bg_color1.gif); 
+    white-space:nowrap;   
+}
+.highlighted_leftmenu #menulabel {
+    font-size: 9pt;
+    cursor: default;
+    color: #620705;
+    font-family: Verdana; 
+    background-image: url(../images/bg_color1.gif); 
+}
+
+td.menulabel {
+    font-size: 9pt;
+    cursor: default;
+    color: #ffffff;
+    font-family: Verdana; 
+    background-image: url(../images/basic_color2.gif); 
+    cellspacing: 0px;
+}
+
+td.headerLogo {
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    padding-right:0px;
+    padding-left:0px;
+    cellspacing: 0px;
+    background-image: url(../images/layout_header_bg.jpg); 
+}
+.contentText2 {
+    font-size: 9pt;
+    font-family: Arial; 
+}
+.contentText {
+    font-size: 9pt;
+    font-family: Arial;
+}
+.contentTitleText {
+    font-weight: bold;
+    font-size: 9pt;
+    font-family: Arial;
+}
+.contentHeadText {
+    font-weight: bold;
+    font-size: 9pt; 
+    color: #ffffff;
+    font-family: Arial; 
+    background-image: url(../images/bg_color5.gif); 
+}
+td.content {
+    background-image: url(../images/bg_color1.gif); 
+    padding: 0px 0px 0px 10px;
+    height: 250px;
+}
+div.content{
+    background-image: url(../images/bg_color1.gif); 
+}
+td.leftcontent {
+    background-image: url(../images/basic_color2.gif); 
+    padding:0px 0px 0px 6px;
+}
+
+tr.resultRow {
+    font-size: 9pt; background: #ffffff; font-family: Arial;
+}
+tr.highlighted_resultRow {
+    font-size: 9pt; background-image: url(../images/bg_color2.gif);  font-family: Arial;
+}
+tr.resultRow2 {
+    font-size: 9pt; background: #dddddd; font-family: Arial;
+}
+tr.footer {
+    font-size: 8pt; font-family: Verdana;
+}
+
+div.divA{
+    color: #003466;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td.divA{
+    color: #003466;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td.tdLang{
+    color: #003466;
+    font-size: 12px;
+}
+
+.rtl{
+    direction: rtl; 
+    unicode-bidi: embed;
+}
+
+a.color1{
+    color:#003466;
+}
+span.color2{
+    color:#a03338;
+}
+/*Konstatina addition*/
+.topmenu {
+    font-size: 9pt; 
+    color: #ffffff; 
+    font-weight:400; 
+    white-space: nowrap;
+}
+
+a.topmenu:active {
+    font-size: 9pt; 
+    color: #ffffff; 
+    font-weight:400;
+    float: right; 
+
+}
+a.topmenu:visited {
+    font-size: 9pt; 
+    color: #ffffff; 
+    font-weight:400; 
+    float:right;
+}
+a.topmenu:hover {
+    font-size: 9pt; 
+    color: #ffffff; 
+    font-weight:400; 
+    float:right;
+}
+
+
+.menulabelmorefile{
+    display:none;
+
+}
+.newMenu{ 
+    font-size: 8pt;
+    color: #000000;
+    font-family: Verdana;
+    text-decoration: none;
+    font-weight:  normal;
+    padding-top: 3px;
+    padding-right: 4px;
+}
+
+.colMenu{
+    padding-left: 2px;
+}
+
+#sddm{
+    margin: 0;
+    padding: 0;
+    z-index: 30;
+    display: inline;
+}
+
+#sddm li{
+    list-style: none;
+    float: right; 
+    font-size: 8pt;
+    color: #000000;
+    font-family: Verdana;
+    text-decoration:none;
+    font-weight:  normal;
+}
+
+#sddm li a{
+    display: block;
+    padding-top: 3px;
+    padding-right: 4px;
+    font-weight:  normal;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+#sddm div{
+    position: absolute;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    background: #f3eec6;
+    border: 1px solid #5970B2
+}
+
+#sddm div a{
+
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    width: auto;    
+    white-space: nowrap;
+    text-align: left;
+    text-decoration: none;
+    background: #f3eec6;
+}
+
+#sddm div a:hover{
+    background: #b0a06d;
+    color: #FFF
+}
+
+.m2cl {
+    margin-left:-15px;
+}
+
+#firstSearchTd{
+    padding-left:20px;
+}
+.searchDiv{
+    padding-top: 5px; 
+    padding-right: 3px;
+}
+
+input.text{
+    font-family: Verdana;
+    font-size: 8pt;
+}
+
+#searchForm{
+    display: inline;
+}
+
+a img { 
+    border:0;
+}
+
+a.disableLink {
+    color:gray;
+    cursor:text;
+}
+
+td.invisible{
+    display: none;
+}

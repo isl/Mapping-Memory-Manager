@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2014 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Georgios Samaritakis, Konstantina Konsolaki.
+
+This file is part of the 3M webapp of Mapping Memory Manager project.
+
+-->
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <description>Mapping Memory Manager Description</description>
+    <!-- General description of your web application -->
+    <display-name>Mapping Memory Manager</display-name>
+    <!-- Context initialization parameters that define shared
+         String constants used within your application, which
+         can be customized by the system administrator who is
+         installing your application.  The values actually
+         assigned to these parameters can be retrieved in a
+         servlet or JSP page by calling:
+
+         String value = getServletContext().getInitParameter("name");
+
+         where "name" matches the <param-name> element of
+         one of these initialization parameters.
+
+         You can define any number of context initialization
+         parameters, including zero.
+    -->
+    <context-param>
+        <param-name>SystemWebRoot</param-name>
+        <param-value>http://localhost:8084/3M/</param-value>
+    </context-param>
+    <!-- ===== eXist ===== -->
+    <context-param>
+        <description>eXist IP address</description>
+        <param-name>DBURI</param-name>
+        <param-value>xmldb:exist://localhost:8090/exist/xmlrpc</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DBdriver</param-name>
+        <param-value>org.exist.xmldb.DatabaseImpl</param-value>
+    </context-param>
+    <context-param>
+        <description>eXist username</description>
+        <param-name>DBuser</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <description>eXist password</description>
+        <param-name>DBpassword</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>SystemDbCollection</param-name>
+        <param-value>/db/DMSCOLLECTION/3M/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>VersionDbCollection</param-name>
+        <param-value>/db/DMSCOLLECTION/3M_VERSIONS/</param-value>
+    </context-param>
+    <context-param>
+        <description>admin files</description>
+        <param-name>AdminDbCollection</param-name>
+        <param-value>/db/DMSCOLLECTION/3M/DMSFILES/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>schemaFolder</param-name>
+        <param-value>C:\\Projects\\3M\\Schema\\</param-value>
+    </context-param>
+    <context-param>
+        <param-name>editorWebapp</param-name>
+        <param-value>x3mlEditor</param-value>
+    </context-param>
+    <context-param>
+        <param-name>UploadsFile</param-name>
+        <param-value>Uploads.xml</param-value>
+    </context-param>
+    <context-param>
+        <param-name>URI_Reference_Path</param-name>
+        <param-value>http://cidoc_mappings.com/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>SystemUploads</param-name>
+        <param-value>C:\\Projects\\3M\\uploads\\</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Export_Import_Folder</param-name>
+        <param-value>C:\\Projects\\3M\\export_import\\</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Backups</param-name>
+        <param-value>C:\\Projects\\3M\\Backups\\</param-value>
+    </context-param>
+    <!-- ===== Various for System ===== -->
+    <context-param>
+        <param-name>ListStep</param-name>
+        <!-- Results to each page -->
+        <param-value>20</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pagingMax</param-name>
+        <!-- poses selides 8a emfanizei prin kai meta apo tin epilegmeni selida -->
+        <param-value>2</param-value>
+    </context-param>
+    <context-param>
+        <param-name>maxCollsize</param-name>
+        <!-- eXist collection size -->
+        <param-value>999</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dataCol</param-name>
+        <!-- poses selides 8a emfanizei prin kai meta apo tin epilegmeni selida -->
+        <param-value>1</param-value>
+    </context-param>
+    <context-param>
+        <param-name>EntityTypes</param-name>
+        <param-value>Mapping</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Primary_EntityTypes</param-name>
+        <param-value>Mapping</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Secondary_EntityTypes</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>SystemLangs</param-name>
+        <param-value>en</param-value>
+    </context-param>
+    <context-param>
+        <description>
+            The EMAIL address of the administrator to whom questions
+            and comments about this application should be addressed.
+        </description>
+        <param-name>webmaster</param-name>
+        <param-value>myaddress@mycompany.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>BugReportURL</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>defaultLang</param-name>
+        <param-value>en</param-value>
+    </context-param>
+    <context-param>
+        <!--The entity shown in at the first page. If empty the user is redirected to the welcome page-->
+        <param-name>defaultEntity</param-name>
+        <param-value>Mapping</param-value>
+    </context-param>
+    <context-param>
+        <!--Users sgin up to the system if true-->
+        <param-name>signUp</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <!--Name of the system-->
+        <param-name>systemName</param-name>
+        <param-value>3M</param-value>
+    </context-param>
+    <context-param>
+        <!--Version of the system-->
+        <param-name>systemVersion</param-name>
+        <param-value>1.0</param-value>
+    </context-param>    
+    <context-param>
+        <!--Acronym's Description of the system-->
+        <param-name>systemAcronymDescription</param-name>
+        <param-value>Mapping Memory Manager</param-value>
+    </context-param>
+    <context-param>
+        <description>File describing all operators for a specific datatype</description>
+        <param-name>dataTypesFile</param-name>
+        <param-value>DatatypeOperators.xml</param-value>
+    </context-param>
+    <!-- ====================FILTERS==================== -->
+    <context-param>
+        <param-name>threshold</param-name>
+        <param-value>5000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>picSeperator</param-name>
+        <param-value>~</param-value>
+    </context-param>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>isl.FIMS.filter.LoginFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>ValidateAction</filter-name>
+        <filter-class>isl.FIMS.filter.ValidateAction</filter-class>
+    </filter>
+    <!-- ====================LISTENERS==================== -->
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/AdminEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/TranslateServlet</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/AdminListEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/AdminOrg</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/AdminUser</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/AdminVoc</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/FirstPage</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/Logout</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/Search</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/SearchSave</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/SearchDelete</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/SearchResults</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/ListEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/Storage</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/DeleteEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/UploadBinFile</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/CreateVersion</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/ViewVersions</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/ExportRDF</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/CreateCopy</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/AdminEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/AdminListEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/AdminOrg</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/AdminUser</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/AdminVoc</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/CreateCopy</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/DeleteEntity</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ExportRDF</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ExportTemplate</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ExportVocabulary</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ImportVocabulary</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ImportXML</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/TranslateServlet</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/CreateVersion</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ViewVersions</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/ExportVersions</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ValidateAction</filter-name>
+        <url-pattern>/Storage</url-pattern>
+    </filter-mapping>
+    <listener>
+        <description>Session Listener</description>
+        <listener-class>isl.FIMS.listener.SessionListener</listener-class>
+    </listener>
+    <!-- ====================SERVLETS==================== -->
+    <!-- =====Admin servlets===== -->
+    <servlet>
+        <servlet-name>SystemMessages</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.SystemMessages</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminEntity</servlet-name>
+        <servlet-class>isl.FIMS.servlet.admin.AdminEntity</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ForgetPass</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.ForgetPass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.SignUp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminListEntity</servlet-name>
+        <servlet-class>isl.FIMS.servlet.admin.AdminListEntity</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminOrg</servlet-name>
+        <servlet-class>isl.FIMS.servlet.admin.AdminOrg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminUser</servlet-name>
+        <servlet-class>isl.FIMS.servlet.admin.AdminUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminVoc</servlet-name>
+        <servlet-class>isl.FIMS.servlet.admin.AdminVoc</servlet-class>
+    </servlet>
+    <!-- =====Various servlets===== -->
+    <!-- =====UI servlet===== -->
+    <servlet>
+        <servlet-name>FirstPage</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.FirstPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SetLanguage</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.SetLanguage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Storage</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.Storage</servlet-class>
+    </servlet>
+    <!-- =====Login servlet===== -->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.Logout</servlet-class>
+    </servlet>
+    <!-- =====Search servlets===== -->
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <servlet-class>isl.FIMS.servlet.search.Search</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchSave</servlet-name>
+        <servlet-class>isl.FIMS.servlet.search.SearchSave</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchDelete</servlet-name>
+        <servlet-class>isl.FIMS.servlet.search.SearchDelete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchResults</servlet-name>
+        <servlet-class>isl.FIMS.servlet.search.SearchResults</servlet-class>
+    </servlet>
+    <!-- =====Entity servlets===== -->
+    <servlet>
+        <servlet-name>ListEntity</servlet-name>
+        <servlet-class>isl.FIMS.servlet.entity.ListEntity</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteEntity</servlet-name>
+        <servlet-class>isl.FIMS.servlet.entity.DeleteEntity</servlet-class>
+    </servlet>
+    <!-- =====Vocabulary servlets===== -->
+    <!-- =====Upload servlets===== -->
+    <servlet>
+        <servlet-name>UploadBinFile</servlet-name>
+        <servlet-class>isl.FIMS.servlet.upload.UploadBinFile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FetchBinFile</servlet-name>
+        <servlet-class>isl.FIMS.servlet.fetch.FetchBinFile</servlet-class>
+    </servlet>
+    <!-- ====================SERVLETS MAPPING==================== -->
+    <!-- =====Admin servlets===== -->
+    <servlet>
+        <servlet-name>ChangePass</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.ChangePass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExportTemplate</servlet-name>
+        <servlet-class>isl.FIMS.servlet.export.ExportTemplate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExportXML</servlet-name>
+        <servlet-class>isl.FIMS.servlet.export.ExportXML</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TranslateServlet</servlet-name>
+        <servlet-class>isl.FIMS.servlet.translation.TranslateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateVersion</servlet-name>
+        <servlet-class>isl.FIMS.servlet.versions.CreateVersion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewVersions</servlet-name>
+        <servlet-class>isl.FIMS.servlet.versions.ViewVersions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExportVersions</servlet-name>
+        <servlet-class>isl.FIMS.servlet.export.ExportVersions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImportXML</servlet-name>
+        <servlet-class>isl.FIMS.servlet.imports.ImportXML</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExportVocabulary</servlet-name>
+        <servlet-class>isl.FIMS.servlet.export.ExportVocabulary</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImportVocabulary</servlet-name>
+        <servlet-class>isl.FIMS.servlet.imports.ImportVocabulary</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FetchAudio</servlet-name>
+        <servlet-class>isl.FIMS.servlet.fetch.FetchAudio</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ExportRDF</servlet-name>
+        <servlet-class>isl.FIMS.servlet.export.ExportRDF</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateCopy</servlet-name>
+        <servlet-class>isl.FIMS.servlet.copy.CreateCopy</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminEntity</servlet-name>
+        <url-pattern>/AdminEntity</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminListEntity</servlet-name>
+        <url-pattern>/AdminListEntity</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminOrg</servlet-name>
+        <url-pattern>/AdminOrg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminUser</servlet-name>
+        <url-pattern>/AdminUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminVoc</servlet-name>
+        <url-pattern>/AdminVoc</url-pattern>
+    </servlet-mapping>
+    <!-- =====Various servlets===== -->
+    <!-- =====UI servlet===== -->
+    <servlet-mapping>
+        <servlet-name>FirstPage</servlet-name>
+        <url-pattern>/FirstPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SetLanguage</servlet-name>
+        <url-pattern>/SetLanguage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgetPass</servlet-name>
+        <url-pattern>/ForgetPass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Storage</servlet-name>
+        <url-pattern>/Storage</url-pattern>
+    </servlet-mapping>
+    <!-- =====Login servlet===== -->
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <!-- =====Search servlets===== -->
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/Search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchSave</servlet-name>
+        <url-pattern>/SearchSave</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchDelete</servlet-name>
+        <url-pattern>/SearchDelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchResults</servlet-name>
+        <url-pattern>/SearchResults</url-pattern>
+    </servlet-mapping>
+    <!-- =====Entity servlets===== -->
+    <servlet-mapping>
+        <servlet-name>ListEntity</servlet-name>
+        <url-pattern>/ListEntity</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteEntity</servlet-name>
+        <url-pattern>/DeleteEntity</url-pattern>
+    </servlet-mapping>
+    <!-- =====Vocabulary servlets===== -->
+    <!-- =====Upload servlets===== -->
+    <servlet-mapping>
+        <servlet-name>UploadBinFile</servlet-name>
+        <url-pattern>/UploadBinFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FetchBinFile</servlet-name>
+        <url-pattern>/FetchBinFile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SystemMessages</servlet-name>
+        <url-pattern>/SystemMessages</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangePass</servlet-name>
+        <url-pattern>/ChangePass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExportTemplate</servlet-name>
+        <url-pattern>/ExportTemplate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExportXML</servlet-name>
+        <url-pattern>/ExportXML</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TranslateServlet</servlet-name>
+        <url-pattern>/TranslateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateVersion</servlet-name>
+        <url-pattern>/CreateVersion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewVersions</servlet-name>
+        <url-pattern>/ViewVersions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExportVersions</servlet-name>
+        <url-pattern>/ExportVersions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImportXML</servlet-name>
+        <url-pattern>/ImportXML</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExportVocabulary</servlet-name>
+        <url-pattern>/ExportVocabulary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImportVocabulary</servlet-name>
+        <url-pattern>/ImportVocabulary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FetchAudio</servlet-name>
+        <url-pattern>/FetchAudio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExportRDF</servlet-name>
+        <url-pattern>/ExportRDF</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateCopy</servlet-name>
+        <url-pattern>/CreateCopy</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Login</welcome-file>
+    </welcome-file-list>
+</web-app>
