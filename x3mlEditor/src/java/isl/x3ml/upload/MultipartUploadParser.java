@@ -76,7 +76,7 @@ public class MultipartUploadParser
 
 			writeDebugInfo(request);
 
-			throw new FileUploadException("No files were found when processing the requst.");
+			throw new FileUploadException("No files were found when processing the request.");
 		}
 		else
 		{

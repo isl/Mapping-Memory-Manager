@@ -27,7 +27,6 @@ Authors : Georgios Samaritakis, Konstantina Konsolaki.
 This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
 
 -->
-
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <context-param>
         <description>eXist database URI. Change IP and port according to your eXist setup.</description>
@@ -48,7 +47,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <description>eXist database user password. Change according to your eXist setup.</description>
         <param-name>DBpassword</param-name>
         <param-value>admin</param-value>
-    </context-param>    
+    </context-param>
     <context-param>
         <description>eXist database x3ml collection</description>
         <param-name>x3mlCollection</param-name>
@@ -68,7 +67,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <description>eXist database x3mlEditor queries collection</description>
         <param-name>configQueriesCollection</param-name>
         <param-value>/db/DMSCOLLECTION/3M/DMSFILES/applicationFiles/xqFiles</param-value>
-    </context-param>    
+    </context-param>
     <context-param>
         <description>DO NOT TOUCH</description>
         <param-name>verboseConnections</param-name>
@@ -78,19 +77,18 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <description>3M system URL. Change according to your setup.</description>
         <param-name>systemURL</param-name>
         <param-value>/3M</param-value>
-    </context-param>  
+    </context-param>
     <context-param>
         <description>If set to on (default value) everythings works as planned.
-        If set to off (maintenance mode), then redirect to maintenance html page.</description>
+            If set to off (maintenance mode), then redirect to maintenance html page.</description>
         <param-name>stateOfSite</param-name>
         <param-value>on</param-value>
     </context-param>
     <context-param>
         <description>Server folder to store uploaded files. Change according to your setup.</description>
         <param-name>uploadsFolder</param-name>
-        <param-value>C:\\Projects\\3M\\uploads\\</param-value>
+        <param-value>C:\\Projects\\3M\\uploads\\Mapping\\</param-value>
     </context-param>
-   
     <context-param>
         <description>Maximum number of xml documents stored in one collection.</description>
         <param-name>maxCollsize</param-name>
@@ -158,6 +156,10 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <servlet-name>ViewPublished</servlet-name>
         <servlet-class>isl.x3ml.servlets.ViewPublished</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ExceptionHandler</servlet-name>
+        <servlet-class>isl.x3ml.servlets.ExceptionHandler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Mapping</servlet-name>
         <url-pattern>/Mapping</url-pattern>
@@ -186,11 +188,23 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <servlet-name>ViewPublished</servlet-name>
         <url-pattern>/ViewPublished</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExceptionHandler</servlet-name>
+        <url-pattern>/ExceptionHandler</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
-            30
+            180
         </session-timeout>
     </session-config>
+     <error-page>
+    <error-code>404</error-code>
+    <location>/ExceptionHandler</location>
+  </error-page>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/ExceptionHandler</location>
+    </error-page>
     <welcome-file-list>
         <welcome-file>Index</welcome-file>
     </welcome-file-list>

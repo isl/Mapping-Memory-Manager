@@ -44,16 +44,14 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             <td >
                 <a title="Path">P</a>
             </td>
-            <td>
-                <span data-editable="" data-path="{concat($pathSoFar,'/source_relation')}">
+            <td>&#160;
+                <span style="font-style:italic;" data-editable="" data-path="{concat($pathSoFar,'/source_relation')}">
                     <xsl:value-of select="source_relation"/>
-                </span>
+                </span><!--img src="formating/images/idea16.png"/--> 
             </td>
-            <td>
-               
-                                                                                  
+            <td>                                                                                                 
                                                 
-                <span data-editable="select" data-path="{concat($pathSoFar,'/target_relation/relationship[1]')}">
+                <span  class="relationship" data-editable="select" data-path="{concat($pathSoFar,'/target_relation/relationship[1]')}">
                     <xsl:call-template name="substring-after-last-and-remove-prefix">
                         <xsl:with-param name="string" select="target_relation/relationship[1]" />
                         <xsl:with-param name="delimiter" select="'/'" />
@@ -62,58 +60,16 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                 <br/>
                 
                 
-                 <xsl:for-each select="target_relation/relationship[position()>1]">
-                                         <xsl:variable name="relPos" select="position()+1"/>
-                                         <xsl:for-each select="..">
-                     <xsl:call-template name="intermediate"> 
-                     <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/target_relation')"/>
-                        <xsl:with-param name="pos3" select="$relPos"/></xsl:call-template>  
-                 </xsl:for-each>
-                 </xsl:for-each>
-                <!--
                 <xsl:for-each select="target_relation/relationship[position()>1]">
                     <xsl:variable name="relPos" select="position()+1"/>
-                      <span data-editable="select" data-path="{concat($pathSoFar,'/target_relation/relationship[',$relPos,']')}">
-                    <xsl:call-template name="substring-after-last">
-                        <xsl:with-param name="string" select="." />
-                        <xsl:with-param name="delimiter" select="'/'" />
-                    </xsl:call-template>
-                    
-                    
-                </span>
-                <xsl:for-each select="..">
-                <xsl:call-template  name="entity">
-					<xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/target_relation')"/>
-                                </xsl:call-template>
-                                
-                                        </xsl:for-each>
-        
+                    <xsl:for-each select="..">
+                        <xsl:call-template name="intermediate"> 
+                            <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/target_relation')"/>
+                            <xsl:with-param name="pos3" select="$relPos"/>
+                        </xsl:call-template>  
+                    </xsl:for-each>
                 </xsl:for-each>
-                -->
-                <!--
-                <xsl:for-each select="internal_node|constant_node">
-                    
-                    <xsl:variable name="name" select="name()"/>
-                    <xsl:variable name="precedingSiblingsWithSameName">
-                        <xsl:choose>
-                            <xsl:when test="$name='constant_node'">
-                                <xsl:value-of select="count(preceding-sibling::constant_node)"></xsl:value-of>
-                            </xsl:when>
-                            <xsl:when test="$name='internal_node'">
-                                <xsl:value-of select="count(preceding-sibling::internal_node)"></xsl:value-of>
-                            </xsl:when>
-                        </xsl:choose>
-                    </xsl:variable>
-                                                   
-                    <xsl:variable name="pos3" select="$precedingSiblingsWithSameName+1"/>       
-                    
-                    <xsl:apply-templates select=".">
-                        <xsl:with-param name="pathSoFar" select="$pathSoFar"/>
-                        <xsl:with-param name="pos3" select="$pos3"/>
-                    </xsl:apply-templates>
-                                                  
-                </xsl:for-each>
-                -->
+              
                 
                 <xsl:if test="//viewMode=0">
              
@@ -126,12 +82,12 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                    
             </td>
             <xsl:for-each select="target_relation">
-            <xsl:call-template name="if-ruleCell">
-                <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/target_relation')"/>
-                <!--xsl:with-param name="entityOrProperty" select="'property'"/-->
+                <xsl:call-template name="if-ruleCell">
+                    <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/target_relation')"/>
+                    <!--xsl:with-param name="entityOrProperty" select="'property'"/-->
 
-            </xsl:call-template>
-        </xsl:for-each>
+                </xsl:call-template>
+            </xsl:for-each>
            
             <xsl:call-template name="commentsCell">
                 <xsl:with-param name="pathSoFar" select="$pathSoFar"/>
@@ -140,25 +96,10 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
           
             <xsl:if test="//viewMode=0">
                 <td rowspan="2">
-                    <!--xsl:if test="count(../../link)>1"-->
                            
-                                            <a style="float:right;" title="Delete Link" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/..')}&amp;id={//output/id}');return false;">
-                                <img src="formating/images/delete16.png"/>
-                            </a>
-                                                                        
-                    <!--xsl:choose>
-                        <xsl:when test="count(../../link)>1">
-                            <a style="float:right;" title="Delete Link" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/..')}&amp;id={//output/id}');return false;">
-                                <img src="formating/images/delete16.png"/>
-                            </a>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <img style="float:right;opacity:0.3;"  src="formating/images/delete16.png"/>
-
-                        </xsl:otherwise>
-                    </xsl:choose-->
-                        
-                        
+                    <a style="float:right;" title="Delete Link" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/..')}&amp;id={//output/id}');return false;">
+                        <img src="formating/images/delete16.png"/>
+                    </a>                        
                     <xsl:choose>
                         <xsl:when test="../preceding-sibling::link">
                             <a style="float:right;" title="Move Link Up" href="" onclick="action('Mapping?action=moveUp&amp;xpath={concat($pathSoFar,'/..')}&amp;id={//output/id}');return false;">
@@ -180,11 +121,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                             <img style="float:right;opacity:0.3;" src="formating/images/down16.png"/>
                         </xsl:otherwise>
                     </xsl:choose>
-                       
-                       
-
-                    
-                    <!--/xsl:if-->
+                                            
                     <a style="float:right;" class="Value_Binding inline" title="Clone Link" href="" onclick="action('Mapping?action=clone&amp;xpath={concat($pathSoFar,'/..')}&amp;id={//output/id}');return false;">
                         <img style="vertical-align:bottom;"  src="formating/images/plus16.png"/>           
                     </a>

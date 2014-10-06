@@ -119,18 +119,20 @@ public class Schema {
 
             String query = "";
             String[] entities = null;
-            if (filenames.length > 1) {
-                if (className.contains("######")) {
+            if (className.contains("######")) {
                     className = className.split("######")[1];
                 }
+//            if (filenames.length > 1) {
+                
                 query = namespaces + buildQuery("//rdfs:Class[rdfs:subClassOf/@rdf:resource[ends-with(.,\"" + className + "\")]]/@rdf:about");
-//                System.out.println(query);
+                System.out.println(query);
                 entities = col.query(query);
-            } else {
-                query = namespaces + "\n//rdfs:Class[rdfs:subClassOf/@rdf:resource[ends-with(.,\"" + className + "\")]]/@rdf:about/string()";
-                entities = file.queryString2(query);
-
-            }
+//            } else {
+//                query = namespaces + "\n//rdfs:Class[rdfs:subClassOf/@rdf:resource[ends-with(.,\"" + className + "\")]]/@rdf:about/string()";
+//                System.out.println("Q2="+query);
+//                entities = file.queryString2(query);
+//
+//            }
 
             for (String entity : entities) {
                 getSubClassesOf(entity, classNames);

@@ -37,7 +37,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -72,6 +71,14 @@ public class Mapping extends BasicServlet {
         String newValue = request.getParameter("value");
         String action = request.getParameter("action");
         String chosenAPI = request.getParameter("mode");
+        String generator = request.getParameter("generator");
+        String viewMode; // 0 is edit, 1 is view
+        if (generator == null) {
+            generator = "";
+            viewMode = "0";
+        } else {
+            viewMode = "1"; //Generator mode is actually a hybrid: view mode+edit for generator elements ONLY
+        }
 
         int mode = 2;
 //        System.out.println("CHOSEN=" + chosenAPI);
@@ -178,8 +185,7 @@ public class Mapping extends BasicServlet {
                 } else if (action.startsWith("clone")) {
                     mappingFile.xCopyAfter(xpath, xpath);
                 }
-
-                String html = transform("<xml>" + mappingFile.toString() + "<output><id>" + id + "</id><viewMode>0</viewMode></output></xml>", xslPath);
+                String html = transform("<xml>" + mappingFile.toString() + "<output><id>" + id + "</id><viewMode>"+viewMode+"</viewMode><generator>" + generator + "</generator></output></xml>", xslPath);
 //                System.out.println(html);
                 ArrayList<String> bodies = findReg("<body.*?</body>", html, Pattern.DOTALL);
                 out.println(bodies.get(0));
@@ -215,8 +221,8 @@ public class Mapping extends BasicServlet {
                     for (int i = 0; i < targetSchemas.length; i++) {
                         String targetSchema = targetSchemas[i];
                         String targetSchemaTitle = targetSchemaTitles[i];
-                        String prefix = prefixes[i + 1];
-                        String uri = uris[i + 1];
+                        String prefix = prefixes[i + 2];
+                        String uri = uris[i + 2];
 
                         filenameAndType.put(targetSchema, targetSchemaTitle);
                         filenameAndPrefix.put(targetSchema, prefix);
@@ -629,12 +635,12 @@ public class Mapping extends BasicServlet {
                 String strippedURL = val;
                 if (val.startsWith("http://")) { //If URL then strip slashes part
                     strippedURL = val.substring(val.lastIndexOf("/") + 1);
-                    
-                     output.append("{'id':'").append(val).append("',");
+
+                    output.append("{'id':'").append(val).append("',");
                     if (selectedValue.equals(val)) {
                         output.append("\n'selected':'selected").append("',");
                     }
-                    
+
                 } else {
                     output.append("{'id':'").append(prefix + ":" + val).append("',");
                     if (selectedValue.equals(prefix + ":" + val)) {

@@ -317,3 +317,13 @@ td {
     display: inline;
     font-size: 80%;
 }
+.relationship {
+    font-style: italic;
+    position: relative;
+    left: 9px;
+}
+
+/*.spacerRow {
+    border-left: 10px solid #708090;
+    border-right: 10px solid #708090;
+}*/

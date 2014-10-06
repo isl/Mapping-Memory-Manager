@@ -66,13 +66,11 @@ public class UploadReceiver extends BasicServlet {
         String filePath = "";
         RequestParser requestParser = null;
         String filename = "";
-        String mime = "";
+//        String mime = "";
         String msg = null;
-        TEMP_DIR = new File(uploadsFolder + id + "/uploadsTemp");
-        System.out.println(uploadsFolder + id + "/uploadsTemp");
-        if (!TEMP_DIR.exists()) {
-            TEMP_DIR.mkdirs();
-        }
+        
+
+//        TEMP_DIR = new File(uploadsFolder + id + "/uploadsTemp");
         try {
             if (ServletFileUpload.isMultipartContent(req)) {
                 requestParser = RequestParser.getInstance(req, new MultipartUploadParser(req, TEMP_DIR, getServletContext()));
@@ -88,9 +86,18 @@ public class UploadReceiver extends BasicServlet {
             msg = e.getMessage();
         }
 
-        UPLOAD_DIR = new File(uploadsFolder + id + filePath);
-        System.out.println("2=" + uploadsFolder + id + filePath);
-        System.out.println("FILENAME=" + filename);
+        DBFile uploadsDBFile = new DBFile(super.DBURI, super.adminCollection, "Uploads.xml", super.DBuser, super.DBpassword);
+        String mime = new Utils().findMime(uploadsDBFile, filename);
+        
+        TEMP_DIR = new File(uploadsFolder + "uploadsTemp");
+
+//        System.out.println(uploadsFolder + id + "/uploadsTemp");
+        if (!TEMP_DIR.exists()) {
+            TEMP_DIR.mkdirs();
+        }
+
+//        UPLOAD_DIR = new File(uploadsFolder + id + filePath);
+        UPLOAD_DIR = new File(uploadsFolder +mime+System.getProperty("file.separator")+ filePath);
 
         if (!UPLOAD_DIR.exists()) {
             UPLOAD_DIR.mkdirs();
@@ -118,12 +125,10 @@ public class UploadReceiver extends BasicServlet {
             isAttribute = true;
         }
         if (isAttribute) {
-//            System.out.println(xpath);
-//            System.out.println(attributeName);
 
             mappingFile.xAddAttribute(xpath, attributeName, filename);
 
-            if (xpath.endsWith("/target_schema") && attributeName.equals("schema_file") && (filename.endsWith("rdfs")||filename.endsWith("rdf"))) {
+            if (xpath.endsWith("/target_schema") && attributeName.equals("schema_file") && (filename.endsWith("rdfs") || filename.endsWith("rdf"))) {
                 //Uploading file to eXist!
                 dbc = new DBCollection(super.DBURI, x3mlCollection, super.DBuser, super.DBpassword);
                 DBFile dbf = dbc.createFile(filename, "XMLDBFile");
@@ -137,6 +142,8 @@ public class UploadReceiver extends BasicServlet {
         }
 
         writeResponse(filename, resp.getWriter(), msg, fileType, mime);
+                        
+
 
     }
 
@@ -191,9 +198,10 @@ public class UploadReceiver extends BasicServlet {
         } else {
             writer.print("{\"error\": \"" + failureReason + "\"}");
         }
+        
     }
 
-     /**
+    /**
      *
      * @param f
      * @param enc
@@ -212,5 +220,5 @@ public class UploadReceiver extends BasicServlet {
             throw new Error("IO Error in readFile");
         }
     }
-    
+
 }

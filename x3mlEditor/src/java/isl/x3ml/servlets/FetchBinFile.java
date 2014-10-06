@@ -27,7 +27,9 @@
  */
 package isl.x3ml.servlets;
 
+import isl.dbms.DBFile;
 import isl.x3ml.BasicServlet;
+import isl.x3ml.utilities.Utils;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -56,15 +58,19 @@ public class FetchBinFile extends BasicServlet {
         request.setCharacterEncoding("UTF-8");
 
         // Get the absolute path of the image ServletContext sc = getServletContext();
-        String id = request.getParameter("id");
-
-        String path = uploadsFolder + id + "/";
-
+//        String id = request.getParameter("id");
         String filename = request.getParameter("file");
+
+//        String path = uploadsFolder + id + "/";
+        String path = uploadsFolder;
+        DBFile uploadsDBFile = new DBFile(super.DBURI, super.adminCollection, "Uploads.xml", super.DBuser, super.DBpassword);
+        String mime = new Utils().findMime(uploadsDBFile, filename);
+        path = path + mime + System.getProperty("file.separator");
 
         String mimeType = getServletContext().getMimeType(filename);
 
         path = path + filename;
+    
 
         filename = filename.substring(filename.lastIndexOf("/") + 1);
         // Set content size

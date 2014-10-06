@@ -63,6 +63,14 @@ public class Utils {
         return myformat.format(day) + "-" + myformat.format(month) + "-" + year;
     }
 
+    public void lengthyProcess() {
+        for (int i=0;i<1000000;i++) {
+            System.out.println(i);
+            i=i+1;
+        }
+    }
+    
+    
     /**
      * Time method
      *
@@ -211,6 +219,21 @@ public class Utils {
             return list;
         }
         return list;
+    }
+    
+     public String findMime(DBFile uploads, String file) {
+
+        file = file.substring(file.lastIndexOf(".") + 1);
+        file = file.toLowerCase();
+//        System.out.println("//mime[type='"+file+"']/../name()");
+
+        String[] mimes = uploads.queryString("//mime[type='" + file + "']/../name()");
+        if (mimes.length == 0) {
+            return "Other";
+        } else {
+            return mimes[0];
+        }
+
     }
 
 }

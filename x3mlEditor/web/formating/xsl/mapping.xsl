@@ -73,7 +73,8 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             </title>
             <head>
                 <script>
-                    var id = <xsl:value-of select="//output/id"/>;                                   
+                    var id = <xsl:value-of select="//output/id"/>;    
+                                               
                 </script>
                 <script src="formating/js/jquery.min.js"/>
                 <script src="formating/js/scripts.js"/>
@@ -83,16 +84,40 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                 <xsl:if test="//viewMode=0">
                     <link href="formating/css/edit.css"  rel="stylesheet"/>
                     <script src="formating/js/edit.js"/>
-
+                </xsl:if>
+                
+                <xsl:if test="//output/generator">
+                    <link href="formating/css/generator.css"  rel="stylesheet"/>
+                    <script src="formating/js/generator.js"/>
                 </xsl:if>
             </head> 
             <body onunload="closeAndUnlock('{//output/id}');">
-
                 
                 <xsl:call-template name="infoTable"/>
                 <p/>
-                <p/>
-                <a name="Schema_Matching_Table"/>
+                <p>
+                    
+                    <xsl:if test="//viewMode=0">
+
+                        <div style="border: 1px solid #307d6e;width:159px;">
+                        
+                            <span class="titleRibbon">Components used</span>
+                            <br/>
+                            <form style="display:inline;">
+                                <label title="Click to disable">
+                                    <input id="TPScheckbox" type="checkbox" checked="checked" />Target Path Suggester</label>&#160;
+                                <br/>
+                                <label>
+                                    <input type="checkbox" disabled="true" />Target Path Validator</label>&#160;
+                                <br/>
+                                <label>
+                                    <input type="checkbox" disabled="true" />Mapping Suggester</label>
+
+                            </form>
+                        </div>
+                    </xsl:if>
+                </p>
+                <!-- <a name="Schema_Matching_Table"/>-->
                
                 <table border="0" cellpadding="3" id="Schema_Matching_Table">
                      
@@ -121,7 +146,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                         <th align="center" >
                             <xsl:attribute name="style">
                                 <xsl:choose>
-                                    <xsl:when test="//exists">
+                                    <xsl:when test="//if">
                                         <xsl:text>min-width:230px;</xsl:text>
                                     </xsl:when>
                                     <xsl:otherwise>
@@ -130,7 +155,9 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                                 </xsl:choose> 
                             </xsl:attribute>
                             if-rule</th>
-                        <th align="center" style="max-width:100px">comments</th>
+                        <!--                         <th align="center" style="max-width:100px">comments</th> -->
+
+                        <th align="center">comments</th>
                         <xsl:if test="//viewMode=0">
                             <th align="center" style="width:65px">actions</th>
                         </xsl:if>
@@ -209,6 +236,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                 <script src="formating/js/jquery.jeditable.mini.js"/>
                 <script src="formating/js/jquery.fineuploader-3.0.js"/>
                 <input id="comboAPI" type="hidden" value="{//output/mode}"/>
+                <input id="generator" type="hidden" value="{//output/generator}"/>
 
             </body>
         </html>

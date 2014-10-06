@@ -56,7 +56,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                         <span data-editable="" data-path="//x3ml/info/title">
                             <xsl:value-of select="//x3ml/info/title"/>
                         </span>&#160;&#160;
-                        <a style="display:inline;" onclick="window.location.search += '&amp;output=xml';return false;"  href="">view XML file</a>
+                        <a  style="display:inline;" onclick="window.open(document.URL+'&amp;output=xml','_blank');return false;"  href="">view XML file</a>
                     </div>
                 </td>
             </tr>
@@ -154,7 +154,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                             <xsl:with-param name="pathSoFar" select="concat('//x3ml/info/target_info[',$pos,']','/target_schema/@schema_file')"/>
                         </xsl:call-template>
                         <xsl:if test="count(../target_info)>1">
-                            <a  style="float:right;" title="Delete Target" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat('//x3ml/info/target_info[',$pos,']')}&amp;id={//output/id}');action('Mapping?action=delete&amp;xpath={concat('//x3ml/namespaces/namespace[',$pos+1,']')}&amp;id={//output/id}');return false;">
+                            <a  style="float:right;" title="Delete Target" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat('//x3ml/info/target_info[',$pos,']')}&amp;id={//output/id}');action('Mapping?action=delete&amp;xpath={concat('//x3ml/namespaces/namespace[',$pos+2,']')}&amp;id={//output/id}');return false;">
                                 <img src="formating/images/delete16.png"/>
                             </a>
                         </xsl:if>
@@ -169,7 +169,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                     </td>
                 </tr>
                 <tr>
-                    <xsl:variable name="namespacePos" select="$pos+1"/>
+                    <xsl:variable name="namespacePos" select="$pos+2"/>
                         
                     <td valign="top">
                         <div class="Map_Title" data-help="namespaces">Namespaces</div>

@@ -38,11 +38,11 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <xsl:param name="pathSoFar"/>
         <xsl:choose>
             <xsl:when test="@schema_file">
-                <a>
+                <a target="_blank">
                     <xsl:attribute name="href">
-                        <xsl:text>FetchBinFile?id=</xsl:text>
-                        <xsl:value-of select="//output/id"/>
-                        <xsl:text>&amp;file=</xsl:text>
+                        <xsl:text>FetchBinFile?</xsl:text>
+                        
+                        <xsl:text>file=</xsl:text>
                         <xsl:value-of select="@schema_file"/>
                     </xsl:attribute> 
                     <xsl:text>view </xsl:text>
@@ -55,11 +55,11 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                
             </xsl:when>
             <xsl:when test="target_schema/@schema_file">
-                <a>
+                <a target="_blank">
                     <xsl:attribute name="href">
-                        <xsl:text>FetchBinFile?id=</xsl:text>
-                        <xsl:value-of select="//output/id"/>
-                        <xsl:text>&amp;file=</xsl:text>
+                        <xsl:text>FetchBinFile?</xsl:text>
+                      
+                        <xsl:text>file=</xsl:text>
                         <xsl:value-of select="target_schema/@schema_file"/>
                     </xsl:attribute> 
                      <xsl:text>view </xsl:text>
@@ -73,11 +73,11 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             <xsl:when test="name()='example_data_source_record'">
                 <xsl:choose>
                     <xsl:when test="@xml_link">
-                        <a>
+                        <a target="_blank">
                             <xsl:attribute name="href">
-                                <xsl:text>FetchBinFile?id=</xsl:text>
-                                <xsl:value-of select="//output/id"/>
-                                <xsl:text>&amp;file=</xsl:text>
+                                <xsl:text>FetchBinFile?</xsl:text>
+                               
+                                <xsl:text>file=</xsl:text>
                                 <xsl:value-of select="@xml_link"/>
                             </xsl:attribute> 
                             view xml
@@ -102,11 +102,10 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                 &#160;&#160;
                 <xsl:choose>
                     <xsl:when test="@html_link">
-                        <a>
+                        <a target="_blank">
                             <xsl:attribute name="href">
-                                <xsl:text>FetchBinFile?id=</xsl:text>
-                                <xsl:value-of select="//output/id"/>
-                                <xsl:text>&amp;file=</xsl:text>
+                                <xsl:text>FetchBinFile?</xsl:text>
+                                <xsl:text>file=</xsl:text>
                                 <xsl:value-of select="@html_link"/>
                             </xsl:attribute> 
                             view html
@@ -133,11 +132,11 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             <xsl:when test="name()='example_data_target_record'">
                 <xsl:choose>
                     <xsl:when test="@rdf_link">
-                        <a>
+                        <a target="_blank">
                             <xsl:attribute name="href">
-                                <xsl:text>FetchBinFile?id=</xsl:text>
-                                <xsl:value-of select="//output/id"/>
-                                <xsl:text>&amp;file=</xsl:text>
+                                <xsl:text>FetchBinFile?</xsl:text>
+                               
+                                <xsl:text>file=</xsl:text>
                                 <xsl:value-of select="@rdf_link"/>
                             </xsl:attribute> 
                             view rdf

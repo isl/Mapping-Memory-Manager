@@ -39,7 +39,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
       
            
         <!-- handle  contents of 'if' tag -->
-        <td>
+        <td> 
             <!-- first remove  "../"   -->
             <xsl:for-each select=".//if[equals]">
                 <xsl:variable name="pos" select="position()"/>
@@ -66,15 +66,14 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                         <xsl:with-param name="by" select="(../../source_node|../../source_relation|../../../../source_relation|/../../../source_node)"/>
                     </xsl:call-template>
                 </xsl:variable>
-               
+               &#160;
                 <span  data-editable="" data-path="{concat($pathSoFar,'/if/or/if[',$pos,']/equals')}">
                     <xsl:value-of select="$RangeIfVar2"/>
                 </span>&#160;
                 <xsl:text>=</xsl:text>
                &#160;
                
-                <span data-editable="" data-path="{concat($pathSoFar,'/if/or/if[',$pos,']/equals/@value')}">
-                   
+                <span data-editable="" data-path="{concat($pathSoFar,'/if/or/if[',$pos,']/equals/@value')}">                   
                     <xsl:value-of select="equals/@value"/>
                 </span>
                                &#160;

@@ -40,11 +40,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         <xsl:if test="//viewMode='0' or relationship!='' or entity/type!=''">
 
             <div style="float:left;width:90%;" class="Internal_Node">
-                <!--
-                <span data-editable="select" data-path="{concat($pathSoFar,'/internal_node[',$pos3,']/entity/@tag')}">
-                    <xsl:value-of select="entity/@tag"/>
-                </span>
-                -->
+               
                  <xsl:variable name="entPos" select="number($pos3)-1"/>
                 <xsl:if test="//viewMode=0">
                     <div style="height:5px;">
@@ -57,30 +53,14 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
 
           
           <xsl:for-each select="entity[position()=$entPos]">
-                <xsl:call-template name="entity">
-                    
+                <xsl:call-template name="entity">                   
                     <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/entity[',$entPos,']')">
                     </xsl:with-param>
                 </xsl:call-template>     
           </xsl:for-each>
-            <!--
-                <xsl:choose>
-                    <xsl:when test="constant_node">
-                   
-                        <xsl:for-each select="constant_node">
-                            <xsl:apply-templates select=".">
-                                <xsl:with-param name="pathSoFar" select="concat($pathSoFar,'/internal_node[',$pos3,']')"/>
-                                <xsl:with-param name="pos3" select="position()"/>
-                            </xsl:apply-templates>     
-                        </xsl:for-each>     
-                    </xsl:when>
-                    <xsl:otherwise>
-                    
-                       </xsl:otherwise>
-                   </xsl:choose>      
-                -->
+          
                          
-                <span style="float:left;"  data-editable="select" data-path="{concat($pathSoFar,'/relationship[',$pos3,']')}">
+                <span class="relationship"  data-editable="select" data-path="{concat($pathSoFar,'/relationship[',$pos3,']')}">
                     <xsl:call-template name="substring-after-last-and-remove-prefix">
                         <xsl:with-param name="string" select="relationship[position()=$pos3]" />
                         <xsl:with-param name="delimiter" select="'/'" />

@@ -25,21 +25,77 @@
  *
  * This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
  */
-function toggle(element) {
-    $(element).parent().parent().next().toggle();
+
+/*a[onclick] {
+    display:block;
+}*/
+
+/*a.inline {
+    display:inline;
+}*/
+
+form>input {
+    min-width: 200px;
+    font-size:100%; //to fix Chrome-Safari issue
+    /*border: 2px red dotted;*/
+} 
+textarea {
+    min-width: 350px;
+}
+.placeholder { 
+    color: gray;
+    font-size: 80%;
 }
 
-function toggleDescription(element) {
-    $(element).parent().children(".description").toggle();
+
+td>form>input { //Special case DOMAIN
+                color: white;
+}
+.editable {
+    border:  1px darkorange dashed;
+    background-color: white;
+    cursor: pointer;
+}
+.footnote {
+    display: block;
+    font-size: 60%;
+    float: right;
 }
 
-function toggleInstance(element) {
-    $(element).parent().parent().children(".instance").toggle();
+/*a[onclick]{
+    float:right;
+    font-size: 80%;
+}*/
+.internalAndconstantNodesLinks {
+    float:right;
+    display: inline;
+    font-size: 80%;
 }
 
-function checkBoxClick(obj) {
-    alert("s");
-    alert($(obj).attr("checked"));
+.left {
+    float:left;
+}
+.add {
+    float:left;
+}
+.white {
+    color: white;
+}
+.whiteAndBold>div {
+    color: black;
+}
+/*.whiteAndBold {
+    font-weight: bold;
+    color: black;
+}*/
+.addLinkRow {
+    height: 30px;
+}
+img {
+    vertical-align:bottom;
+}
+.instance {
+    background-color: lightskyblue;
 }
 
 

@@ -58,6 +58,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
           
             
             <!--xsl:if test="//viewMode=0 or $strippedURL!=''"-->
+            &#160;
             <span  data-editable="select" data-path="{concat($pathSoFar,'/type[',$pos4,']')}">
                 <xsl:value-of select="$strippedURL"/>
             </span>
@@ -246,7 +247,6 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                             <xsl:text>]</xsl:text>
                         </span>
                         <xsl:if test="//viewMode=0">
-
                             <a style="display:inline;" title="Delete Variable" href="" onclick="action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/@variable')}&amp;id={//output/id}');return false;">
                                 <img src="formating/images/delete16.png"/>
                             </a>
@@ -264,16 +264,26 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                                 <xsl:value-of select="../instance_info/description"/>
                             </span>
                         </div>
+                        
                         <br class="description" style="display:block"></br>
                     </xsl:when>
-                    <xsl:otherwise>  
+                    <xsl:otherwise>
+  
                         <br/>
                     </xsl:otherwise>
                 </xsl:choose>
                
             </xsl:if>
            
+           
+           
+           
+           
         </xsl:for-each>
+        <xsl:call-template name="instance_generator">
+            <xsl:with-param name="pathSoFar" select="$pathSoFar"/>
+        </xsl:call-template>
+
         <xsl:if test="//viewMode=0">
            
             <a   class="smallerLetters left" title="Add Type" href="" onclick="">
@@ -317,6 +327,96 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
         </xsl:if>         
        
       
+    </xsl:template>
+
+    <xsl:template name="instance_generator">
+        <xsl:param name="pathSoFar"></xsl:param>
+          
+        <xsl:if test="//output/generator!=''">
+            <xsl:choose>
+                <xsl:when test="instance_generator">
+                   
+                    <div class="instance" > 
+                        <div class="comment_title">&#160;&#160;&#160;Instance_Generator name:</div>
+                        <span class="comment_content" data-generator_editable="" data-path="{concat($pathSoFar,'/instance_generator/@name')}">
+                            <xsl:value-of select="instance_generator/@name"/>
+                        </span>
+                        <a  title="Delete Instance_Generator" style="display:inline;float:right;" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/instance_generator')}&amp;id={//output/id}');return false;">
+                            <img src="formating/images/delete16.png"/>
+                        </a>   
+                        <br/>
+                        <xsl:for-each select="instance_generator/arg">
+                            <xsl:variable name="argPos" select="position()"/>
+
+                            <div class="comment_title">&#160;&#160;&#160;Argument name:</div>
+                            <span class="comment_content" data-generator_editable="" data-path="{concat($pathSoFar,'/instance_generator/arg[',$argPos,']/@name')}">
+                                <xsl:value-of select="@name"/>
+                            </span>
+                            <span class="comment_content"> and value: </span>
+                            <span class="comment_content" data-generator_editable="" data-path="{concat($pathSoFar,'/instance_generator/arg[',$argPos,']')}">
+                                <xsl:value-of select="."/>
+                            </span>
+                            <a  title="Delete Arg" style="display:inline;float:right;" href="" onclick="confirmDialog();action('Mapping?action=delete&amp;xpath={concat($pathSoFar,'/instance_generator/arg[',$argPos,']')}&amp;id={//output/id}');return false;">
+                            <img src="formating/images/delete16.png"/>
+                        </a>   
+                            <br/>
+                        </xsl:for-each>
+                        <a style="display:inline;background-color:lightskyblue;width:100%;"  class="smallerLetters" title="Add Arg" href="" onclick="">
+                            <xsl:attribute name="onclick">
+                                
+                                <xsl:text>action('Mapping?action=add___arg&amp;xpath=</xsl:text>
+                                <xsl:value-of select="concat($pathSoFar,'/instance_generator/arg')"/>
+                                <xsl:text>&amp;id=</xsl:text>
+                                <xsl:value-of select="//output/id"/>
+                                <xsl:text>');return false;</xsl:text>
+                                  
+                            </xsl:attribute>
+                            <img src="formating/images/plus16.png"/>
+                            <span style="display:inline;">Arg</span>
+                            
+                
+                        </a>
+                            
+                            
+                            
+                    </div>
+                    
+                        
+                        
+                 
+                </xsl:when>
+                <xsl:otherwise>
+                    <a class="smallerLetters" style="display:inline;" title="Add Instance_Generator" href="">
+                        <xsl:attribute name="onclick">
+                            <xsl:choose>
+                                       
+                                <xsl:when test="instance_info">
+                                    <xsl:text>action('Mapping?action=addAfter___instance_generator&amp;xpath=</xsl:text>
+                                    <xsl:value-of select="concat($pathSoFar,'/instance_info')"/>
+                                    <xsl:text>&amp;id=</xsl:text>
+                                    <xsl:value-of select="//output/id"/>
+                                    <xsl:text>');return false;</xsl:text>
+                                </xsl:when>
+                               
+                                <xsl:otherwise>
+                                    <xsl:text>action('Mapping?action=addAfter___instance_generator&amp;xpath=</xsl:text>
+                                    <xsl:value-of select="concat($pathSoFar,'/type[last()]')"/>
+                                    <xsl:text>&amp;id=</xsl:text>
+                                    <xsl:value-of select="//output/id"/>
+                                    <xsl:text>');return false;</xsl:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>                             
+
+                        <img src="formating/images/plus16.png"/>
+                        <span style="display:inline;">Instance_Generator</span>
+                    </a>
+                 
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
+        
+        
     </xsl:template>
 
 </xsl:stylesheet>

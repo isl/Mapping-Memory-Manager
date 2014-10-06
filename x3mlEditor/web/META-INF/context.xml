@@ -27,5 +27,4 @@ Authors : Georgios Samaritakis, Konstantina Konsolaki.
 This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
 
 -->
-
 <Context antiJARLocking="true" path="/x3mlEditor"/>

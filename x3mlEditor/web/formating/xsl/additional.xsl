@@ -57,7 +57,8 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             </xsl:attribute>
            
             <xsl:if test="//viewMode='0' or relationship!='' or entity/type!='' or entity/instance_info/constant!='' ">
-                <span data-editable="select" data-path="{concat($pathSoFar,'/additional[',$pos3,']/relationship')}">
+                
+                <span class="relationship" data-editable="select" data-path="{concat($pathSoFar,'/additional[',$pos3,']/relationship')}">
                     <xsl:call-template name="substring-after-last-and-remove-prefix">
                         <xsl:with-param name="string" select="relationship" />
                         <xsl:with-param name="delimiter" select="'/'" />
@@ -67,6 +68,7 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
                     <img src="formating/images/delete16.png"/><!--Delete Constant Node-->
                 </a>
                 <br/>  
+                &#160;
                 <span style="display:inline;" data-editable="select" data-path="{concat($pathSoFar,'/additional[',$pos3,']/entity/type')}">
                     <!--xsl:value-of select="entity/@tag"/-->
                     <xsl:call-template name="substring-after-last-and-remove-prefix">

@@ -42,10 +42,11 @@ This file is part of the x3mlEditor webapp of Mapping Memory Manager project.
             <td class="whiteAndBold">                                
                 <a title="Domain">D</a>
             </td>
-            <td>
+            <td>&#160;
                 <span class="whiteAndBold" data-editable="text" data-path="{concat($pathSoFar,'/source_node')}">
                     <xsl:value-of select="domain/source_node"/>
                 </span>
+                <!--img src="formating/images/idea16.png"/--> 
             </td>
             <td class="whiteAndBold" >
                 <xsl:for-each select="domain/target_node/entity">

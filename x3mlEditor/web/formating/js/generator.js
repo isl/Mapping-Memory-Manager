@@ -27,81 +27,20 @@
  */
 //var path;
 var load_url = "Mapping";
-var allowedExtensions = ['xml', 'rdf', 'rdfs', 'html'];
 var lastValue;
 //var uploadMessage = "Upload file";
 var id, comboAPI;
 var goAhead = true;
 $(document).ready(function() {
-    comboAPI = $("#comboAPI").val();
 
     //help();
     editable();
-
-
-
-    $('.fileUpload').each(function() {
-        var $this = $(this);
-        upload($this);
-    });
-
-// To be considered...
-//    $(document).on('change', 'select', function() {
-//        //alert("Change Event Triggered On:" + $(this).val());
-//        lastValue = $(this).val();
-//    });
-
-    $('#TPScheckbox').click(function() {
-        if (!$('#TPScheckbox').is(':checked')) {
-//            $('*[data-editable]').each(function() {
-//                
-//               
-//                 
-//                  var $this = $(this);
-//        $this.addClass("editable");
-//        var xpath = $this.attr("data-path");
-//        var type = $this.attr("data-editable");
-//        var placeholderColor = "";
-//        
-//
-//        var lastPart = /[^/]*$/.exec(xpath)[0];
-//                 
-//                 if (type === "select") {
-//                                        $this.editable('disable');
-//
-//                     $this.editable("Mapping"
-//                    ,
-//                    {
-//                        submitdata: {
-//                            xpath: xpath,
-//                            id: id
-//                        },
-//                        indicator: 'Saving...',
-//                        placeholder: '<span class="placeholder ' + placeholderColor + '">(fill in ' + lastPart + ')</span>',
-//                        tooltip: 'Click to edit ' + xpath,
-//                        onblur: 'submit',
-//                        style: "inherit",
-//                        height: "100%" //to fix Chrome-Safari issue
-////                        width:($this.width() + 100) + "px", 
-//                    });
-//                 }
-//                 
-//            });
-        }
-    });
-
+   
 });
 function  confirmDialog() {
     confirmDialog("");
 }
 
-
-function  loadurl(xpath, id) {
-    if (lastValue !== undefined) {
-        alert("lastVal=" + lastValue)
-    }
-    return  'Mapping?xpath=' + xpath + "&id=" + id + "&mode=" + comboAPI + "&lastValue=" + lastValue;
-}
 
 
 function  confirmDialog(type) {
@@ -114,7 +53,9 @@ function  confirmDialog(type) {
 
 
 
-function action(url) {
+function action(url, generator) {
+    url = url+"&generator="+$("#generator").val();
+    
     if (goAhead) {
 
         $.post(url)
@@ -123,10 +64,7 @@ function action(url) {
                     $("body").html(data);
                     //   help();
                     editable();
-                    $('.fileUpload').each(function() {
-                        var $this = $(this);
-                        upload($this);
-                    });
+                  
                 });
     } else {
         goAhead = true;
@@ -179,15 +117,15 @@ function editable() {
 //  path = $(location).attr('pathname');
 
 
-    $('*[data-editable]').each(function() {
+    $('*[data-generator_editable]').each(function() {
 
         var $this = $(this);
         $this.addClass("editable");
         var xpath = $this.attr("data-path");
-        var type = $this.attr("data-editable");
+        var type = $this.attr("data-generator_editable");
         var placeholderColor = "";
         if (xpath.indexOf("/domain/") !== -1 && xpath.indexOf("/additional") === -1) {
-//            placeholderColor = "white";
+//            placeholderColor = "black";
         }
 
         var lastPart = /[^/]*$/.exec(xpath)[0];
@@ -337,60 +275,8 @@ function getHelpFor(field) {
 //                alert(data);
             });
 }
-function upload($this) {
-    var xpath = $this.attr("data-path");
-//    alert($this.attr("data-path"));
-    var uploadMessage = "Upload File";
-    if ($this.attr("data-path").match("schema_file$") == "schema_file") {
-        uploadMessage = "Upload schema";
-    } else if ($this.attr("data-path").match("xml_link$") == "xml_link") {
-        uploadMessage = "Upload xml";
-    } else if ($this.attr("data-path").match("html_link$") == "html_link") {
-        uploadMessage = "Upload html";
-    } else if ($this.attr("data-path").match("rdf_link$") == "rdf_link") {
-        uploadMessage = "Upload rdf";
-    }
 
-    var mappingId = id;
-    $this.fineUploader({
-        request: {
-            endpoint: 'UploadReceiver?id=' + id + '&path=' + xpath
 
-        },
-        multiple: false,
-        validation: {
-            allowedExtensions: allowedExtensions
-
-        },
-        text: {
-            uploadButton: uploadMessage
-        },
-        failedUploadTextDisplay: {
-            mode: 'custom',
-            maxChars: 40,
-            responseProperty: 'error',
-            enableTooltip: true
-        },
-        debug: false
-    }).on('complete', function(event, id, fileName, responseJSON) {
-        if (responseJSON.success) {
-            filename = responseJSON.filename;
-            // alert(uploadMessage)
-            var linkText = "view";
-            if (uploadMessage === "Upload rdf") {
-                linkText = "view rdf"
-            } else if (uploadMessage === "Upload xml") {
-                linkText = "view xml"
-            } else if (uploadMessage === "Upload html") {
-                linkText = "view html"
-            }
-            var $linkHtml = $("<a href='FetchBinFile?id=" + mappingId + "&amp;file=" + filename + "'>" + linkText + " </a>");
-
-            $this.next().css('display', 'inline');
-            $this.replaceWith($linkHtml);
-        }
-    });
-}
 
 
 

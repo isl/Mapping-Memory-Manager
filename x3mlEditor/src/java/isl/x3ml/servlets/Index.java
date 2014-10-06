@@ -29,6 +29,7 @@ package isl.x3ml.servlets;
 
 import isl.dbms.DBCollection;
 import isl.x3ml.BasicServlet;
+import isl.x3ml.utilities.Utils;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -120,15 +121,16 @@ public class Index extends BasicServlet {
                 return;
             }
 
-            if (action.equals("view")) {
+            if (action.equals("instance")) {
+                xmlMiddle.append("<viewMode>").append("1").append("</viewMode>"); // Looks like view but not quite...
+                xmlMiddle.append("<generator>").append("instance").append("</generator>"); 
+            } else if (action.equals("view")) {
                 xmlMiddle.append("<viewMode>").append("1").append("</viewMode>");
-
-                xmlMiddle.append("<versions>").append(request.getParameter("versions")).append("</versions>");
-                xmlMiddle.append("<collectionID>").append(request.getParameter("collectionID")).append("</collectionID>");
-                xmlMiddle.append("<xmlId>").append(request.getParameter("xmlId")).append("</xmlId>");
-                xmlMiddle.append("<entityType>").append(request.getParameter("entityType")).append("</entityType>");
-
-            } else {
+//                xmlMiddle.append("<xmlId>").append(request.getParameter("xmlId")).append("</xmlId>");
+//                xmlMiddle.append("<versions>").append(request.getParameter("versions")).append("</versions>");
+//                xmlMiddle.append("<collectionID>").append(request.getParameter("collectionID")).append("</collectionID>");
+//                xmlMiddle.append("<entityType>").append(request.getParameter("entityType")).append("</entityType>");
+            } else if (action.equals("edit")) {
                 xmlMiddle.append("<viewMode>").append("0").append("</viewMode>");
 
                 HttpSession session = sessionCheck(request, response);
@@ -155,6 +157,7 @@ public class Index extends BasicServlet {
             }
 
             xmlMiddle.append("</output>");
+//            System.out.println(xmlMiddle);
             out.write(transform(xmlMiddle.toString(), xsl));
         } else {
             String content = xmlMiddle.toString();
@@ -162,6 +165,7 @@ public class Index extends BasicServlet {
             content = content.replaceAll("(?s)<admin>.*?</admin>", "");
             out.write(content);
         }
+
 
         out.close();
 
