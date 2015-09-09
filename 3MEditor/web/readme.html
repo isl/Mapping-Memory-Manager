@@ -1,0 +1,108 @@
+<!--
+Copyright 2014 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Georgios Samaritakis, Konstantina Konsolaki.
+
+This file is part of the 3MEditor webapp of Mapping Memory Manager project.
+
+-->
+<fieldset>
+    <legend>3MEditor</legend>
+    Version: <b>2015-08-24</b>
+</fieldset>
+
+<fieldset>
+    <legend>Changelog</legend>
+
+    <h5 style="text-decoration: underline;">August</h5>
+    <p>24 August 2015: Visual changes following Korina's suggestions doc.</p>
+    <p>13 August 2015: Updated source analyzer functionality. Now domain source value is taken into account when user fills link source values. 
+        This way user gets only meaningful possible values inside combo and not all of them!
+    </p>
+    <p>11 August 2015: Added label_generator functionality. Made further progress with nasty issue 30 (need to test all cases though).</p>
+    <p>06 August 2015: Apparently fixing jira issue 30 broke down deleting maps and links. Applied a new fix but it requires further testing.</p>
+
+    <h5 style="text-decoration: underline;">July</h5>
+    <p>08 July 2015: Fixing jira issue 30: Html tree was not updated when you deleted a link or a map if what you deleted had following
+        siblings.</p>
+
+    <h5 style="text-decoration: underline;">June</h5>
+    <p>26 June 2015: Changed default transformation output from n-triples to rdf/xml and also added a button
+        so that user may choose desired output. Fixed 201 mapping bug (CRMsci using cidoc with absolute paths did not
+        return all values)</p>
+    <p>25 June 2015: Complete redesign of if-rule column to support richer expressions (will need testing).
+        Copied @type hack from x3mlEditor to support older x3ml files.
+        Added instance_generator functionality inside additional/entity</p>
+
+    <h5 style="text-decoration: underline;">May</h5>
+    <p>29 May 2015: Bug fixing and cosmetics (based on notes after demo in Γ100).</p>
+
+    <p>25 May 2015: Added graph tab (work by Nikos). Will need feedback.</p>
+
+    <p>14 May 2015: Partial XML source edit functionality added! Transformation tab: User can now edit source file on the fly!</p>
+    <p>7 May 2015: Added Tranformation tab, so that user may view x3ml Engine results with a user interface.</p>
+    <p>4 May 2015: Showing partial XML source views. First step towards adding edit Raw XML functionality.</p>
+
+    <h5 style="text-decoration: underline;">April</h5>
+    <p>22 Apr 2015: Removing xpaths from title attibutes.</p>
+    <p>21 Apr 2015: Restored variable in intermediate entity once again. Fixing borders issues when trying to delete. Changing configuration layout.</p>
+    <p>20 Apr 2015: Fixing empty target schema bug. Adding a custom value even when source analyzer is on is now possible (Still needs some further refining...).
+        Adding narrower support in if-rule. When deleting last condition inside if-rule OR block, also delete entire if block to help x3ml Engine.
+    </p>
+    <p>17 Apr 2015: Visuals and bug fixing.
+    </p>
+    <p>16 Apr 2015: One more set of visual changes.
+    </p>
+    <p>08 Apr 2015: Multiple visual changes (Korina's doc ~ 90%).
+    </p>
+    <p>03 Apr 2015: Changed whole upload mechanism. Now checking for duplicates and if found file is not uploaded and is replaced by its
+        duplicate. Also added better exception handling for schema queries and possible target-namespace mismatch. Changed source analyzer service.</p>
+    <p>02 Apr 2015: At last added listener code that removes any unused or duplicate files from server and DB on sessionDestroyed.
+        Added message if source analyzer cannot read source schema or example xml (some mappings had rdf files with extension .xml as source
+        schema, for example Mapping2). Scroll editable block to top of page so that user does not get lost.
+    </p>
+    <h5 style="text-decoration: underline;">March</h5>
+    <p>27 Mar 2015: Added source analyzer functionality! Works with xml files at the moment.
+        Needs extra work for xsd. Also changed combo filling mechanism to reduce server requests and
+        provide a primitive target validator.</p>
+    <p>23 Mar 2015: Added instance_generation mode. Added about tab to keep track of changes.
+        Fixed a nasty, hard to detect bug (when deleting one of multiple entries and shifting positions, input values were 
+        lost! XML was fine, so when user refreshed page, everything was fine.)
+    </p>
+    <p>18 Mar 2015: Changed placeholder text and appearance. Fixed a copy-paste bug.
+        Added text in configuration tab.</p>
+    <p>17 Mar 2015: Moving action column to dummy header row!</p>
+    <p>16 Mar 2015: Extreme visual makeover almost complete!</p>
+    <p>3 Mar 2015: Added collapse/expand functionality. Added scroll top/bottom functionality.
+        Removed actions label to save space.
+    </p>
+    <p>2 Mar 2015: Fixed proper view mode. Made relationships italics.
+        Changed how additional relationship combo is filled. Fixing bug with if-rule in domain.
+        Visual changes. Adding copy-paste functionality fully! Changing comments length from 50 to 30.</p>
+
+    <h5 style="text-decoration: underline;">February</h5>
+    <p>26 Feb 2015: Small visual changes and fixes.</p>
+    <p>19 Feb 2015: Massive visual changes after discussion with Martin. Added Jena code
+        to enable mode 3 again.</p>
+    <p>16 Feb 2015: Starting changes calendar. Adding configuration tab, so that user may change target analyzer on the fly.</p>
+</fieldset>
