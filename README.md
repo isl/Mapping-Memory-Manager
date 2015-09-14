@@ -56,7 +56,7 @@ the schema of the Mapping.
 2.	Replace context.xml located at FIMS\web\META-INF with the context.xml from “3M_configuration”.
 
 3.	Replace web.xml located at FIMS\web\WEB-INF with the web.xml from “3M_configuration”.  Afterwards, edit the new web.xml file and make the 
-changes described at FIMS repository at (README.md)[https://github.com/isl/FIMS/blob/master/README.md]. 
+changes described at FIMS repository at README.md(https://github.com/isl/FIMS/blob/master/README.md]).
 
 a.	You will find the needed .xsd files at 3M/Schema folder
 
