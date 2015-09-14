@@ -2418,5 +2418,22 @@ This file is part of the Mapping Memory Manager.
             </link>
         </mapping>
     </mappings>
-    
+   <admin>
+        <id>1</id>
+        <uri_id>http://cidoc_mappings.com/Mapping/1</uri_id>
+        <lang>en</lang>
+        <organization>1</organization>
+        <creator>admin</creator>
+        <saved>yes</saved>
+        <locked>no</locked>
+        <status>published</status>
+        <versions>
+            <versionId>1</versionId>
+            <versionUser>admin</versionUser>
+            <versionDate>2013-04-09 12:10:04</versionDate>
+        </versions>
+        <read>*</read>
+        <write>admin</write>
+        <info/>
+    </admin>  
 </x3ml>

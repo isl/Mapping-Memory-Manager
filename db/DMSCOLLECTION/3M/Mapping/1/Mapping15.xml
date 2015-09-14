@@ -1752,4 +1752,22 @@ authority refers to a period within ancient civilizations</rationale>
             </link>
         </mapping>
     </mappings>    
+	<admin>
+        <id>15</id>
+        <uri_id>http://cidoc_mappings.com/Mapping/15</uri_id>
+        <lang>en</lang>
+        <organization>1</organization>
+        <creator>math</creator>
+        <saved>yes</saved>
+        <locked>no</locked>
+        <status>published</status>
+        <versions>
+            <versionId>1</versionId>
+            <versionUser>math</versionUser>
+            <versionDate>2014-01-29 11:23:52</versionDate>
+        </versions>
+        <write>math</write>
+        <read>*</read>
+        <info/>
+    </admin>
 </x3ml>
