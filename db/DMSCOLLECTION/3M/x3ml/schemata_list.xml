@@ -1,0 +1,35 @@
+
+<!--
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Mapping Memory Manager.
+
+-->
+<target_schemata><target_info id="1"><target_schema schema_file="cidoc_crm_v6.0-draft-2015January.rdfs" type="rdfs" version="6.0">CIDOC-CRM</target_schema><namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/></target_info><target_info id="2"><target_schema schema_file="CRMdig_v3.2.rdfs" type="rdfs" version="3.2">CRMdig</target_schema><namespace prefix="crmdig" uri="http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/"/></target_info><target_info id="3"><target_schema schema_file="CRMgeo_v1.2.rdfs" type="rdfs" version="1.2">CRMgeo</target_schema><namespace prefix="crmgeo" uri="http://www.ics.forth.gr/isl/CRMext/CRMgeo.rdfs/"/></target_info><target_info id="4"><target_schema schema_file="CRMsci_v1.2.2.rdfs" type="rdfs" version="1.2.2">CRMsci</target_schema><namespace prefix="crmsci" uri="http://www.ics.forth.gr/isl/CRMext/CRMsci.rdfs/"/></target_info><target_info id="5"><target_schema schema_file="CRMarchaeo_v1.2.1.rdfs" type="rdfs" version="1.2.1">CRMarchaeo</target_schema><namespace prefix="crmarchaeo" uri="http://www.ics.forth.gr/isl/CRMext/CRMarchaeo.rdfs/"/></target_info>
+	<!--target_info>
+		<target_schema schema_file="CRMinf_v1.2.1.rdfs" type="rdfs" version="1.2.1">CRMinf</target_schema>
+		<namespace prefix="crminf" uri="http://www.ics.forth.gr/isl/CRMext/CRMinf.rdfs/"/>
+</target_info>
+--><target_info id="6"><target_schema schema_file="FRBR2.0-draft-B.rdfs" type="rdfs" version="2.1">FRBR</target_schema><namespace prefix="frbr" uri="http://www.cidoc-crm.org/frbr/"/></target_info><target_info id="7"><target_schema schema_file="CRMext4SKOSandLabel_v1.2.rdfs" type="rdfs" version="1.2">CRMext4SKOSandLabel</target_schema><namespace prefix="skos" uri="http://www.w3.org/2004/02/skos/core#"/></target_info><target_info id="8"><target_schema schema_file="CRMpc_v1.0.rdfs" type="rdfs" version="1.0">CRMpc</target_schema><namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/></target_info></target_schemata>

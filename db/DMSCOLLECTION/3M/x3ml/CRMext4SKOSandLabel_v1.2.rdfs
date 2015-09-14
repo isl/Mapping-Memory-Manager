@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Mapping Memory Manager.
+
+-->
+
+<rdf:RDF xml:lang="en"  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+			xml:base="http://www.cidoc-crm.org/cidoc-crm/">
+
+<!-- SKOS to CIDOC relations -->
+	<rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+		<rdfs:subClassOf rdf:resource="E55_Type"/>
+	</rdfs:Class>
+
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+		<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	
+		<rdfs:subPropertyOf rdf:resource="P127_has_broader_term"/>
+	</rdf:Property>
+	
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+		<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>	
+		<rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/L4_has_preferred_label"/>
+	</rdf:Property> 
+	
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+		<rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>	
+	</rdf:Property> 
+	
+	<rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+		<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	</rdf:Property>
+</rdf:RDF>
+

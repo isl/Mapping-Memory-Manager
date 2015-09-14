@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Mapping Memory Manager.
+
+-->
+
+<lido:lidoWrap xsi:schemaLocation="http://www.lido-schema.org lido-v0.7.xsd" xmlns:lido="http://www.lido-schema.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<lido:lido>
+		<lido:lidoRecID lido:type="local">BFM-00120252</lido:lidoRecID>
+		<lido:category lido:source="CIDOC-CRM-v5.0.1">E84 Information Carrier</lido:category>
+		<lido:descriptiveMetadata xml:lang="de">
+			<lido:objectClassificationWrap>
+				<lido:objectWorkTypeWrap>
+					<lido:objectWorkType>
+						<lido:term>Bilderbogen</lido:term>
+					</lido:objectWorkType>
+					<lido:objectWorkType>
+						<lido:term lido:addedSearchTerm="yes">Massenkommunikation</lido:term>
+					</lido:objectWorkType>
+				</lido:objectWorkTypeWrap>
+				<lido:classificationWrap>
+					<lido:classification><lido:term>Einblattdruck</lido:term></lido:classification>
+					<lido:classification>
+						<lido:term lido:addedSearchTerm="yes">Druckgraphik</lido:term>
+					</lido:classification>
+				</lido:classificationWrap>
+			</lido:objectClassificationWrap>
+			<lido:objectIdentificationWrap>
+				<lido:titleWrap>
+					<lido:titleSet>
+						<lido:appellationValue>Münchener Bilderbogen Nro. 91: "Auf dem Dorfe."</lido:appellationValue>
+					</lido:titleSet>
+				</lido:titleWrap>
+				<lido:repositoryWrap>
+					<lido:repositorySet lido:repositoryType="current">
+						<lido:repositoryName>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanisches Nationalmuseum, Graphische Sammlung (Nürnberg)</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:repositoryName>
+						<lido:workID lido:type="Inventarnummer">H 3672</lido:workID>
+					</lido:repositorySet>
+				</lido:repositoryWrap>
+				<lido:displayStateEditionWrap>
+					<lido:displayEdition>5. Auflage</lido:displayEdition>
+				</lido:displayStateEditionWrap>
+				<lido:objectMeasurementsWrap>
+					<lido:objectMeasurementsSet>
+						<lido:displayObjectMeasurements>44,3 x 35,4 cm (Blatt); 10 Bildfelder</lido:displayObjectMeasurements>
+						<lido:objectMeasurements>
+							<lido:measurementsSet lido:value="44,3" lido:unit="cm" lido:type="Höhe"/>
+							<lido:measurementsSet lido:value="35,4" lido:unit="cm" lido:type="Breite"/>
+							<lido:extentMeasurements>Blatt</lido:extentMeasurements>
+						</lido:objectMeasurements>
+					</lido:objectMeasurementsSet>
+				</lido:objectMeasurementsWrap>
+			</lido:objectIdentificationWrap>
+			<lido:eventWrap>
+				<lido:eventSet>
+					<lido:event>
+						<lido:eventType><lido:term>Entwurf</lido:term></lido:eventType>
+						<lido:eventActor>
+							<lido:displayActorInRole>Joseph von Camerlohr (Deutschland, 1820-1851), Zeichner</lido:displayActorInRole>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:actorID lido:type="local" lido:source="DISKUS-KUE-Datei">10153461</lido:actorID>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Camerlohr, Joseph von</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Cammerloher, Josef von</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nationalityActor><lido:term>Deutschland</lido:term></lido:nationalityActor>
+							<lido:vitalDatesActor  lido:birthDate="1820.09.19" lido:deathDate="1851.07.06">1820-1851</lido:vitalDatesActor>
+							<lido:genderActor>männlich</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>Zeichner</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventActor>
+							<lido:displayActorInRole>Andreas Müller (1831) (Deutschland, 1831-1901), Zeichner</lido:displayActorInRole>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Müller, Andreas (1831)</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Komponiermüller</lido:appellationValue>
+									</lido:nameActorSet>
+							<lido:vitalDatesActor  lido:birthDate="1831.07.23" lido:deathDate="1901.12.07">1831-1901</lido:vitalDatesActor>
+							<lido:genderActor>männlich</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>Zeichner</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventDate>
+							<lido:date>
+							<lido:earliestDate>1871</lido:earliestDate>
+							<lido:latestDate>1871</lido:latestDate>
+							</lido:date>
+						</lido:eventDate>
+						<lido:eventMaterialsTech>
+							<lido:materialsTech>
+								<lido:termMaterialsTech lido:type="Material">
+									<lido:term>Papier</lido:term>
+								</lido:termMaterialsTech>
+								<lido:termMaterialsTech lido:type="Technik">
+									<lido:term>Holzstich</lido:term>
+								</lido:termMaterialsTech>
+							</lido:materialsTech>
+						</lido:eventMaterialsTech>
+					</lido:event>
+				</lido:eventSet>
+				<lido:eventSet>
+					<lido:displayEvent>Ausführung: C. Wolf und Sohn, Druck</lido:displayEvent>
+					<lido:event>
+						<lido:eventType><lido:term>Ausführung</lido:term></lido:eventType>
+						<lido:eventActor>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="corporation">
+									<lido:nameActorSet>
+										<lido:appellationValue>Wolf, C. und Sohn</lido:appellationValue>
+									</lido:nameActorSet>
+								</lido:actor>
+							<lido:roleActor><lido:term>Druck</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventPlace>
+							<lido:place lido:politicalEntity="Gemeinde">
+							<lido:namePlaceSet>
+								<lido:appellationValue>Augsburg</lido:appellationValue>
+							</lido:namePlaceSet>
+							<lido:partOfPlace lido:politicalEntity="Bundesland">
+								<lido:namePlaceSet>
+									<lido:appellationValue>Bayern</lido:appellationValue>
+								</lido:namePlaceSet>
+								<lido:partOfPlace lido:politicalEntity="Staat">
+									<lido:namePlaceSet>
+										<lido:appellationValue>Deutschland</lido:appellationValue>
+									</lido:namePlaceSet>
+								</lido:partOfPlace>
+							</lido:partOfPlace>
+							</lido:place>
+						</lido:eventPlace>
+						<lido:eventMaterialsTech>
+							<lido:materialsTech>
+								<lido:termMaterialsTech lido:type="Technik">
+									<lido:term>Typendruck</lido:term>
+								</lido:termMaterialsTech>
+							</lido:materialsTech>
+						</lido:eventMaterialsTech>
+					</lido:event>
+				</lido:eventSet>
+				<lido:eventSet>
+					<lido:event>
+						<lido:eventType>
+							<lido:term>
+								Publikation
+							</lido:term>
+						</lido:eventType>
+						<lido:eventActor>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Braun, Kaspar (1807)</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Braun, Caspar</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:vitalDatesActor lido:birthDate="1807.08.13" lido:deathDate="1877.10.20">1807-1877</lido:vitalDatesActor>
+									<lido:genderActor>männlich</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>Verleger</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+					</lido:event>
+				</lido:eventSet>
+			</lido:eventWrap>
+			<lido:objectRelationWrap>
+				<lido:subjectWrap>
+					<lido:subjectSet>
+						<lido:subject lido:type="Beschreibung">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">25 I 24</lido:conceptID>
+								<lido:term>Dorfbewohner, Dörfler</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+					<lido:subjectSet>
+						<lido:subject lido:type="Beschreibung">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">46 A 13 2</lido:conceptID>
+								<lido:term>öffentliche Straße in einem Dorf</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+					<lido:subjectSet>
+						<lido:subject lido:type="Beschreibung">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">43 B 31</lido:conceptID>
+								<lido:term>Gasthaus, Kaffeehaus, Kneipe, etc.</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+				</lido:subjectWrap>
+				<lido:relatedWorksWrap>
+					<lido:relatedWorksSet>
+						<lido:relatedWork>
+							<lido:object>
+							<lido:objectNote>Braun, Kaspar (1807) &amp; Schneider, Friedrich: Münchener Bilderbögen, 1848-1870, Germanisches Nationalmuseum Nürnberg				</lido:objectNote>
+							</lido:object>
+						</lido:relatedWork>
+						<lido:relatedWorkRelType>Teil von</lido:relatedWorkRelType>
+					</lido:relatedWorksSet>
+				</lido:relatedWorksWrap>
+			</lido:objectRelationWrap>
+		</lido:descriptiveMetadata>
+		<lido:descriptiveMetadata xml:lang="en">
+			<lido:objectClassificationWrap>
+				<lido:objectWorkTypeWrap>
+					<lido:objectWorkType>
+						<lido:term>Sheet of Pictures</lido:term>
+					</lido:objectWorkType>
+					<lido:objectWorkType>
+						<lido:term lido:addedSearchTerm="yes">Mass Communication</lido:term>
+					</lido:objectWorkType>
+				</lido:objectWorkTypeWrap>
+				<lido:classificationWrap>
+					<lido:classification><lido:term>Single Sheet Woodcut</lido:term></lido:classification>
+					<lido:classification>
+						<lido:term lido:addedSearchTerm="yes">Etching</lido:term>
+					</lido:classification>
+				</lido:classificationWrap>
+			</lido:objectClassificationWrap>
+			<lido:objectIdentificationWrap>
+				<lido:titleWrap>
+					<lido:titleSet>
+						<lido:appellationValue>Münchener Bilderbogen Nro. 91: "Auf dem Dorfe."</lido:appellationValue>
+					</lido:titleSet>
+				</lido:titleWrap>
+				<lido:repositoryWrap>
+					<lido:repositorySet lido:repositoryType="current">
+						<lido:repositoryName>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanic National Museum, Graphical Collection (Nuremberg)</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:repositoryName>
+						<lido:workID lido:type="Inventory Number">H 3672</lido:workID>
+					</lido:repositorySet>
+				</lido:repositoryWrap>
+				<lido:displayStateEditionWrap>
+					<lido:displayEdition>5. Auflage</lido:displayEdition>
+				</lido:displayStateEditionWrap>
+				<lido:objectMeasurementsWrap>
+					<lido:objectMeasurementsSet>
+						<lido:displayObjectMeasurements>44,3 x 35,4 cm (Sheet); 10 frames</lido:displayObjectMeasurements>
+						<lido:objectMeasurements>
+							<lido:measurementsSet lido:value="44,3" lido:unit="cm" lido:type="Height"/>
+							<lido:measurementsSet lido:value="35,4" lido:unit="cm" lido:type="Width"/>
+							<lido:extentMeasurements>Sheet</lido:extentMeasurements>
+						</lido:objectMeasurements>
+					</lido:objectMeasurementsSet>
+				</lido:objectMeasurementsWrap>
+			</lido:objectIdentificationWrap>
+			<lido:eventWrap>
+				<lido:eventSet>
+					<lido:event>
+						<lido:eventType><lido:term>Draft</lido:term></lido:eventType>
+						<lido:eventActor>
+							<lido:displayActorInRole>Joseph von Camerlohr (Germany, 1820-1851), illustrator</lido:displayActorInRole>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:actorID lido:type="local" lido:source="DISKUS-KUE-Datei">10153461</lido:actorID>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Camerlohr, Joseph von</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Cammerloher, Josef von</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nationalityActor><lido:term>Germany</lido:term></lido:nationalityActor>
+							<lido:vitalDatesActor  lido:birthDate="1820.09.19" lido:deathDate="1851.07.06">1820-1851</lido:vitalDatesActor>
+							<lido:genderActor>male</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>illustrator</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventActor>
+							<lido:displayActorInRole>Andreas Müller (1831) (Germany, 1831-1901), illustrator</lido:displayActorInRole>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Müller, Andreas (1831)</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Komponiermüller</lido:appellationValue>
+									</lido:nameActorSet>
+							<lido:vitalDatesActor  lido:birthDate="1831.07.23" lido:deathDate="1901.12.07">1831-1901</lido:vitalDatesActor>
+							<lido:genderActor>male</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>illustrator</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventDate>
+							<lido:date>
+							<lido:earliestDate>1871</lido:earliestDate>
+							<lido:latestDate>1871</lido:latestDate>
+							</lido:date>
+						</lido:eventDate>
+						<lido:eventMaterialsTech>
+							<lido:materialsTech>
+								<lido:termMaterialsTech lido:type="Material">
+									<lido:term>Paper</lido:term>
+								</lido:termMaterialsTech>
+								<lido:termMaterialsTech lido:type="Technique">
+									<lido:term>Wood engraving</lido:term>
+								</lido:termMaterialsTech>
+							</lido:materialsTech>
+						</lido:eventMaterialsTech>
+					</lido:event>
+				</lido:eventSet>
+				<lido:eventSet>
+					<lido:displayEvent>Execution: C. Wolf und Sohn, Print</lido:displayEvent>
+					<lido:event>
+						<lido:eventType><lido:term>Execution</lido:term></lido:eventType>
+						<lido:eventActor>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="corporation">
+									<lido:nameActorSet>
+										<lido:appellationValue>Wolf, C. und Sohn</lido:appellationValue>
+									</lido:nameActorSet>
+								</lido:actor>
+							<lido:roleActor><lido:term>Print</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+						<lido:eventPlace>
+							<lido:place lido:politicalEntity="Municipality">
+							<lido:namePlaceSet>
+								<lido:appellationValue>Augsburg</lido:appellationValue>
+							</lido:namePlaceSet>
+							<lido:partOfPlace lido:politicalEntity="Federal State">
+								<lido:namePlaceSet>
+									<lido:appellationValue>Bavaria</lido:appellationValue>
+								</lido:namePlaceSet>
+								<lido:partOfPlace lido:politicalEntity="State">
+									<lido:namePlaceSet>
+										<lido:appellationValue>Germany</lido:appellationValue>
+									</lido:namePlaceSet>
+								</lido:partOfPlace>
+							</lido:partOfPlace>
+							</lido:place>
+						</lido:eventPlace>
+						<lido:eventMaterialsTech>
+							<lido:materialsTech>
+								<lido:termMaterialsTech lido:type="Technique">
+									<lido:term>Letterpress printing</lido:term>
+								</lido:termMaterialsTech>
+							</lido:materialsTech>
+						</lido:eventMaterialsTech>
+					</lido:event>
+				</lido:eventSet>
+				<lido:eventSet>
+					<lido:event>
+						<lido:eventType>
+							<lido:term>
+								Publication
+							</lido:term>
+						</lido:eventType>
+						<lido:eventActor>
+							<lido:actorInRole>
+								<lido:actor lido:actorType="person">
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="preferred">Braun, Kaspar (1807)</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:nameActorSet>
+										<lido:appellationValue lido:pref="alternate">Braun, Caspar</lido:appellationValue>
+									</lido:nameActorSet>
+									<lido:vitalDatesActor lido:birthDate="1807.08.13" lido:deathDate="1877.10.20">1807-1877</lido:vitalDatesActor>
+									<lido:genderActor>male</lido:genderActor>
+								</lido:actor>
+							<lido:roleActor><lido:term>publisher</lido:term></lido:roleActor>
+							</lido:actorInRole>
+						</lido:eventActor>
+					</lido:event>
+				</lido:eventSet>
+			</lido:eventWrap>
+			<lido:objectRelationWrap>
+				<lido:subjectWrap>
+					<lido:subjectSet>
+						<lido:subject lido:type="Description">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">25 I 24</lido:conceptID>
+								<lido:term>villagers, villein</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+					<lido:subjectSet>
+						<lido:subject lido:type="Description">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">46 A 13 2</lido:conceptID>
+								<lido:term>public road in village</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+					<lido:subjectSet>
+						<lido:subject lido:type="Description">
+							<lido:subjectConcept>
+								<lido:conceptID lido:type="local" lido:source="Iconclass">43 B 31</lido:conceptID>
+								<lido:term>inn, coffee-house, public house, etc.</lido:term>
+							</lido:subjectConcept>
+						</lido:subject>
+					</lido:subjectSet>
+				</lido:subjectWrap>
+				<lido:relatedWorksWrap>
+					<lido:relatedWorksSet>
+						<lido:relatedWork>
+							<lido:object>
+							<lido:objectNote xml:lang="de">Braun, Kaspar (1807) &amp; Schneider, Friedrich: Münchener Bilderbögen, 1848-1870, Germanisches Nationalmuseum Nürnberg				</lido:objectNote>
+							</lido:object>
+						</lido:relatedWork>
+						<lido:relatedWorkRelType>Part of</lido:relatedWorkRelType>
+					</lido:relatedWorksSet>
+				</lido:relatedWorksWrap>
+			</lido:objectRelationWrap>
+		</lido:descriptiveMetadata>
+		<lido:administrativeMetadata xml:lang="de">
+			<lido:rightsWorkWrap>
+				<lido:rightsWorkSet>
+					<lido:rightsType>Copyright</lido:rightsType>
+					<lido:rightsHolder>
+						<lido:legalBodyName>
+							<lido:appellationValue>Germanisches Nationalmuseum Nürnberg</lido:appellationValue>
+						</lido:legalBodyName>
+					</lido:rightsHolder>
+				</lido:rightsWorkSet>
+			</lido:rightsWorkWrap>
+			<lido:recordWrap>
+				<lido:recordID lido:type="local">obj 00120252</lido:recordID>
+				<lido:recordType>Einzelobjekt</lido:recordType>
+				<lido:recordSource>
+					<lido:legalBodyName>
+						<lido:appellationValue>Bildarchiv Foto Marburg</lido:appellationValue>
+					</lido:legalBodyName>
+					<lido:legalBodyWeblink>http://www.fotomarburg.de</lido:legalBodyWeblink>
+				</lido:recordSource>
+			</lido:recordWrap>
+			<lido:resourceWrap>
+				<lido:resourceSet>
+					<lido:resourceID lido:type="local">H 3672/1213</lido:resourceID>
+					<lido:resourceType>Negativ</lido:resourceType>
+					<lido:rightsResource>
+						<lido:rightsHolder>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanisches Nationalmuseum</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:rightsHolder>
+					</lido:rightsResource>
+					<lido:resourceViewDate lido:earliestdate="1986" lido:latestdate="1986">1986</lido:resourceViewDate>
+					<lido:resourceSource>Germanisches Nationalmuseum</lido:resourceSource>
+				</lido:resourceSet>
+				<lido:resourceSet>
+					<lido:linkResource>http://www.bildindex.de/bilder/mi08044c08a.jpg</lido:linkResource>
+					<lido:resourceID lido:type="local">mi08044c08a.jpg</lido:resourceID>
+					<lido:resourceType>Digitalfoto</lido:resourceType>
+					<lido:rightsResource>
+						<lido:rightsHolder>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanisches Nationalmuseum</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:rightsHolder>
+					</lido:rightsResource>
+				</lido:resourceSet>
+			</lido:resourceWrap>
+		</lido:administrativeMetadata>
+		<lido:administrativeMetadata xml:lang="en">
+			<lido:rightsWorkWrap>
+				<lido:rightsWorkSet>
+					<lido:rightsType>Copyright</lido:rightsType>
+					<lido:rightsHolder>
+						<lido:legalBodyName>
+							<lido:appellationValue>Germanisches Nationalmuseum Nürnberg</lido:appellationValue>
+						</lido:legalBodyName>
+					</lido:rightsHolder>
+				</lido:rightsWorkSet>
+			</lido:rightsWorkWrap>
+			<lido:recordWrap>
+				<lido:recordID lido:type="local">obj 00120252</lido:recordID>
+				<lido:recordType>Item</lido:recordType>
+				<lido:recordSource>
+					<lido:legalBodyName>
+						<lido:appellationValue>Bildarchiv Foto Marburg</lido:appellationValue>
+					</lido:legalBodyName>
+					<lido:legalBodyWeblink>http://www.fotomarburg.de</lido:legalBodyWeblink>
+				</lido:recordSource>
+			</lido:recordWrap>
+			<lido:resourceWrap>
+				<lido:resourceSet>
+					<lido:resourceID lido:type="local">H 3672/1213</lido:resourceID>
+					<lido:resourceType>Negative</lido:resourceType>
+					<lido:rightsResource>
+						<lido:rightsHolder>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanisches Nationalmuseum</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:rightsHolder>
+					</lido:rightsResource>
+					<lido:resourceViewDate lido:earliestdate="1986" lido:latestdate="1986">1986</lido:resourceViewDate>
+					<lido:resourceSource>Germanic National Museum</lido:resourceSource>
+				</lido:resourceSet>
+				<lido:resourceSet>
+					<lido:linkResource>http://www.bildindex.de/bilder/mi08044c08a.jpg</lido:linkResource>
+					<lido:resourceID lido:type="local">mi08044c08a.jpg</lido:resourceID>
+					<lido:resourceType>Digital Image</lido:resourceType>
+					<lido:rightsResource>
+						<lido:rightsHolder>
+							<lido:legalBodyName>
+								<lido:appellationValue>Germanisches Nationalmuseum</lido:appellationValue>
+							</lido:legalBodyName>
+						</lido:rightsHolder>
+					</lido:rightsResource>
+				</lido:resourceSet>
+			</lido:resourceWrap>
+		</lido:administrativeMetadata>
+	</lido:lido>
+</lido:lidoWrap>

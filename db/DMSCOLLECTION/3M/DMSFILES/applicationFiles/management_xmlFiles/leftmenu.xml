@@ -1,0 +1,57 @@
+
+<!--
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the Mapping Memory Manager.
+
+-->
+<leftmenu>
+	<menugroup type="left" id="1">
+		<menu id="Mapping">
+			<userRights href="ListEntity?type=Mapping">editor</userRights>
+			<userRights href="ListEntity?type=Mapping">guest</userRights>
+			<userRights href="ListEntity?type=Mapping">admin</userRights>
+			<userRights href="ListEntity?type=Mapping">sysadmin</userRights>
+			<label>mappings</label>
+		</menu>
+	</menugroup>
+	<menugroup type="left" id="3">
+		<menu id="AdminOrg">
+			<userRights href="AdminOrg?action=list">admin</userRights>
+			<userRights href="AdminOrg?action=list&amp;mode=sys">sysadmin</userRights>
+			<label>AdminOrgs</label>
+		</menu>
+		<menu id="AdminUser">
+			<userRights href="AdminUser?action=list">admin</userRights>
+			<userRights href="AdminUser?action=list&amp;mode=sys">sysadmin</userRights>
+			<label>AdminUsers</label>
+		</menu>
+		<menu id="Backup">
+			<userRights href="Storage?action=list&amp;menu=admin&amp;menuId=Backup">admin</userRights>
+			<userRights href="Storage?action=list&amp;menu=sysadmin&amp;menuId=Backup">sysadmin</userRights>
+			<label>Backup</label>
+		</menu>
+	</menugroup>
+</leftmenu>
