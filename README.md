@@ -23,7 +23,7 @@ http://www.ics.forth.gr/isl
 
 Authors : Konstantina Konsolaki, Georgios Samaritakis
 
-This file is part of the FIMS webapp.
+This file is part of the the Mapping Memory Manager.
 
  
 
