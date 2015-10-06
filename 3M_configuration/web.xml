@@ -174,13 +174,13 @@ This file is part of the Mapping Memory Manager.
 		<param-value>en</param-value>
 	</context-param>
 	<context-param>
-		<description>Email password</description>
+		<description>gmail password</description>
 		<param-name>emailPass</param-name>
 		<param-value/>
 	</context-param>
 	<context-param>
 		<description>
-            gmmail address
+            gmail address
 		</description>
 		<param-name>emailAdress</param-name>
 		<param-value/>
