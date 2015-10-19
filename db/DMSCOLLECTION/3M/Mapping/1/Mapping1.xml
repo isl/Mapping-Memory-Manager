@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Copyright 2015 Institute of Computer Science,
 Foundation for Research and Technology - Hellas
@@ -27,14 +26,13 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 This file is part of the Mapping Memory Manager.
 
 -->
-<?xml-stylesheet type="text/xsl" href="crm_mapping-v2.0.xsl"?>
-<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source_type="xpath" version="0.9" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.9" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd" source_type="xpath">
     <info>
         <title>LIDO to CIDOC (version 2.0)</title>
         <general_description> ***PUBLISHED TO CIDOC SITE*** The mapping was implemented within the ATHENA project (www.athenaeurope.org). The ATHENA project is bringing together relevant stakeholders and content owners from museums and other cultural institutions all over Europe, evaluating and integrating specific tools, based on a common agreed set of standards and guidelines to create harmonised access to their content.
 	UPDATE : Mapping file updated according to Gerald de Jong, DELVING, June 2013.</general_description>
         <source_info>
-            <source_schema schema_file="lido-v0.7.xsd" type="xml" version="0.7">LIDO</source_schema>
+            <source_schema version="0.7" schema_file="lido-v0.7.xsd" type="xml">LIDO</source_schema>
             <source_collection>Deutsches Dokumentationszentrum fΓΌr Kunstgeschichte - Bildarchiv Foto Marburg (http://www.fotomarburg.de/)</source_collection>
         </source_info>
         <target_info>
@@ -49,7 +47,8 @@ This file is part of the Mapping Memory Manager.
         <example_data_info>
             <example_data_from>Deutsches Dokumentationszentrum fΓΌr Kunstgeschichte - Bildarchiv Foto Marburg  (http://www.fotomarburg.de/)</example_data_from>
             <example_data_contact_person>Regine Stein, stein@zib.de</example_data_contact_person>
-            <example_data_source_record html_link="example-lido-v0.7.html" xml_link="example-lido-v0.7.xml">example-lido-v0.7.xml</example_data_source_record>
+            <example_data_source_record xml_link="example-lido-v0.7.xml" html_link="example-lido-v0.7.html">example-lido-v0.7.xml</example_data_source_record>
+            <generator_policy_info/>
             <example_data_target_record/>
         </example_data_info>
     </info>
@@ -2418,7 +2417,7 @@ This file is part of the Mapping Memory Manager.
             </link>
         </mapping>
     </mappings>
-   <admin>
+    <admin>
         <id>1</id>
         <uri_id>http://cidoc_mappings.com/Mapping/1</uri_id>
         <lang>en</lang>
@@ -2435,5 +2434,5 @@ This file is part of the Mapping Memory Manager.
         <read>*</read>
         <write>admin</write>
         <info/>
-    </admin>  
+    </admin>
 </x3ml>

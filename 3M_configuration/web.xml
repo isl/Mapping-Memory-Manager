@@ -221,7 +221,7 @@ This file is part of the Mapping Memory Manager.
 	<context-param>
 		<!--Acronym's Description of the system-->
 		<param-name>uploadAttributes</param-name>
-		<param-value>data#schema_file,data#xml_link,data#rdf_link,data#html_link</param-value>
+		<param-value>data#schema_file,data#xml_link,data#rdf_link,data#html_link,data#generator_link</param-value>
 	</context-param>
 	<context-param>
 		<description>File describing all operators for a specific datatype</description>

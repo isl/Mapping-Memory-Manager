@@ -27,7 +27,6 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 This file is part of the Mapping Memory Manager.
 
 -->
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="info">
 		<xs:annotation>
@@ -90,6 +89,15 @@ This file is part of the Mapping Memory Manager.
 				<xs:annotation>
 					<xs:documentation/>
 				</xs:annotation>
+			</xs:element>
+			<xs:element name="generator_policy_info">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="generator_link" type="xs:string"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
 			</xs:element>
 			<xs:element ref="example_data_target_record"/>
 		</xs:sequence>

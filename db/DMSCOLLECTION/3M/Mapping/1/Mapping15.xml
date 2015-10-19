@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Copyright 2015 Institute of Computer Science,
 Foundation for Research and Technology - Hellas
@@ -27,13 +26,13 @@ Authors : Konstantina Konsolaki, Georgios Samaritakis
 This file is part of the Mapping Memory Manager.
 
 -->
-<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source_type="extended xpath" version="1.0" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd">
+<x3ml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="x3ml_v1.0.xsd" source_type="extended xpath">
     <info>
         <title>OEAW Coins DB</title>
         <general_description>Full mapping of dFMRÖ (digitale FundMünzen der Römischen Zeit in Österreich), a database of ancient coin finds in Austria, to CIDOC-CRM. The mapping was implemented within the ARIADNE project (http://www.ariadne-infrastructure.eu/)
 </general_description>
         <source_info>
-            <source_schema type="ER" version="">Relation DB - access</source_schema>
+            <source_schema version="" type="ER">Relation DB - access</source_schema>
             <source_collection>dFMRÖ (digitale FundMünzen der Römischen Zeit in Österreich) (http://www.oeaw.ac.at/numismatik/projekte/dfmroe/dfmroe.html)</source_collection>
         </source_info>
         <target_info>
@@ -41,11 +40,11 @@ This file is part of the Mapping Memory Manager.
             <target_collection/>
         </target_info>
         <target_info>
-            <target_schema schema_file="CRMdig_v3.2.rdfs" type="rdfs" version="3.2">CRMdig</target_schema>
+            <target_schema version="3.2" type="rdfs" schema_file="CRMdig_v3.2.rdfs">CRMdig</target_schema>
             <target_collection/>
         </target_info>
         <target_info>
-            <target_schema schema_file="CRMext4SKOSandLabel_v1.2.rdfs" type="rdfs" version="">CRMext4SKOS</target_schema>
+            <target_schema version="" type="rdfs" schema_file="CRMext4SKOSandLabel_v1.2.rdfs">CRMext4SKOS</target_schema>
             <target_collection/>
         </target_info>
         <mapping_info>
@@ -57,6 +56,7 @@ This file is part of the Mapping Memory Manager.
             <example_data_from>OEAW. The source record is not a real record. It was created for testing purposes. The target record is not yet the full mapping.</example_data_from>
             <example_data_contact_person>Maria Theodoridou (maria@ics.forth.gr)</example_data_contact_person>
             <example_data_source_record html_link="01-coin-input___24-06-2014161340___1291.xml" xml_link="01-coin-input___24-06-2014161340___1291.xml">01-coin-input.xml</example_data_source_record>
+            <generator_policy_info/>
             <example_data_target_record rdf_link="08-all-rdf___24-06-2014161938___2490.xml">08-all-rdf.xml</example_data_target_record>
         </example_data_info>
     </info>
@@ -64,8 +64,8 @@ This file is part of the Mapping Memory Manager.
         <namespace prefix="rdfs" uri="http://www.w3.org/2000/01/rdf-schema#"/>
         <namespace prefix="xsd" uri="http://www.w3.org/2001/XMLSchema#"/>
         <namespace prefix="crm" uri="http://www.cidoc-crm.org/cidoc-crm/"/>
-        <namespace prefix="crmdig" uri=""/>
-        <namespace prefix="crm" uri=""/>
+        <namespace uri="" prefix="crmdig"/>
+        <namespace uri="" prefix="crm"/>
     </namespaces>
     <mappings>
         <mapping>
@@ -1751,8 +1751,8 @@ authority refers to a period within ancient civilizations</rationale>
                 </range>
             </link>
         </mapping>
-    </mappings>    
-	<admin>
+    </mappings>
+    <admin>
         <id>15</id>
         <uri_id>http://cidoc_mappings.com/Mapping/15</uri_id>
         <lang>en</lang>
