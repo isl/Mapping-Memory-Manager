@@ -1,4 +1,3 @@
-
 <!--
 Copyright 2015 Institute of Computer Science,
 Foundation for Research and Technology - Hellas
@@ -28,50 +27,54 @@ This file is part of the Mapping Memory Manager.
 
 -->
 <missingValidActions>
-	<missingAction type="Mapping">
-		<actionPerType id="insert">
-			<userRights href="AdminEntity?type=Mapping&amp;action=insert">admin</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=insert">editor</userRights>
-		</actionPerType>
-		<actionPerType id="info">
-			<userRights href="AdminEntity?type=Mapping&amp;action=info">sysadmin</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=info">guest</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=info">admin</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=info">editor</userRights>
-		</actionPerType>
-		<actionPerType id="ExportVersion">
-			<userRights id="ExportVersions?type=Mapping&amp;id=" href="#">editor</userRights>
-			<userRights id="ExportVersions?type=Mapping&amp;id=" href="#">admin</userRights>
-		</actionPerType>
-		<actionPerType id="CreateVersion">
-			<userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">editor</userRights>
-			<userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">admin</userRights>
-		</actionPerType>
-		<actionPerType id="rejectpublish">
-			<userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">sysadmin</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">admin</userRights>
-		</actionPerType>
-		<actionPerType id="setrights">
-			<userRights href="AdminEntity?type=Mapping&amp;action=setrights">editor</userRights>
-			<userRights href="AdminEntity?type=Mapping&amp;action=setrights">admin</userRights>
-		</actionPerType>
-	</missingAction>
-	<missingAction type="Org">
-		<actionPerType id="insert">
-			<userRights href="AdminOrg?action=insert">sysadmin</userRights>
-		</actionPerType>
-		<actionPerType id="edit">
-			<userRights id="AdminOrg?action=edit" href="#">admin</userRights>
-			<userRights id="AdminOrg?action=edit" href="#">sysadmin</userRights>
-		</actionPerType>
-	</missingAction>
-	<missingAction type="User">
-		<actionPerType id="insert">
-			<userRights href="AdminUser?action=insert">admin</userRights>
-		</actionPerType>
-		<actionPerType id="edit">
-			<userRights id="AdminUser?action=edit" href="#">admin</userRights>
-			<userRights id="AdminUser?action=edit" href="">sysadmin</userRights>
-		</actionPerType>
-	</missingAction>
+    <missingAction type="Mapping">
+        <actionPerType id="insert">
+            <userRights href="AdminEntity?type=Mapping&amp;action=insert">admin</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=insert">editor</userRights>
+        </actionPerType>
+        <actionPerType id="info">
+            <userRights href="AdminEntity?type=Mapping&amp;action=info">sysadmin</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=info">guest</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=info">admin</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=info">editor</userRights>
+        </actionPerType>
+        <actionPerType id="ExportVersion">
+            <userRights id="ExportVersions?type=Mapping&amp;id=" href="#">editor</userRights>
+            <userRights id="ExportVersions?type=Mapping&amp;id=" href="#">admin</userRights>
+        </actionPerType>
+        <actionPerType id="CreateVersion">
+            <userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">editor</userRights>
+            <userRights id="CreateVersion?type=Mapping&amp;id=&amp;action=create" href="#">admin</userRights>
+        </actionPerType>
+        <actionPerType id="ViewVersions">
+            <userRights id="ViewVersions?action=getXML&amp;type=Mapping&amp;id=" href="#">editor</userRights>
+            <userRights id="ViewVersions?action=getXML&amp;type=Mapping&amp;id=" href="#">admin</userRights>
+        </actionPerType>
+        <actionPerType id="rejectpublish">
+            <userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">sysadmin</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=rejectpublish">admin</userRights>
+        </actionPerType>
+        <actionPerType id="setrights">
+            <userRights href="AdminEntity?type=Mapping&amp;action=setrights">editor</userRights>
+            <userRights href="AdminEntity?type=Mapping&amp;action=setrights">admin</userRights>
+        </actionPerType>
+    </missingAction>
+    <missingAction type="Org">
+        <actionPerType id="insert">
+            <userRights href="AdminOrg?action=insert">sysadmin</userRights>
+        </actionPerType>
+        <actionPerType id="edit">
+            <userRights id="AdminOrg?action=edit" href="#">admin</userRights>
+            <userRights id="AdminOrg?action=edit" href="#">sysadmin</userRights>
+        </actionPerType>
+    </missingAction>
+    <missingAction type="User">
+        <actionPerType id="insert">
+            <userRights href="AdminUser?action=insert">admin</userRights>
+        </actionPerType>
+        <actionPerType id="edit">
+            <userRights id="AdminUser?action=edit" href="#">admin</userRights>
+            <userRights id="AdminUser?action=edit" href="">sysadmin</userRights>
+        </actionPerType>
+    </missingAction>
 </missingValidActions>
