@@ -92,7 +92,7 @@ This file is part of the Mapping Memory Manager.
 	<context-param>
 		<description>exist schema path</description>
 		<param-name>dbSchemaPath</param-name>
-		<param-value>data#target_schema/@schema_file</param-value>
+		<param-value>data#target_schema/@schema_file,data#generator_policy_info/@generator_link</param-value>
 	</context-param>
 	<context-param>
 		<param-name>schemaFolder</param-name>
