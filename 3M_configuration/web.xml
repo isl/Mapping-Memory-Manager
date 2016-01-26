@@ -209,14 +209,16 @@ This file is part of the Mapping Memory Manager.
 		<param-value>3M</param-value>
 	</context-param>
 	<context-param>
-		<!--Version of the system-->
-		<param-name>systemVersion</param-name>
-		<param-value>1.0</param-value>
+   <!--Espa logo neeeded-->
+
+        <param-name>espaLogo</param-name>
+        <param-value>false</param-value>
 	</context-param>    
 	<context-param>
-		<!--Acronym's Description of the system-->
-		<param-name>systemAcronymDescription</param-name>
-		<param-value>Mapping Memory Manager</param-value>
+   <!--Contact Email-->
+
+        <param-name>contactEmail</param-name>
+        <param-value>maria@ics.forth.gr</param-value>
 	</context-param>
 	<context-param>
 		<!--Acronym's Description of the system-->

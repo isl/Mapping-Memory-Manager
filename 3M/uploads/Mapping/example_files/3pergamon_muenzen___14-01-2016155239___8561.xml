@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Diese Grammatik wurde abgelehnt - verwenden Sie stattdessen FMPXMLRESULT. -->
+<FMPDSORESULT xmlns:xsi="http://www.filemaker.com/fmpdsoresult">
+	<ERRORCODE>0</ERRORCODE>
+	<DATABASE>DAIMuenze.fmp12</DATABASE>
+	<LAYOUT/>
+	<ROW MODID="9" RECORDID="310">
+		<Anzahl_aufgehoben/>
+		<Anzahl_insgesamt/>
+		<Arbeitsnotiz/>
+		<Aufbewahrung_InvNr/>
+		<Aufbewahrung_Status/>
+		<Aufbewahrungsort>Grabungshaus, Depot</Aufbewahrungsort>
+		<Aufbewahrungsort_zusatz/>
+		<Beschreibung/>
+		<DS_Bearbeiter>Jan Ramsch</DS_Bearbeiter>
+		<DS_Bearbeitungsdatum>11.10.2011</DS_Bearbeitungsdatum>
+		<DS_Eigentuemer>Jan Ramsch</DS_Eigentuemer>
+		<DS_Erstellungsdatum>18.09.2010</DS_Erstellungsdatum>
+		<Erhaltung>stark korrodiert</Erhaltung>
+		<Erhaltung_Durchmesser>18,50</Erhaltung_Durchmesser>
+		<Erhaltung_Gewicht>5,7</Erhaltung_Gewicht>
+		<Erhaltung_Prozent>100</Erhaltung_Prozent>
+		<Erhaltung_Staerke>4,85</Erhaltung_Staerke>
+		<Funddatum>18.9.2010</Funddatum>
+		<Grabfund_janein>nein</Grabfund_janein>
+		<Grabfund_Nr/>
+		<Grobdatierung>hellenistisch</Grobdatierung>
+		<Herkunft>Archäol. Befund</Herkunft>
+		<Herkunft_Altfunde_BefAbhub/>
+		<Herkunft_Altfunde_Grabung/>
+		<Herkunft_Altfunde_GrabungZusatz/>
+		<Herkunft_Streufund_Ort/>
+		<Herkunft_Streufund_Zusatz/>
+		<Kampagne>2010</Kampagne>
+		<Konservierung_durchgeführt>ja</Konservierung_durchgeführt>
+		<Kulturkreis/>
+		<KurzbeschreibungMuenze>hellenistische Bronzemünze</KurzbeschreibungMuenze>
+		<Lage_Abhub/>
+		<Lage_Details/>
+		<Lage_Einmessung_Bezug1/>
+		<Lage_Einmessung_Bezug2/>
+		<Lage_Einmessung_Distanz1/>
+		<Lage_Einmessung_Distanz2/>
+		<Lage_Einmessung_Richtung1/>
+		<Lage_Einmessung_Richtung2/>
+		<Lage_Fundtiefe_absolut/>
+		<Lage_Fundtiefe_Bezug/>
+		<Lage_Fundtiefe_relativ/>
+		<Lage_ungestoert/>
+		<Metall>Bronze</Metall>
+		<Muenzstaette>unbest.</Muenzstaette>
+		<Nominal/>
+		<Nummer_Fund>22</Nummer_Fund>
+		<Nummer_Katalog/>
+		<Planquadrat1/>
+		<Planquadrat2/>
+		<Praegeherr>unbest.</Praegeherr>
+		<PS_MuenzeID>103361</PS_MuenzeID>
+		<Referenzen/>
+		<Rückseite_Beischrift>[  ]</Rückseite_Beischrift>
+		<Rückseite_Freitext/>
+		<Rückseite_Motiv/>
+		<Stempelstellung/>
+		<Vorderseite_Beischrift>[  ]</Vorderseite_Beischrift>
+		<Vorderseite_Freitext/>
+		<Vorderseite_Motiv/>
+	</ROW>
+	<ROW MODID="14" RECORDID="311">
+		<Anzahl_aufgehoben>1</Anzahl_aufgehoben>
+		<Anzahl_insgesamt>1</Anzahl_insgesamt>
+		<Arbeitsnotiz/>
+		<Aufbewahrung_InvNr/>
+		<Aufbewahrung_Status>aufgehoben</Aufbewahrung_Status>
+		<Aufbewahrungsort>Grabungshaus, Depot</Aufbewahrungsort>
+		<Aufbewahrungsort_zusatz/>
+		<Beschreibung>Datierung: ca. 25 v. Chr.
+RPC I 2235</Beschreibung>
+		<DS_Bearbeiter>Jan Ramsch</DS_Bearbeiter>
+		<DS_Bearbeitungsdatum>14.10.2013</DS_Bearbeitungsdatum>
+		<DS_Eigentuemer>Jan Ramsch</DS_Eigentuemer>
+		<DS_Erstellungsdatum>21.09.2010</DS_Erstellungsdatum>
+		<Erhaltung>relativ gut</Erhaltung>
+		<Erhaltung_Durchmesser>26,82</Erhaltung_Durchmesser>
+		<Erhaltung_Gewicht>10,5</Erhaltung_Gewicht>
+		<Erhaltung_Prozent>100</Erhaltung_Prozent>
+		<Erhaltung_Staerke>3,06</Erhaltung_Staerke>
+		<Funddatum>21.9.2010</Funddatum>
+		<Grabfund_janein>nein</Grabfund_janein>
+		<Grabfund_Nr/>
+		<Grobdatierung>kaiserzeitlich</Grobdatierung>
+		<Herkunft>Archäol. Befund</Herkunft>
+		<Herkunft_Altfunde_BefAbhub/>
+		<Herkunft_Altfunde_Grabung/>
+		<Herkunft_Altfunde_GrabungZusatz/>
+		<Herkunft_Streufund_Ort/>
+		<Herkunft_Streufund_Zusatz/>
+		<Kampagne>2010</Kampagne>
+		<Konservierung_durchgeführt>ja</Konservierung_durchgeführt>
+		<Kulturkreis/>
+		<KurzbeschreibungMuenze>kaiserzeitliche Bronzemünze</KurzbeschreibungMuenze>
+		<Lage_Abhub/>
+		<Lage_Details/>
+		<Lage_Einmessung_Bezug1/>
+		<Lage_Einmessung_Bezug2/>
+		<Lage_Einmessung_Distanz1/>
+		<Lage_Einmessung_Distanz2/>
+		<Lage_Einmessung_Richtung1/>
+		<Lage_Einmessung_Richtung2/>
+		<Lage_Fundtiefe_absolut/>
+		<Lage_Fundtiefe_Bezug>1</Lage_Fundtiefe_Bezug>
+		<Lage_Fundtiefe_relativ>1</Lage_Fundtiefe_relativ>
+		<Lage_ungestoert/>
+		<Metall>Bronze</Metall>
+		<Muenzstaette/>
+		<Nominal>as</Nominal>
+		<Nummer_Fund>23</Nummer_Fund>
+		<Nummer_Katalog/>
+		<Planquadrat1/>
+		<Planquadrat2/>
+		<Praegeherr>Provinz Asia für Augustus</Praegeherr>
+		<PS_MuenzeID>103698</PS_MuenzeID>
+		<Referenzen>RPC I 2235</Referenzen>
+		<Rückseite_Beischrift>AVGVSTVS</Rückseite_Beischrift>
+		<Rückseite_Freitext>im Lorbeerkranz.</Rückseite_Freitext>
+		<Rückseite_Motiv/>
+		<Stempelstellung>12 h</Stempelstellung>
+		<Vorderseite_Beischrift>CAESAR</Vorderseite_Beischrift>
+		<Vorderseite_Freitext>Kopf des Augustus nach r.; Perlkreis.</Vorderseite_Freitext>
+		<Vorderseite_Motiv/>
+	</ROW>
+	<ROW MODID="19" RECORDID="312">
+		<Anzahl_aufgehoben>1</Anzahl_aufgehoben>
+		<Anzahl_insgesamt>1</Anzahl_insgesamt>
+		<Arbeitsnotiz>Bei H. Voegtli, PF 8, Nr. 456. Dat. Münzstätte ca. 350 v. Chr.
+SNG Cop. 632.
+		</Arbeitsnotiz>
+		<Aufbewahrung_InvNr/>
+		<Aufbewahrung_Status>aufgehoben</Aufbewahrung_Status>
+		<Aufbewahrungsort>Grabungshaus, Depot</Aufbewahrungsort>
+		<Aufbewahrungsort_zusatz/>
+		<Beschreibung>Datierung: Mitte 4. Jh. v. Chr.
+SNG Copenhagen 632; Voegtli 1992, 456</Beschreibung>
+		<DS_Bearbeiter>Jan Ramsch</DS_Bearbeiter>
+		<DS_Bearbeitungsdatum>14.10.2013</DS_Bearbeitungsdatum>
+		<DS_Eigentuemer>Jan Ramsch</DS_Eigentuemer>
+		<DS_Erstellungsdatum>23.09.2010</DS_Erstellungsdatum>
+		<Erhaltung>relativ gut</Erhaltung>
+		<Erhaltung_Durchmesser>14,72</Erhaltung_Durchmesser>
+		<Erhaltung_Gewicht>3,6</Erhaltung_Gewicht>
+		<Erhaltung_Prozent>100</Erhaltung_Prozent>
+		<Erhaltung_Staerke>3,31</Erhaltung_Staerke>
+		<Funddatum>23.9.2010</Funddatum>
+		<Grabfund_janein>nein</Grabfund_janein>
+		<Grabfund_Nr/>
+		<Grobdatierung>hellenistisch</Grobdatierung>
+		<Herkunft>Archäol. Befund</Herkunft>
+		<Herkunft_Altfunde_BefAbhub/>
+		<Herkunft_Altfunde_Grabung/>
+		<Herkunft_Altfunde_GrabungZusatz/>
+		<Herkunft_Streufund_Ort/>
+		<Herkunft_Streufund_Zusatz/>
+		<Kampagne>2010</Kampagne>
+		<Konservierung_durchgeführt>ja</Konservierung_durchgeführt>
+		<Kulturkreis/>
+		<KurzbeschreibungMuenze>hellenistische Bronzemünze</KurzbeschreibungMuenze>
+		<Lage_Abhub/>
+		<Lage_Details>Siebfund</Lage_Details>
+		<Lage_Einmessung_Bezug1/>
+		<Lage_Einmessung_Bezug2/>
+		<Lage_Einmessung_Distanz1/>
+		<Lage_Einmessung_Distanz2/>
+		<Lage_Einmessung_Richtung1/>
+		<Lage_Einmessung_Richtung2/>
+		<Lage_Fundtiefe_absolut/>
+		<Lage_Fundtiefe_Bezug>1</Lage_Fundtiefe_Bezug>
+		<Lage_Fundtiefe_relativ>1</Lage_Fundtiefe_relativ>
+		<Lage_ungestoert/>
+		<Metall>Bronze</Metall>
+		<Muenzstaette>Maroneia (Thrakien)</Muenzstaette>
+		<Nominal/>
+		<Nummer_Fund>25</Nummer_Fund>
+		<Nummer_Katalog/>
+		<Planquadrat1/>
+		<Planquadrat2/>
+		<Praegeherr>Maroneia</Praegeherr>
+		<PS_MuenzeID>104070</PS_MuenzeID>
+		<Referenzen>SNG Copenhagen 632; Voegtli 1992, 456</Referenzen>
+		<Rückseite_Beischrift>MA[PΩNITE]ΩN</Rückseite_Beischrift>
+		<Rückseite_Freitext>Rebstock mit vier Trauben in einem Linienquadrat; darunter Monogramm YE.</Rückseite_Freitext>
+		<Rückseite_Motiv/>
+		<Stempelstellung>12 h</Stempelstellung>
+		<Vorderseite_Beischrift>keine</Vorderseite_Beischrift>
+		<Vorderseite_Freitext>Pferd nach r. springend.</Vorderseite_Freitext>
+		<Vorderseite_Motiv/>
+	</ROW>
+	
+</FMPDSORESULT>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-
+- phpMyAdmin XML Dump
+- version 3.1.5
+- http://www.phpmyadmin.net
+-
+- Host: mysql1059.servage.net
+- Generato il: 15 apr, 2015 at 11:58 AM
+- Versione MySQL: 5.0.85
+- Versione PHP: 5.2.42-servage30
+-->
+
+<!--
+- Database: 'coins-mt'
+-->
+<coins-mt>
+  <!-- Tabella coins_sar -->
+    <coins_sar>
+        <ID>2680</ID>
+        <inv>1812-1</inv>
+        <weight>38.36</weight>
+        <diam_min>36.5</diam_min>
+        <diam_max>37</diam_max>
+        <posit>0</posit>
+        <authority>Anonimo</authority>
+        <metal>AE</metal>
+        <mint>Roma</mint>
+        <nominal>As</nominal>
+        <class>repubblicane</class>
+        <car_fisiche>integra</car_fisiche>
+        <regio_naz>Latium</regio_naz>
+        <crono>secolo</crono>
+        <from_year>-225</from_year>
+        <to_year>-201</to_year>
+        <century>III a.C.</century>
+        <part_century>ultimo qua</part_century>
+        <calc_century>III a.C.</calc_century>
+        <armadio>1</armadio>
+        <cassetto>3</cassetto>
+        <d_leggenda>ANEPIGRAFE</d_leggenda>
+        <r_leggenda>NON REGISTRATA</r_leggenda>
+    </coins_sar>
+    <coins_sar>
+        <ID>2681</ID>
+        <inv>1812-2</inv>
+        <weight>34.42</weight>
+        <diam_min>34</diam_min>
+        <diam_max>36</diam_max>
+        <posit>90</posit>
+        <authority>Non identificabile</authority>
+        <metal>AE</metal>
+        <mint>Roma</mint>
+        <nominal>As</nominal>
+        <class>repubblicane</class>
+        <car_fisiche>integra</car_fisiche>
+        <regio_naz>Latium</regio_naz>
+        <crono>anno</crono>
+        <from_year>-194</from_year>
+        <to_year>-190</to_year>
+        <century></century>
+        <part_century></part_century>
+        <calc_century>II a.C.</calc_century>
+        <armadio>1</armadio>
+        <cassetto>3</cassetto>
+        <d_leggenda>ANEPIGRAFE</d_leggenda>
+        <r_leggenda>NON REGISTRATA</r_leggenda>
+    </coins_sar>
+</coins-mt>

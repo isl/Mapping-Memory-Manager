@@ -64,7 +64,9 @@ b.	You will find the uploads folder at 3M/uploads
 
 4.	Replace the images located at the FIMS\web\formatting\images folder with the images from 3M_configuration\images
 
-5.	Replace the manuals located at the FIMS\web\Manuals folder with the manuals from 3M_configuration\Manuals
+5.	Replace the css file located at the FIMS\web\formatting\css folder with the page.css from 3M_configuration\css
+
+6.	Replace the manuals located at the FIMS\web\Manuals folder with the manuals from 3M_configuration\Manuals
 
 
 

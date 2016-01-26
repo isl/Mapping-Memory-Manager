@@ -1,0 +1,404 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:sar="http://www.sar.it/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:crmdig="http://www.ics.forth.gr/isl/CRMext/CRMdig.rdfs/"
+    xmlns:ariadne="http://www.ariadne-infrastructure.eu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <crm:E22_Man-Made_Object rdf:about="http://www.sar.it/COIN/2680">
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="http://www.sar.it/class/repubblicane">
+        <skos:prefLabel xml:lang="it">repubblicane</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:2e7e3883-ab82-4f6e-ae1d-8c3318050078">
+        <crm:P90_has_value>36.5</crm:P90_has_value>
+        <crm:P91_has_unit>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/measurement%20units/mm">
+            <skos:prefLabel>mm</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+          </skos:Concept>
+        </crm:P91_has_unit>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/diameter">
+            <skos:prefLabel>diameter</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>min diameter of coin  2680</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P53_has_former_or_current_location>
+      <crm:E53_Place rdf:about="http://www.sar.it/cassetto/3">
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.sar.it/location/drawer">
+            <skos:prefLabel>drawer</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label xml:lang="it">3</rdfs:label>
+      </crm:E53_Place>
+    </crm:P53_has_former_or_current_location>
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="http://www.sar.it/denomination/As">
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/denomination">
+            <skos:prefLabel>denomination</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <skos:prefLabel xml:lang="it">As</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:75ef3cf6-9d84-4cb9-a5ae-2057d4baf80e">
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/inventory%20no">
+            <skos:prefLabel>inventory no</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>1812-1</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="http://www.sar.it/car_fisiche/integra">
+        <skos:prefLabel xml:lang="it">integra</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P50_has_current_keeper>
+      <crm:E40_Legal_Body rdf:about="http://www.sar.it/">
+        <rdfs:label xml:lang="en">Archaeological Superintendence of Rome</rdfs:label>
+        <rdfs:label xml:lang="it">Sprintendenza Archaeologica di Roma</rdfs:label>
+      </crm:E40_Legal_Body>
+    </crm:P50_has_current_keeper>
+    <crm:P65_shows_visual_item>
+      <crm:E36_Visual_Item rdf:about="urn:uuid:471c4ba7-5019-4a76-8c68-dddc8b2601bc">
+        <crm:P138_represents>
+          <crm:E40_Legal_Body rdf:about="http://www.sar.it/mint/Roma">
+            <rdfs:label xml:lang="it">Roma</rdfs:label>
+          </crm:E40_Legal_Body>
+        </crm:P138_represents>
+        <rdfs:label>mint of coin  2680</rdfs:label>
+      </crm:E36_Visual_Item>
+    </crm:P65_shows_visual_item>
+    <crm:P53_has_former_or_current_location>
+      <crm:E53_Place rdf:about="http://www.sar.it/armadio/1">
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.sar.it/location/closet">
+            <skos:prefLabel>closet</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label xml:lang="it">1</rdfs:label>
+      </crm:E53_Place>
+    </crm:P53_has_former_or_current_location>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:0c635bc1-0ebb-4a5c-81f0-b32f5b4e291c">
+        <crm:P90_has_value>38.36</crm:P90_has_value>
+        <crm:P91_has_unit>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/measurement%20units/gr">
+            <skos:prefLabel>gr</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+          </skos:Concept>
+        </crm:P91_has_unit>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/weight">
+            <skos:prefLabel>weight</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>weight of coin  2680</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P56_bears_feature>
+      <crm:E25_Man-Made_Feature rdf:about="urn:uuid:940388b5-a704-4867-a4d6-14d1bd7d5bdf">
+        <crm:P65_shows_visual_item>
+          <crm:E34_Inscription rdf:about="urn:uuid:f61ff850-f488-48b4-ab88-1e546b620af1">
+            <crm:P3_has_note>ANEPIGRAFE</crm:P3_has_note>
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.sar.it/terms/obverse">
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label>Obverse legend inscription of coin 2680</rdfs:label>
+          </crm:E34_Inscription>
+        </crm:P65_shows_visual_item>
+        <rdfs:label>Obverse feature of coin 2680</rdfs:label>
+      </crm:E25_Man-Made_Feature>
+    </crm:P56_bears_feature>
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/coins">
+        <skos:prefLabel>coins</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:9a52d34b-2acc-413c-bd0d-867ebec753ae">
+        <crm:P90_has_value>0</crm:P90_has_value>
+        <crm:P91_has_unit>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/measurement%20units/h">
+            <skos:prefLabel>h</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+          </skos:Concept>
+        </crm:P91_has_unit>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/angle">
+            <skos:prefLabel>angle</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/die%20axe">
+            <skos:prefLabel>die axe</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>die axe of coin  2680</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:935ba726-7e86-4ae7-a41f-bb2588d9aad2">
+        <rdfs:label>2680</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+    <rdfs:label>2680</rdfs:label>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="urn:uuid:2765c2f0-df5c-453d-9af6-a0f2e60c9e28">
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:about="urn:uuid:b1b45519-d806-49cd-95e6-1a05256f2b70">
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.sar.it/terms/inferred%20date">
+                <skos:prefLabel>inferred date</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <crm:P81_ongoing_throughout>ultimo qua</crm:P81_ongoing_throughout>
+            <crm:P82_at_some_time_within>III a.C.</crm:P82_at_some_time_within>
+            <crm:P82b_end_of_the_end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0201-12-31T23:59:59</crm:P82b_end_of_the_end>
+            <crm:P81b_begin_of_the_end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0201-01-01T00:00:00</crm:P81b_begin_of_the_end>
+            <crm:P81a_end_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0225-12-31T23:59:59</crm:P81a_end_of_the_begin>
+            <crm:P82a_begin_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0225-01-01T00:00:00</crm:P82a_begin_of_the_begin>
+            <rdfs:label>production date of coin  2680</rdfs:label>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:about="http://www.sar.it/crono/secolo">
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.sar.it/terms/approximate%20dating">
+                <skos:prefLabel>approximate dating</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label xml:lang="it">secolo</rdfs:label>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P10_falls_within>
+          <crm:E4_Period rdf:about="http://www.sar.it/region/Latium">
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/country">
+                <skos:prefLabel>country</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <skos:prefLabel xml:lang="it">Latium</skos:prefLabel>
+          </crm:E4_Period>
+        </crm:P10_falls_within>
+        <crm:PC1_produced_things_of_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/Roman%20coins">
+            <skos:prefLabel>Roman coins</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:PC1_produced_things_of_type>
+        <crm:P17_was_motivated_by>
+          <crm:E7_Activity rdf:about="urn:uuid:085c388c-e542-4a41-b33e-c5120aacc147">
+            <crm:P14_carried_out_by>
+              <crm:E39_Actor rdf:about="http://www.sar.it/actor/Anonimo">
+                <rdfs:label xml:lang="it">Anonimo</rdfs:label>
+              </crm:E39_Actor>
+            </crm:P14_carried_out_by>
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/issuing">
+                <skos:prefLabel>issuing</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label>issuing of coin  2680</rdfs:label>
+          </crm:E7_Activity>
+        </crm:P17_was_motivated_by>
+        <rdfs:label>production of coin  2680</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P45_consists_of>
+      <skos:Concept rdf:about="http://www.sar.it/metal/AE">
+        <skos:prefLabel xml:lang="it">AE</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E57_Material"/>
+      </skos:Concept>
+    </crm:P45_consists_of>
+    <crm:P52_has_current_owner rdf:resource="http://www.sar.it/"/>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:4f1564cc-843d-4d14-8a79-a9499b7113d5">
+        <crm:P90_has_value>37</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/diameter"/>
+        <rdfs:label>max diameter of coin  2680</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P56_bears_feature>
+      <crm:E25_Man-Made_Feature rdf:about="urn:uuid:8f17d0d1-508f-496b-a0e8-22102d3931ec">
+        <crm:P65_shows_visual_item>
+          <crm:E34_Inscription rdf:about="urn:uuid:03ad1105-47b4-4962-b004-c0c0f9f9cd56">
+            <crm:P3_has_note>NON REGISTRATA</crm:P3_has_note>
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.sar.it/terms/reverse">
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label>Reverse legend inscription of coin 2680</rdfs:label>
+          </crm:E34_Inscription>
+        </crm:P65_shows_visual_item>
+        <rdfs:label>Reverse feature of coin 2680</rdfs:label>
+      </crm:E25_Man-Made_Feature>
+    </crm:P56_bears_feature>
+  </crm:E22_Man-Made_Object>
+  <crm:E22_Man-Made_Object rdf:about="http://www.sar.it/COIN/2681">
+    <crm:P56_bears_feature>
+      <crm:E25_Man-Made_Feature rdf:about="urn:uuid:e408f705-5b93-4cb2-8a79-ff0f7e5932fe">
+        <crm:P65_shows_visual_item>
+          <crm:E34_Inscription rdf:about="urn:uuid:95909287-1366-4f4a-b42b-30dc079617e2">
+            <crm:P3_has_note>NON REGISTRATA</crm:P3_has_note>
+            <crm:P2_has_type rdf:resource="http://www.sar.it/terms/reverse"/>
+            <rdfs:label>Reverse legend inscription of coin 2681</rdfs:label>
+          </crm:E34_Inscription>
+        </crm:P65_shows_visual_item>
+        <rdfs:label>Reverse feature of coin 2681</rdfs:label>
+      </crm:E25_Man-Made_Feature>
+    </crm:P56_bears_feature>
+    <crm:P53_has_former_or_current_location rdf:resource="http://www.sar.it/armadio/1"/>
+    <crm:P45_consists_of rdf:resource="http://www.sar.it/metal/AE"/>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:de89316c-0ada-450e-9343-1b99c7a5f471">
+        <rdfs:label>2681</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+    <crm:P2_has_type rdf:resource="http://www.sar.it/car_fisiche/integra"/>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:b92c01de-9390-4977-ab89-2c6ea15534c6">
+        <crm:P90_has_value>34.42</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/gr"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/weight"/>
+        <rdfs:label>weight of coin  2681</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P56_bears_feature>
+      <crm:E25_Man-Made_Feature rdf:about="urn:uuid:bc34026a-01c4-4f32-ba64-2976ca318100">
+        <crm:P65_shows_visual_item>
+          <crm:E34_Inscription rdf:about="urn:uuid:26793e9d-8438-4dd3-894a-c83280ce9f63">
+            <crm:P3_has_note>ANEPIGRAFE</crm:P3_has_note>
+            <crm:P2_has_type rdf:resource="http://www.sar.it/terms/obverse"/>
+            <rdfs:label>Obverse legend inscription of coin 2681</rdfs:label>
+          </crm:E34_Inscription>
+        </crm:P65_shows_visual_item>
+        <rdfs:label>Obverse feature of coin 2681</rdfs:label>
+      </crm:E25_Man-Made_Feature>
+    </crm:P56_bears_feature>
+    <crm:P53_has_former_or_current_location rdf:resource="http://www.sar.it/cassetto/3"/>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="urn:uuid:1052e80d-13a3-4139-9d11-58e76c328d1e">
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:about="urn:uuid:790a8c36-fad3-4354-858e-e65cd649ed8a">
+            <crm:P82_at_some_time_within>II a.C.</crm:P82_at_some_time_within>
+            <crm:P2_has_type rdf:resource="http://www.sar.it/terms/inferred%20date"/>
+            <crm:P82b_end_of_the_end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0190-12-31T23:59:59</crm:P82b_end_of_the_end>
+            <crm:P81b_begin_of_the_end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0190-01-01T00:00:00</crm:P81b_begin_of_the_end>
+            <crm:P81a_end_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0194-12-31T23:59:59</crm:P81a_end_of_the_begin>
+            <crm:P82a_begin_of_the_begin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >-0194-01-01T00:00:00</crm:P82a_begin_of_the_begin>
+            <rdfs:label>production date of coin  2681</rdfs:label>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P4_has_time-span>
+          <crm:E52_Time-Span rdf:about="http://www.sar.it/crono/anno">
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="http://www.sar.it/terms/exact%20dating">
+                <skos:prefLabel>exact dating</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label xml:lang="it">anno</rdfs:label>
+          </crm:E52_Time-Span>
+        </crm:P4_has_time-span>
+        <crm:P10_falls_within rdf:resource="http://www.sar.it/region/Latium"/>
+        <crm:PC1_produced_things_of_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/Roman%20coins"/>
+        <crm:P17_was_motivated_by>
+          <crm:E7_Activity rdf:about="urn:uuid:ace08a1f-585f-4288-94d5-618b408c71f6">
+            <crm:P14_carried_out_by>
+              <crm:E39_Actor rdf:about="http://www.sar.it/actor/Non%20identificabile">
+                <rdfs:label xml:lang="it">Non identificabile</rdfs:label>
+              </crm:E39_Actor>
+            </crm:P14_carried_out_by>
+            <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/issuing"/>
+            <rdfs:label>issuing of coin  2681</rdfs:label>
+          </crm:E7_Activity>
+        </crm:P17_was_motivated_by>
+        <rdfs:label>production of coin  2681</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:b9b6d60f-6424-4794-bf64-bf2e15644ad9">
+        <crm:P90_has_value>36</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/diameter"/>
+        <rdfs:label>max diameter of coin  2681</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P2_has_type rdf:resource="http://www.sar.it/class/repubblicane"/>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:05ffc72e-a71a-4a3b-b9ec-c6ec68b16609">
+        <crm:P90_has_value>90</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/h"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/angle"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/die%20axe"/>
+        <rdfs:label>die axe of coin  2681</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:a52f1def-5721-40b8-9fba-ce718e52ccac">
+        <crm:P90_has_value>34</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/diameter"/>
+        <rdfs:label>min diameter of coin  2681</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P50_has_current_keeper rdf:resource="http://www.sar.it/"/>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:d8a767c1-c913-400b-a8bd-fc9964fe69bd">
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/inventory%20no"/>
+        <rdfs:label>1812-2</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+    <crm:P52_has_current_owner rdf:resource="http://www.sar.it/"/>
+    <rdfs:label>2681</rdfs:label>
+    <crm:P65_shows_visual_item>
+      <crm:E36_Visual_Item rdf:about="urn:uuid:b8b9f5a0-2f91-44d6-bf1d-a0da046eacb7">
+        <crm:P138_represents rdf:resource="http://www.sar.it/mint/Roma"/>
+        <rdfs:label>mint of coin  2681</rdfs:label>
+      </crm:E36_Visual_Item>
+    </crm:P65_shows_visual_item>
+    <crm:P2_has_type rdf:resource="http://www.sar.it/denomination/As"/>
+    <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/coins"/>
+  </crm:E22_Man-Made_Object>
+</rdf:RDF>

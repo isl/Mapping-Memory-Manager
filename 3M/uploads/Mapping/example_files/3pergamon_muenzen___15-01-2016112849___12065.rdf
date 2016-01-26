@@ -1,0 +1,244 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:ariadne="http://www.ariadne-infrastructure.eu/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dai="https://www.dainst.org/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <crm:E22_Man-Made_Object rdf:about="https://www.dainst.org/COIN/104070">
+    <crm:P50_has_current_keeper>
+      <crm:E40_Legal_Body rdf:about="https://www.dainst.org/">
+        <rdfs:label>DAI</rdfs:label>
+        <rdfs:label xml:lang="en">German Archaeological Institute</rdfs:label>
+        <rdfs:label xml:lang="de">Deutsches Archäologisches Institut</rdfs:label>
+      </crm:E40_Legal_Body>
+    </crm:P50_has_current_keeper>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="urn:uuid:36abf2c0-d78e-4bbf-a143-1e9674a901b2">
+        <crm:P17_was_motivated_by>
+          <crm:E39_Actor rdf:about="https://www.dainst.org/actors/Maroneia">
+            <crm:P2_has_type>
+              <skos:Concept rdf:about="https://www.dainst.org/actors/Praegeherr">
+                <skos:prefLabel xml:lang="de">Praegeherr</skos:prefLabel>
+                <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+              </skos:Concept>
+            </crm:P2_has_type>
+            <rdfs:label>Maroneia</rdfs:label>
+          </crm:E39_Actor>
+        </crm:P17_was_motivated_by>
+        <crm:P10_falls_within>
+          <crm:E4_Period rdf:about="https://www.dainst.org/period/hellenistisch">
+            <rdfs:label xml:lang="de">hellenistisch</rdfs:label>
+          </crm:E4_Period>
+        </crm:P10_falls_within>
+        <crm:P7_took_place_at>
+          <crm:E53_Place rdf:about="https://www.dainst.org/place/Maroneia%20%28Thrakien%29">
+            <rdfs:label xml:lang="de">Maroneia (Thrakien)</rdfs:label>
+          </crm:E53_Place>
+        </crm:P7_took_place_at>
+        <rdfs:label>production of coin  104070</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:abdbddf4-ee1f-4d34-bb48-79be7568461e">
+        <crm:P90_has_value>3,6</crm:P90_has_value>
+        <crm:P91_has_unit>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/measurement%20units/gr">
+            <skos:prefLabel>gr</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+          </skos:Concept>
+        </crm:P91_has_unit>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/weight">
+            <skos:prefLabel>weight</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>weight of coin  104070</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:607c11c5-c2c9-45df-a534-192aea3ba761">
+        <crm:P90_has_value>14,72</crm:P90_has_value>
+        <crm:P91_has_unit>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/measurement%20units/mm">
+            <skos:prefLabel>mm</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+          </skos:Concept>
+        </crm:P91_has_unit>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/diameter">
+            <skos:prefLabel>diameter</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <rdfs:label>diameter of coin  104070</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P45_consists_of>
+      <skos:Concept rdf:about="https://www.dainst.org/material/Bronze">
+        <crm:P127_has_broader_term>
+          <skos:Concept rdf:about="https://www.dainst.org/Metall/Metall">
+            <skos:prefLabel xml:lang="de">Metall</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P127_has_broader_term>
+        <skos:prefLabel xml:lang="de">Bronze</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E57_Material"/>
+      </skos:Concept>
+    </crm:P45_consists_of>
+    <crm:P52_has_current_owner rdf:resource="https://www.dainst.org/"/>
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/coin">
+        <skos:prefLabel>coins</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P3_has_note>Bei H. Voegtli, PF 8, Nr. 456. Dat. Münzstätte ca. 350 v. Chr.
+SNG Cop. 632.</crm:P3_has_note>
+    <crm:P3_has_note>Datierung: Mitte 4. Jh. v. Chr.
+SNG Copenhagen 632; Voegtli 1992, 456</crm:P3_has_note>
+    <rdfs:label>104070</rdfs:label>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:7844b123-e9dd-4eec-8710-8571fe8b2ef2">
+        <crm:P90_has_value>3,31</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/dimensions/thickness">
+            <skos:prefLabel>thickness</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:71635450-efea-474c-9c65-6b958f2cd88e">
+        <rdfs:label>104070</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+  </crm:E22_Man-Made_Object>
+  <crm:E22_Man-Made_Object rdf:about="https://www.dainst.org/COIN/103361">
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="urn:uuid:5267998f-de8e-49b6-82c1-874f33515651">
+        <crm:P17_was_motivated_by>
+          <crm:E39_Actor rdf:about="https://www.dainst.org/actors/unbest.">
+            <crm:P2_has_type rdf:resource="https://www.dainst.org/actors/Praegeherr"/>
+            <rdfs:label>unbest.</rdfs:label>
+          </crm:E39_Actor>
+        </crm:P17_was_motivated_by>
+        <crm:P10_falls_within rdf:resource="https://www.dainst.org/period/hellenistisch"/>
+        <crm:P7_took_place_at>
+          <crm:E53_Place rdf:about="https://www.dainst.org/place/unbest.">
+            <rdfs:label xml:lang="de">unbest.</rdfs:label>
+          </crm:E53_Place>
+        </crm:P7_took_place_at>
+        <rdfs:label>production of coin  103361</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:d419352a-eb84-44f9-a33e-ccdd65187bdf">
+        <crm:P90_has_value>18,50</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/diameter"/>
+        <rdfs:label>diameter of coin  103361</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:71b96846-95a8-48ae-bb73-df48bfadb16e">
+        <crm:P90_has_value>4,85</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/thickness"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P50_has_current_keeper rdf:resource="https://www.dainst.org/"/>
+    <crm:P45_consists_of rdf:resource="https://www.dainst.org/material/Bronze"/>
+    <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/coin"/>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:5a244737-3690-4c42-98d9-b9ae2829c61a">
+        <crm:P90_has_value>5,7</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/gr"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/weight"/>
+        <rdfs:label>weight of coin  103361</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P52_has_current_owner rdf:resource="https://www.dainst.org/"/>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:c2451f57-70c9-41c4-b0c2-d9243dbdbe73">
+        <rdfs:label>103361</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+    <rdfs:label>103361</rdfs:label>
+  </crm:E22_Man-Made_Object>
+  <crm:E22_Man-Made_Object rdf:about="https://www.dainst.org/COIN/103698">
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:411af47c-c770-4e41-92cc-06ee497e1381">
+        <crm:P90_has_value>3,06</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/thickness"/>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:ebbee9c0-5d88-4b68-8d56-a6b10f7b988b">
+        <crm:P90_has_value>10,5</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/gr"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/weight"/>
+        <rdfs:label>weight of coin  103698</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P50_has_current_keeper rdf:resource="https://www.dainst.org/"/>
+    <crm:P43_has_dimension>
+      <crm:E54_Dimension rdf:about="urn:uuid:83a55475-367a-4a28-91b2-e7bf6564dc19">
+        <crm:P90_has_value>26,82</crm:P90_has_value>
+        <crm:P91_has_unit rdf:resource="http://www.ariadne-infrastructure.eu/measurement%20units/mm"/>
+        <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/dimensions/diameter"/>
+        <rdfs:label>diameter of coin  103698</rdfs:label>
+      </crm:E54_Dimension>
+    </crm:P43_has_dimension>
+    <crm:P2_has_type>
+      <skos:Concept rdf:about="https://www.dainst.org/denomination/as">
+        <crm:P2_has_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/denomination">
+            <skos:prefLabel>denomination</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:P2_has_type>
+        <skos:prefLabel xml:lang="de">as</skos:prefLabel>
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+      </skos:Concept>
+    </crm:P2_has_type>
+    <crm:P52_has_current_owner rdf:resource="https://www.dainst.org/"/>
+    <rdfs:label>103698</rdfs:label>
+    <crm:P3_has_note>Datierung: ca. 25 v. Chr.
+RPC I 2235</crm:P3_has_note>
+    <crm:P45_consists_of rdf:resource="https://www.dainst.org/material/Bronze"/>
+    <crm:P2_has_type rdf:resource="http://www.ariadne-infrastructure.eu/concepts/coin"/>
+    <crm:P108i_was_produced_by>
+      <crm:E12_Production rdf:about="urn:uuid:2f406a85-baa6-4263-9e6b-88cd2970c8c1">
+        <crm:P17_was_motivated_by>
+          <crm:E39_Actor rdf:about="https://www.dainst.org/actors/Provinz%20Asia%20f%C3%BCr%20Augustus">
+            <crm:P2_has_type rdf:resource="https://www.dainst.org/actors/Praegeherr"/>
+            <rdfs:label>Provinz Asia für Augustus</rdfs:label>
+          </crm:E39_Actor>
+        </crm:P17_was_motivated_by>
+        <crm:P10_falls_within>
+          <crm:E4_Period rdf:about="https://www.dainst.org/period/kaiserzeitlich">
+            <rdfs:label xml:lang="de">kaiserzeitlich</rdfs:label>
+          </crm:E4_Period>
+        </crm:P10_falls_within>
+        <crm:PC1_produced_things_of_type>
+          <skos:Concept rdf:about="http://www.ariadne-infrastructure.eu/concepts/Roman%20coins">
+            <skos:prefLabel>Roman coins</skos:prefLabel>
+            <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+          </skos:Concept>
+        </crm:PC1_produced_things_of_type>
+        <rdfs:label>production of coin  103698</rdfs:label>
+      </crm:E12_Production>
+    </crm:P108i_was_produced_by>
+    <crm:P1_is_identified_by>
+      <crm:E41_Appellation rdf:about="urn:uuid:9789cbb3-10a2-42de-8471-1f59310dd411">
+        <rdfs:label>103698</rdfs:label>
+      </crm:E41_Appellation>
+    </crm:P1_is_identified_by>
+  </crm:E22_Man-Made_Object>
+</rdf:RDF>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+CRM-COINext 1.1 Encoded in RDFS
+
+RDFS created by FORTH-ICS January 22, 2015
+
+
+-->
+
+<rdf:RDF xml:lang="en" 
+			xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xml:base="http://www.cidoc-crm.org/cidoc-crm">
+
+
+
+<rdf:Property rdf:about="PC1_produced_things_of_type">
+		<rdfs:domain rdf:resource="E12_Production"/>
+		<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+<rdf:Property rdf:about="PC1i_was_produced_by">
+		<rdfs:domain rdf:resource="E55_Type"/>
+		<rdfs:range rdf:resource="E12_Production"/>
+</rdf:Property>
+
+	
+
+</rdf:RDF>

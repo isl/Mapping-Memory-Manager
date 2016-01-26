@@ -1,0 +1,608 @@
+/*
+Copyright 2015 Institute of Computer Science,
+Foundation for Research and Technology - Hellas
+
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved
+by the European Commission - subsequent versions of the EUPL (the "Licence");
+You may not use this work except in compliance with the Licence.
+You may obtain a copy of the Licence at:
+
+http://ec.europa.eu/idabc/eupl
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Licence is distributed on an "AS IS" basis,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the Licence for the specific language governing permissions and limitations
+under the Licence.
+
+Contact:  POBox 1385, Heraklio Crete, GR-700 13 GREECE
+Tel:+30-2810-391632
+Fax: +30-2810-391638
+E-mail: isl@ics.forth.gr
+http://www.ics.forth.gr/isl
+
+Authors : Konstantina Konsolaki, Georgios Samaritakis
+
+This file is part of the FIMS webapp.
+
+*/
+
+/*Need change for 3M*/
+
+.contentHeadText {
+    font-weight: bold;
+    font-size: 9pt; 
+    color: #ffffff;
+    font-family: Arial; 
+    background-color: #85A896;
+    text-align: center;
+}
+#login-list a{
+    color:#85A895;
+}
+
+#leftmenu .nav>.nav-header{
+    color: #2C664B;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 15px;
+
+}
+
+.moreDropDown .nav-header{
+    padding-left: 5px;
+    color: #2C664B;
+    font-weight: bold;
+}
+
+.title{
+    color: #2C664B;
+    margin-top: 2px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.vocPanel>h4{
+    color: #2C664B;
+}
+
+.savedQ a {
+    color: #2C664B;
+    text-decoration:none;
+}
+
+/* unvisited link */
+.savedQ a:link {
+    color: #2C664B;
+    text-decoration:none;
+}
+
+/* visited link */
+.savedQ a:visited {
+    color: #2C664B;
+}
+
+/* mouse over link */
+.savedQ a:hover {
+    color: #2C664B;
+}
+
+/* selected link */
+.savedQ a:active {
+    color: #2C664B;
+}
+
+.saveQaccordion-toggle:after{
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    margin-left: 10px;
+    color: #2C664B;         /* adjust as needed */
+    font-size: x-small;
+}
+// Till here
+
+tr#resultRow td a img{
+    font-weight: bold; 
+    font-family: Verdana; 
+    text-decoration: none; 
+    border-color: #620705;
+}
+
+
+body {
+    font-size: 9pt;
+    font-family:Verdana;
+}
+
+.contentHeadText th{
+    text-align: center;
+}
+
+textarea{
+    width: 45%;
+}
+
+tr.resultRow {
+    font-size: 10pt;
+    background: #ffffff;
+    font-family: Arial;
+    text-align: center;
+}
+tr.highlighted_resultRow {
+    font-size: 10pt;
+    background-color: #F4F4F4 !important;
+    font-family: Arial;
+}
+
+.rtl{
+    direction: rtl; 
+    unicode-bidi: embed;
+}
+
+
+input[type=text]{
+    font-family: Verdana;
+    font-size: 9pt;
+}
+.inputwidth{
+    width: 45%;
+}
+input:read-only { 
+    background-color: #e0e0e0;
+}
+a img { 
+    border:0;
+}
+
+
+td.invisible {
+    display: none;
+}
+/*New Rules*/
+
+html,body{
+    background-color:#CCCACB !important;
+    height:100%;
+    width:100%;
+}
+
+
+
+#header{
+    margin-bottom: -17px;
+}
+#content{
+    background-color: white;
+    min-height: 50%;
+}
+.headerDropDown{
+    float:right;
+    top:-140px;
+    right:16px;
+}
+#insideHeaderDrop{
+    left: -90px;
+}
+#outsideHeaderDrop{
+    left: -68px;
+
+}
+#searchDropDown{
+    left:-130px;
+}
+/* unvisited link */
+.headerDropDown a:link {
+    color: #565655;
+    text-decoration:none;
+    font-size: 12px;
+}
+
+/* visited link */
+.headerDropDown a:visited {
+    color: #565655;
+}
+
+/* mouse over link */
+.headerDropDown a:hover {
+    color: #565655;
+}
+
+/* selected link */
+.headerDropDown a:active {
+    color: #565655;
+}
+
+.account-wall
+{
+    padding: 40px 0px 20px 10px;
+    width: 45%;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.form-signin
+{
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+
+
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#login-list{
+    padding-left: 15px;
+    padding-top: 8px;
+}
+.form-control{
+    margin-bottom: 3px !important;
+}
+
+#footer{
+    background-color: #565655;
+}
+
+#leftmenu{
+    padding-right: 0px; 
+    padding-left: 0px;
+    padding-bottom: 30px;
+}
+
+#leftmenu .nav>li>a{
+    padding: 1px 5px;
+    color:#565655;
+    background-color: #F4F4F4; 
+    padding-left: 15px;
+
+}
+#leftmenu  .submenu{
+    padding-left: 14px;
+    background-color: #F4F4F4;
+}
+#leftmenu .collapse>li{
+    color:#565655;
+}
+#leftmenu .caret{
+    margin-left: 4px;
+}
+
+#leftmenu .nav-divider{
+    height: 2%;
+}
+
+#leftmenu .nav>li>a:hover{
+    background-color: #EAEAEA;
+    font-weight: bold;
+}
+#leftmenu .selected{
+    background-color: #EAEAEA !important;
+    font-weight: bold;
+}
+
+.rightContent{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-bottom: 30px;
+}
+.actionsMenu >.nav-tabs{
+    border-bottom: 0px;
+}
+
+.actionsMenu >.nav>li>a{
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.actionsMenu >.nav>li>a:focus{
+    border-color: #ffffff;
+    background-color:transparent!important;
+}
+
+.actionsMenu >.nav>li>a:hover{
+    border-color: #ffffff;
+    background-color:transparent!important;
+}
+.moreDropDown a {
+    color: #565655;
+    text-decoration:none;
+}
+
+/* unvisited link */
+.moreDropDown a:link {
+    color: #565655;
+    text-decoration:none;
+}
+
+/* visited link */
+.moreDropDown a:visited {
+    color: #565655;
+}
+
+/* mouse over link */
+.moreDropDown a:hover {
+    color: #565655;
+}
+
+/* selected link */
+.moreDropDown a:active {
+    color: #565655;
+}
+
+.keyword{
+    margin-left: 5px;
+    padding-left: 3px
+}
+
+.searchCaret{
+    color: #565655;
+    margin-top: 10px;
+    padding-left: 2px;
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.moreCaret{
+    width: 10px!important;
+    height: 10px!important;
+    margin-top: 5px;
+}
+
+.context{
+    margin-top: 20px;
+}
+
+.subtitle{
+    margin-bottom: 25px;
+    font-weight: bold;
+    color:  #727172;
+}
+
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: left;
+    font-size: 0.8em;
+
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+    font-size: 0.8em;
+}
+
+.panel-title a:link{
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.panel-title a:hover{
+    text-decoration: none;
+}
+.panel-title a:visited{
+    text-decoration: none;
+}
+.panel-title a:active{
+    text-decoration: none;
+}
+.vocPanel{
+    background-color: white!important;
+    background-image: none !important;
+}
+
+.vocLink  a{
+    color: #565655;
+}
+.vocLink a:hover {
+    color: #565655;
+    text-decoration: none;
+}
+
+
+.comparePanelBody{
+    margin-top: 8px;
+}
+
+.deleteButton{
+    margin-bottom: 10px !important;
+    margin-left: 18px;
+}
+
+.deleteIcon{
+    float: left;
+    top: 2px;
+    padding-right: 4px;
+}
+
+.compareCol{
+    margin-top: 12px;
+    padding-left: 0px !important;
+}
+
+.comparePanelBody{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.special {
+    display:table;
+    width:100%;
+}
+.v-m {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.displayParagraph{
+    outline: 1px solid #CCCCCC;
+    outline-offset: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.displayButtons{
+    margin-top: 30px;
+}
+
+.displayButton{
+    margin-right: 15px;
+}
+
+.searchBox{
+    margin-top: 20px;
+    border: solid 1px #CCCCCC;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.searchBox .row{
+    margin-left: 0px;
+}
+
+.searchBox table{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.searchBox table th, tr ,td{
+    border: 1px solid;
+    border-spacing: 2px;
+    border-color: #ebebeb;
+}
+
+.searchBox>.chzn-container input[type=text]{
+    margin: 10px;
+}
+
+.searchBox .searchValues + div{
+    width: 100%!important;
+}
+.searchOutput+div{
+    width: 100%!important;
+}
+
+.searchString{
+    width: 100%;
+}
+
+.saveQaccordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+#collapseCreateQ .row{
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+}
+
+#collapseSaveQ .row{
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+
+}
+
+.tooltip.top .tooltip-inner {
+    background-color:#565655;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #565655;
+}
+
+.tooltip .tooltip-arrow {
+    border-top: 5px solid #565655 !important;
+}
+
+
+/* top row */
+.col .well{ 
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;  
+}
+
+/* bottom row */
+.col-base{ 
+    margin-top: -15px; /* cut off top portion of bottom wells */
+}
+
+
+
+
+.col-wrap{
+    overflow: hidden; 
+}
+
+
+#leftWell{
+    background-image: none;
+    background-color: #F4F4F4;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+
+}
+
+#rightWell{
+    background-image: none;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.tooltipInfo{
+    padding-left: 5px;
+}
+
+#welcomeImage{
+    width:100%;
+}
+
+.select2{
+    font-size: 13px;
+}
+
+.select2-results__option--highlighted{
+    background-color: rgb(51,102,153) !important;
+}
+
+.searchResults{
+    color: #727172;
+}
+
+.searchbottom{
+    margin-bottom: 30px;
+}
+
+
+.footerText{
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+#forthImg{
+    margin-top: -18px;
+    margin-bottom: 9px;
+}
+
+.footerCopy{
+    margin-top: 10px;
+    width: 15% !important;
+}

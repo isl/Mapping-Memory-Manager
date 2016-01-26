@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CRMext4SKOSandLabel version 1.3 Encoded in RDFS
+
+RDFS created by FORTH-ICS October 10, 2014
+
+modified June 9, 2015
+
+modified March 3, 2015
+
+
+-->
+
+<rdf:RDF xml:lang="en"  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+			xml:base="http://www.cidoc-crm.org/cidoc-crm/">
+
+<!-- SKOS to CIDOC relations -->
+	<rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+		<rdfs:subClassOf rdf:resource="E55_Type"/>
+	</rdfs:Class>
+
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+		<rdfs:domain rdf:resource="E55_Type"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>	
+		<!-- since the range is changed to Literal we removed the subclassing <rdfs:subPropertyOf rdf:resource="P127_has_broader_term"/> -->
+	</rdf:Property>
+	
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+		<rdfs:domain rdf:resource="E55_Type"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>	
+		<!-- since the range is changed to Literal we removed the subclassing <rdfs:subPropertyOf rdf:resource="P89i_contains"/> -->
+	</rdf:Property>
+	
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+		<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>	
+		<rdfs:subPropertyOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/L4_has_preferred_label"/>
+	</rdf:Property> 
+	
+	<rdf:Property rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+		<rdfs:domain rdf:resource="E55_Type"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>	
+	</rdf:Property> 
+	
+	<rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+		<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	</rdf:Property>
+</rdf:RDF>
+
