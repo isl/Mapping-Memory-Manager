@@ -180,29 +180,31 @@
 			<label>Versions</label>
 		</menu>
 		<menu id="Delete" img_src="/formating/images/delete.png" help="deleteHelp">
-			<actionPerType id="Mapping">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Mapping&amp;status=&amp;mode=&amp;id=';" href="">admin</userRights>
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Mapping&amp;status=&amp;mode=&amp;id=';" href="">editor</userRights>
-			</actionPerType>
-			<actionPerType id="AdminUser">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminUser?action=delete&amp;id=&amp;mode=';" href="">admin</userRights>
-			</actionPerType>
-			<actionPerType id="AdminOrg">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminOrg?action=delete&amp;id=&amp;mode=sys';" href="">sysadmin</userRights>
-			</actionPerType>
-			<actionPerType id="AdminVoc">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">editor</userRights>
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">admin</userRights>
-			</actionPerType>
-			<actionPerType id="AdminVocTrans">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">editor</userRights>
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">admin</userRights>
-				<label>AdminVocTrans</label>
-			</actionPerType>
-			<actionPerType id="Backup">
-				<userRights id="javascript:if ( confirmAction(str) ) location.href='Storage?action=delete&amp;menuId=Backup&amp;id='" href="#">sysadmin</userRights>
-			</actionPerType>
-			<label>Diagrafi</label>
+			<submenu id="DeleteSub">
+				<actionPerType id="Mapping">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Mapping&amp;status=&amp;mode=&amp;id=';" href="">admin</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='DeleteEntity?type=Mapping&amp;status=&amp;mode=&amp;id=';" href="">editor</userRights>
+				</actionPerType>
+				<actionPerType id="AdminUser">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminUser?action=delete&amp;id=&amp;mode=';" href="">admin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminOrg">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminOrg?action=delete&amp;id=&amp;mode=sys';" href="">sysadmin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminVoc">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete&amp;id=&amp;file=&amp;menuId=AdminVoc';" href="#">admin</userRights>
+				</actionPerType>
+				<actionPerType id="AdminVocTrans">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">editor</userRights>
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='AdminVoc?action=delete_trans&amp;id=&amp;mode=&amp;file=&amp;menuId=AdminVocTrans'" href="#">admin</userRights>
+					<label>AdminVocTrans</label>
+				</actionPerType>
+				<actionPerType id="Backup">
+					<userRights id="javascript:if ( confirmAction(str) ) location.href='Storage?action=delete&amp;menuId=Backup&amp;id='" href="#">sysadmin</userRights>
+				</actionPerType>
+				<label>Diagrafi</label>
+			</submenu>
 		</menu>
 		<menu id="UnlockEntity" img_src="/formating/images/unlock.png">
 			<submenu id="UnlockEntitySub">
