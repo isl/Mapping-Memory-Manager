@@ -126,17 +126,7 @@ This file is part of the Mapping Memory Manager.
 		<param-name>entityListPhoto</param-name>
 		<param-value/>
 	</context-param>
-	<!-- ===== Various for System ===== -->
-	<context-param>
-		<param-name>ListStep</param-name>
-		<!-- Results to each page -->
-		<param-value>20</param-value>
-	</context-param>
-	<context-param>
-		<param-name>pagingMax</param-name>
-		<!-- poses selides 8a emfanizei prin kai meta apo tin epilegmeni selida -->
-		<param-value>2</param-value>
-	</context-param>
+	
 	<context-param>
 		<param-name>maxCollsize</param-name>
 		<!-- eXist collection size -->
@@ -230,6 +220,16 @@ This file is part of the Mapping Memory Manager.
 		<param-name>dataTypesFile</param-name>
 		<param-value>DatatypeOperators.xml</param-value>
 	</context-param>
+    <context-param>
+        <description>Schema Version</description>
+        <param-name>schemaVersion</param-name>
+        <param-value>1.5</param-value>
+    </context-param>
+    <context-param>
+        <description>System Version</description>
+        <param-name>systemVersion</param-name>
+        <param-value>2.0</param-value>
+    </context-param>
 	<!-- ====================FILTERS==================== -->
 	<context-param>
 		<param-name>threshold</param-name>
@@ -328,6 +328,10 @@ This file is part of the Mapping Memory Manager.
 		<filter-name>LoginFilter</filter-name>
 		<url-pattern>/CreateCopy</url-pattern>
 	</filter-mapping>
+	    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/About</url-pattern>
+    </filter-mapping>
 	<filter-mapping>
 		<filter-name>ValidateAction</filter-name>
 		<url-pattern>/AdminEntity</url-pattern>
@@ -555,6 +559,14 @@ This file is part of the Mapping Memory Manager.
 		<servlet-name>UnlockEntity</servlet-name>
 		<servlet-class>isl.FIMS.servlet.entity.UnlockEntity</servlet-class>
 	</servlet>
+<servlet>
+        <servlet-name>About</servlet-name>
+        <servlet-class>isl.FIMS.servlet.ui.About</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetVersionsList</servlet-name>
+        <servlet-class>isl.FIMS.servlet.versions.GetVersionsList</servlet-class>
+    </servlet>
 	<servlet-mapping>
 		<servlet-name>AdminEntity</servlet-name>
 		<url-pattern>/AdminEntity</url-pattern>
@@ -706,6 +718,14 @@ This file is part of the Mapping Memory Manager.
 		<servlet-name>ExportSchema</servlet-name>
 		<url-pattern>/ExportSchema</url-pattern>
 	</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>About</servlet-name>
+        <url-pattern>/About</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetVersionsList</servlet-name>
+        <url-pattern>/GetVersionsList</url-pattern>
+    </servlet-mapping>
 	<session-config>
 		<session-timeout>180</session-timeout>
 	</session-config>

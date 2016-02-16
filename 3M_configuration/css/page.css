@@ -174,7 +174,7 @@ html,body{
 }
 #content{
     background-color: white;
-    min-height: 50%;
+    min-height: 70%;
 }
 .headerDropDown{
     float:right;
@@ -605,4 +605,7 @@ html,body{
 .footerCopy{
     margin-top: 10px;
     width: 15% !important;
+}
+.nowrap{
+      white-space: nowrap;
 }
