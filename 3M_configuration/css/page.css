@@ -62,37 +62,41 @@ This file is part of the FIMS webapp.
     margin-bottom: 30px;
 }
 
+.titleSearch{
+    color: #2C664B;
+    font-weight: bold;
+}
 .vocPanel>h4{
     color: #2C664B;
 }
 
-.savedQ a {
+.savedQ a, .extraSearch a {
     color: #2C664B;
     text-decoration:none;
 }
 
 /* unvisited link */
-.savedQ a:link {
+.savedQ a:link, .extraSearch a:link {
     color: #2C664B;
     text-decoration:none;
 }
 
 /* visited link */
-.savedQ a:visited {
+.savedQ a:visited , .extraSearch a:visited {
     color: #2C664B;
 }
 
 /* mouse over link */
-.savedQ a:hover {
+.savedQ a:hover, .extraSearch a:hover {
     color: #2C664B;
 }
 
 /* selected link */
-.savedQ a:active {
+.savedQ a:active, .extraSearch a:active {
     color: #2C664B;
 }
 
-.saveQaccordion-toggle:after{
+.saveQaccordion-toggle:after, .extraSearchaccordion-toggle:after{
     /* symbol for "opening" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
@@ -467,7 +471,7 @@ html,body{
 }
 
 .searchBox{
-    margin-top: 20px;
+	
     border: solid 1px #CCCCCC;
     padding: 4px;
     margin-bottom: 20px;
@@ -478,7 +482,7 @@ html,body{
 }
 
 .searchBox table{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .searchBox table th, tr ,td{
@@ -502,21 +506,21 @@ html,body{
     width: 100%;
 }
 
-.saveQaccordion-toggle.collapsed:after {
+.saveQaccordion-toggle.collapsed:after , .extraSearchaccordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
 
-#collapseCreateQ .row{
+#collapseCreateQ , #collapseSaveQ, #collapseExtraSearch .row{
     margin-top: 20px!important;
     margin-bottom: 20px!important;
 }
 
-#collapseSaveQ .row{
+/*#collapseSaveQ .row{
     margin-top: 20px!important;
     margin-bottom: 20px!important;
 
-}
+}*/
 
 .tooltip.top .tooltip-inner {
     background-color:#565655;
@@ -607,4 +611,18 @@ html,body{
 
 .nowrap{
       white-space: nowrap;
+}
+
+.string_inputoper , .time_inputoper , .vocSelect{
+    -webkit-user-select: none;
+    background-image: linear-gradient(#fff, #f7f7f7);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    color: #555;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 2px;
+    white-space: nowrap;
+    width: 100%;
+
 }

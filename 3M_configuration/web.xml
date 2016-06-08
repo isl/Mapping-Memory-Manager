@@ -567,6 +567,10 @@ This file is part of the Mapping Memory Manager.
         <servlet-name>GetVersionsList</servlet-name>
         <servlet-class>isl.FIMS.servlet.versions.GetVersionsList</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetTerms</servlet-name>
+        <servlet-class>isl.FIMS.servlet.search.GetTerms</servlet-class>
+    </servlet>
 	<servlet-mapping>
 		<servlet-name>AdminEntity</servlet-name>
 		<url-pattern>/AdminEntity</url-pattern>
@@ -725,6 +729,10 @@ This file is part of the Mapping Memory Manager.
     <servlet-mapping>
         <servlet-name>GetVersionsList</servlet-name>
         <url-pattern>/GetVersionsList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetTerms</servlet-name>
+        <url-pattern>/GetTerms</url-pattern>
     </servlet-mapping>
 	<session-config>
 		<session-timeout>180</session-timeout>
