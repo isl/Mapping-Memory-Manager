@@ -193,6 +193,11 @@ This file is part of the Mapping Memory Manager.
 		<param-name>signUp</param-name>
 		<param-value>true</param-value>
 	</context-param>
+	  <context-param>
+        <!--Option forget password-->
+        <param-name>forgetPass</param-name>
+        <param-value>true</param-value>
+    </context-param>
 	<context-param>
 		<!--Name of the system-->
 		<param-name>systemName</param-name>

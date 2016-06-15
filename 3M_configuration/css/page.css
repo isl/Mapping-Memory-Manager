@@ -307,7 +307,19 @@ html,body{
     padding-right: 25px !important;
     padding-bottom: 30px;
 }
+.actionsRow{
+    border: 1px solid #989498;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.actionsMenu{
+    padding-right: 0px!important;
+}
 .actionsMenu >.nav-tabs{
+    margin-top: 14px;
+    
     border-bottom: 0px;
 }
 
@@ -360,15 +372,6 @@ html,body{
 .searchCaret{
     color: #565655;
     margin-top: 10px;
-    padding-left: 2px;
-    width: 10px!important;
-    height: 10px!important;
-}
-
-.moreCaret{
-    width: 10px!important;
-    height: 10px!important;
-    margin-top: 5px;
 }
 
 .context{
@@ -625,4 +628,8 @@ html,body{
     white-space: nowrap;
     width: 100%;
 
+}
+
+.highlight{
+    background-color: yellow;
 }
