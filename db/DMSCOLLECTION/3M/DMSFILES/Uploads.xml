@@ -27,31 +27,33 @@ This file is part of the Mapping Memory Manager.
 
 -->
 <uploads>
-    <Mapping>
-        <xml_schema>
-            <mime>
-                <type>xsd</type>
-            </mime>
-        </xml_schema>
-        <rdf_schema>
-            <mime>
-                <type use="schema_file">rdf</type>
-                <type use="schema_file">rdfs</type>
-            </mime>
-        </rdf_schema>
-        <example_files>
-            <mime>
-                <type>html</type>
-                <type>htm</type>
-                <type use="xml_link">xml</type>
- 				<type use="rdf_link">rdf</type>
-                <type use="rdf_link">rdfs</type>
-            </mime>
-        </example_files>
-        <generator_files>
-            <mime>
-                <type use="generator_link">xml</type>
-            </mime>
-        </generator_files>
-    </Mapping>
+	<Mapping>
+		<xml_schema>
+			<mime>
+				<type>xsd</type>
+			</mime>
+		</xml_schema>
+		<rdf_schema>
+			<mime>
+				<type use="schema_file">rdf</type>
+				<type use="schema_file">rdfs</type>
+				<type use="schema_file">owl</type>
+				<type use="schema_file">ttl</type>
+			</mime>
+		</rdf_schema>
+		<example_files>
+			<mime>
+				<type>html</type>
+				<type>htm</type>
+				<type use="xml_link">xml</type>
+				<type use="rdf_link">rdf</type>
+				<type use="rdf_link">rdfs</type>
+			</mime>
+		</example_files>
+		<generator_files>
+			<mime>
+				<type use="generator_link">xml</type>
+			</mime>
+		</generator_files>
+	</Mapping>
 </uploads>
