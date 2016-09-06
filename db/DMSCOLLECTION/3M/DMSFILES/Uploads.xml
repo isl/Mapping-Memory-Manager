@@ -38,7 +38,10 @@ This file is part of the Mapping Memory Manager.
 				<type use="schema_file">rdf</type>
 				<type use="schema_file">rdfs</type>
 				<type use="schema_file">owl</type>
+<<<<<<< HEAD
 				<type use="schema_file">ttl</type>
+=======
+>>>>>>> origin/master
 			</mime>
 		</rdf_schema>
 		<example_files>
@@ -56,4 +59,8 @@ This file is part of the Mapping Memory Manager.
 			</mime>
 		</generator_files>
 	</Mapping>
+<<<<<<< HEAD
 </uploads>
+=======
+</uploads>
+>>>>>>> origin/master
