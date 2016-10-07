@@ -59,13 +59,14 @@ This file is part of the FIMS webapp.
     color: #2C664B;
     margin-top: 2px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .titleSearch{
     color: #2C664B;
     font-weight: bold;
 }
+
 .vocPanel>h4{
     color: #2C664B;
 }
@@ -171,27 +172,24 @@ html,body{
     width:100%;
 }
 
-
-
 #header{
-    margin-bottom: -17px;
+    height: 0px;
+    padding-left: 8%;
 }
+
 #content{
     background-color: white;
     min-height: 70%;
 }
 .headerDropDown{
-    float:right;
-    top:-140px;
-    right:16px;
-}
-#insideHeaderDrop{
-    left: -90px;
-}
-#outsideHeaderDrop{
-    left: -68px;
+    /*    float:right;
+        top:12px;
+        right:16px;*/
+    /*    top: 10px;*/
 
 }
+
+
 #searchDropDown{
     left:-130px;
 }
@@ -201,7 +199,14 @@ html,body{
     text-decoration:none;
     font-size: 12px;
 }
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent!important;
+}
 
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: transparent!important;
+}
 /* visited link */
 .headerDropDown a:visited {
     color: #565655;
@@ -307,6 +312,7 @@ html,body{
     padding-right: 25px !important;
     padding-bottom: 30px;
 }
+
 .actionsRow{
     border: 1px solid #989498;
     margin-left: 0px !important;
@@ -319,7 +325,7 @@ html,body{
 }
 .actionsMenu >.nav-tabs{
     margin-top: 14px;
-    
+
     border-bottom: 0px;
 }
 
@@ -328,7 +334,6 @@ html,body{
     padding-left: 0px;
     padding-top: 0px;
 }
-
 .actionsMenu >.nav>li>a:focus{
     border-color: #ffffff;
     background-color:transparent!important;
@@ -338,6 +343,7 @@ html,body{
     border-color: #ffffff;
     background-color:transparent!important;
 }
+
 .moreDropDown a {
     color: #565655;
     text-decoration:none;
@@ -373,7 +379,6 @@ html,body{
     color: #565655;
     margin-top: 10px;
 }
-
 .context{
     margin-top: 20px;
 }
@@ -474,7 +479,6 @@ html,body{
 }
 
 .searchBox{
-	
     border: solid 1px #CCCCCC;
     padding: 4px;
     margin-bottom: 20px;
@@ -596,7 +600,6 @@ html,body{
     margin-bottom: 30px;
 }
 
-
 .footerText{
     color:white;
     margin-top: 10px;
@@ -613,7 +616,7 @@ html,body{
 }
 
 .nowrap{
-      white-space: nowrap;
+    white-space: nowrap;
 }
 
 .string_inputoper , .time_inputoper , .vocSelect{
