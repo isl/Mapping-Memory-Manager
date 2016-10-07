@@ -3,7 +3,6 @@
         <xml_schema>
             <mime>
                 <type use="schema_file">xsd</type>
-                <type use="schema_file">xml</type>
             </mime>
         </xml_schema>
         <rdf_schema>
@@ -19,6 +18,7 @@
                 <type>html</type>
                 <type>htm</type>
                 <type use="xml_link">xml</type>
+				<type use="schema_file">xml</type>
                 <type use="rdf_link">rdf</type>
                 <type use="rdf_link">rdfs</type>
             </mime>
