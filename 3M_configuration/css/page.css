@@ -179,7 +179,6 @@ html,body{
 
 #content{
     background-color: white;
-    min-height: 70%;
     display: flex;
     flex-wrap: wrap;
 }
