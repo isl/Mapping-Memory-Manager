@@ -1,8 +1,11 @@
 <topmenu>
-	<menugroup type="top" id="1" img_src="formating/images/arrowDownWhite.png">
-		<!--menu id="BugReport" href="http://139.91.183.3:8080/BugReport/?project=synthesis">BugReport</menu-->
-		<menu id="Logout" href="Logout">logout</menu>
-		<!--menu id="Help" href="./Manuals/" onmouseover="toggle_visibility_Class('help','')">Help</menu-->
-		<menu id="changePass" href="ChangePass?action=toedit">changePass</menu>
-	</menugroup>
+    <menugroup type="top" id="1">
+        <menu id="settings" img_src="formating/images/user.png">
+            <submenu id="settings">
+                <action id="Logout" href="Logout">logout</action>
+                <action id="changePass" href="ChangePass?action=toedit">changePass</action>
+                <action id="About" href="About">About</action>
+            </submenu>
+        </menu>
+    </menugroup>
 </topmenu>
