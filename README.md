@@ -59,7 +59,7 @@ the schema of the Mapping.
 changes described at FIMS repository at [README.md](https://github.com/isl/FIMS/blob/master/README.md)
 
 a.	You will find the needed .xsd files at https://github.com/isl/x3ml/tree/master/resources/X3ML%20Schema folder. Please copy the xsd files at
-    3M/Schema folder.
+    3M/Schema folder. Also rename the x3ml.xsd file to Mapping.xsd.
 	
 b.	You will find the uploads folder at 3M/uploads
 
