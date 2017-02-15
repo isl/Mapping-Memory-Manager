@@ -233,12 +233,12 @@ This file is part of the Mapping Memory Manager.
     <context-param>
         <description>Schema Version</description>
         <param-name>schemaVersion</param-name>
-        <param-value>1.5</param-value>
+        <param-value>1.1</param-value>
     </context-param>
     <context-param>
         <description>System Version</description>
         <param-name>systemVersion</param-name>
-        <param-value>2.0</param-value>
+        <param-value>1.1</param-value>
     </context-param>
 	<!-- ====================FILTERS==================== -->
 	<context-param>
