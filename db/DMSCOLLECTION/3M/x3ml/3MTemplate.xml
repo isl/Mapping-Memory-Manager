@@ -4,14 +4,24 @@
     <info>
         <title/>
         <general_description/>
-        <source_info>
-            <source_schema type="" version=""/>
+        <source>
+            <source_info>
+                <source_schema type="" version=""/>
+                <namespaces>
+                    <namespace uri="" prefix=""/>
+                </namespaces>
+            </source_info>
             <source_collection/>
-        </source_info>
-        <target_info>
-            <target_schema type="" version=""/>
+        </source>
+        <target>
+            <target_info>
+                <target_schema type="" version=""/>
+                <namespaces>
+                    <namespace uri="" prefix=""/>
+                </namespaces>
+            </target_info>
             <target_collection/>
-        </target_info>
+        </target>
         <mapping_info>
             <mapping_created_by_org/>
             <mapping_created_by_person/>
@@ -123,5 +133,8 @@
         <instance_generator name=""/>
         <label_generator name=""/>
         <arg name="" type="xpath"/>
+        <namespaces>
+            <namespace uri="" prefix=""/>
+        </namespaces>
     </optionalPart>
 </x3ml>
