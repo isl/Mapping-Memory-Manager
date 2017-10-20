@@ -39,6 +39,7 @@
                 <target_node>
                     <entity>
                         <type/>
+                <instance_generator name="UUID"/>
                     </entity>
                 </target_node>
             </domain>
