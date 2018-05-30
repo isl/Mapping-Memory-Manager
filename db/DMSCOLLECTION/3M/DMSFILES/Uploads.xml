@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <uploads>
     <Mapping>
         <xml_schema>
@@ -31,6 +30,13 @@
                 <type use="generator_link">xml</type>
             </mime>
         </generator_files>
+        <thesaurus_files>
+            <mime>
+                <type use="thesaurus_link">ttl</type>
+                <type use="thesaurus_link">rdf</type>
+                <type use="thesaurus_link">nt</type>
+            </mime>
+        </thesaurus_files>
     </Mapping>
     <SampleMapping>
         <xml_schema>
@@ -63,5 +69,12 @@
                 <type use="generator_link">xml</type>
             </mime>
         </generator_files>
+        <thesaurus_files>
+            <mime>
+                <type use="thesaurus_link">ttl</type>
+                <type use="thesaurus_link">rdf</type>
+                <type use="thesaurus_link">nt</type>
+            </mime>
+        </thesaurus_files>
     </SampleMapping>
 </uploads>
