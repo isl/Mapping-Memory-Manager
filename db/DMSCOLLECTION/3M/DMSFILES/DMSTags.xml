@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- was: no XML declaration present --><!-- was: no XML declaration present -->
 <DMS>
     <tags>
@@ -119,6 +120,8 @@
             <tagname>AdminStatus</tagname>
             <xpath>//admin/info</xpath>
             <tagname>info</tagname>
+            <xpath>//admin/lastModified</xpath>
+            <tagname>lastModified</tagname>
         </tag>
     </tags>
 </DMS>

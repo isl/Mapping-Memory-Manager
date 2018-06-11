@@ -3,6 +3,7 @@
         <xml_schema>
             <mime>
                 <type use="schema_file">xsd</type>
+                <type use="schema_file">xml</type>
             </mime>
         </xml_schema>
         <rdf_schema>
@@ -11,6 +12,7 @@
                 <type use="schema_file">rdfs</type>
                 <type use="schema_file">owl</type>
                 <type use="schema_file">ttl</type>
+                <type use="schema_file">nt</type>
             </mime>
         </rdf_schema>
         <example_files>
@@ -18,9 +20,9 @@
                 <type>html</type>
                 <type>htm</type>
                 <type use="xml_link">xml</type>
-				<type use="schema_file">xml</type>
                 <type use="rdf_link">rdf</type>
                 <type use="rdf_link">rdfs</type>
+                <type use="rdf_link">ttl</type>
             </mime>
         </example_files>
         <generator_files>
@@ -28,5 +30,51 @@
                 <type use="generator_link">xml</type>
             </mime>
         </generator_files>
+        <thesaurus_files>
+            <mime>
+                <type use="thesaurus_link">ttl</type>
+                <type use="thesaurus_link">rdf</type>
+                <type use="thesaurus_link">nt</type>
+            </mime>
+        </thesaurus_files>
     </Mapping>
+    <SampleMapping>
+        <xml_schema>
+            <mime>
+                <type use="schema_file">xsd</type>
+                <type use="schema_file">xml</type>
+            </mime>
+        </xml_schema>
+        <rdf_schema>
+            <mime>
+                <type use="schema_file">rdf</type>
+                <type use="schema_file">rdfs</type>
+                <type use="schema_file">owl</type>
+                <type use="schema_file">ttl</type>
+                <type use="schema_file">nt</type>
+            </mime>
+        </rdf_schema>
+        <example_files>
+            <mime>
+                <type>html</type>
+                <type>htm</type>
+                <type use="xml_link">xml</type>
+                <type use="rdf_link">rdf</type>
+                <type use="rdf_link">rdfs</type>
+                <type use="rdf_link">ttl</type>
+            </mime>
+        </example_files>
+        <generator_files>
+            <mime>
+                <type use="generator_link">xml</type>
+            </mime>
+        </generator_files>
+        <thesaurus_files>
+            <mime>
+                <type use="thesaurus_link">ttl</type>
+                <type use="thesaurus_link">rdf</type>
+                <type use="thesaurus_link">nt</type>
+            </mime>
+        </thesaurus_files>
+    </SampleMapping>
 </uploads>
