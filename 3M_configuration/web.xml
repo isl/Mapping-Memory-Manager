@@ -240,6 +240,11 @@ This file is part of the Mapping Memory Manager.
         <param-name>systemVersion</param-name>
         <param-value>1.1</param-value>
     </context-param>
+	<context-param>
+		<description>publicationDate</description>
+		<param-name>publicationDate</param-name>
+		<param-value>2012</param-value>
+	</context-param>			
 	<!-- ====================FILTERS==================== -->
 	<context-param>
 		<param-name>threshold</param-name>
@@ -637,6 +642,10 @@ This file is part of the Mapping Memory Manager.
         <servlet-name>GetTerms</servlet-name>
         <servlet-class>isl.FIMS.servlet.search.GetTerms</servlet-class>
     </servlet>
+	<servlet>
+		<servlet-name>Privacy</servlet-name>
+		<servlet-class>isl.FIMS.servlet.ui.Privacy</servlet-class>
+	</servlet>	  
     <servlet-mapping>
         <servlet-name>AdminEntity</servlet-name>
         <url-pattern>/AdminEntity</url-pattern>
@@ -800,6 +809,10 @@ This file is part of the Mapping Memory Manager.
         <servlet-name>GetTerms</servlet-name>
         <url-pattern>/GetTerms</url-pattern>
     </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Privacy</servlet-name>
+		<url-pattern>/Privacy</url-pattern>
+	</servlet-mapping>				  
     <session-config>
         <session-timeout>180</session-timeout>
     </session-config>
