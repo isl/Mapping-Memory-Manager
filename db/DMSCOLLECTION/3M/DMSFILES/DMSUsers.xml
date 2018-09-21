@@ -30,7 +30,7 @@ This file is part of the Mapping Memory Manager.
 
 <DMS>
     <users>
-        <user password="sysadmin" id="3" username="sysadmin">
+        <user password="48a365b4ce1e322a55ae9017f3daf0c0" id="3" username="sysadmin">
             <info>
                 <firstname>System Administrator</firstname>
                 <lastname>Sys Admin</lastname>
@@ -48,7 +48,7 @@ This file is part of the Mapping Memory Manager.
                 <sysadmin level="high"/>
             </actions>
         </user>
-        <user password="admin" id="4" username="admin">
+        <user password="21232f297a57a5a743894a0e4a801fc3" id="4" username="admin">
             <info>
                 <firstname>Admin</firstname>
                 <lastname>Admin</lastname>
@@ -66,7 +66,7 @@ This file is part of the Mapping Memory Manager.
                 <admin level="normal"/>
             </actions>
         </user>
-        <user password="user" id="5" username="user">
+        <user password="ee11cbb19052e40b07aac0ca060c23ee" id="5" username="user">
             <info>
                 <firstname>User</firstname>
                 <lastname>user</lastname>
@@ -84,7 +84,7 @@ This file is part of the Mapping Memory Manager.
                 <editor level="normal"/>
             </actions>
         </user>
-        <user password="guest" id="6" username="guest">
+        <user password="84e0343a0486ff05530df6c705c8bb4" id="6" username="guest">
             <info>
                 <firstname>Guest</firstname>
                 <lastname>guest</lastname>
