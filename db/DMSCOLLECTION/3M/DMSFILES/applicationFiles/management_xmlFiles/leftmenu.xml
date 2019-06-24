@@ -24,6 +24,13 @@
 			<userRights href="./Manuals/en/manual.pdf" target="_blank">sysadmin</userRights>
 			<label>manual</label>
 		</menu>
+		 <menu id="X3ML_Generators_Manual">
+            <userRights href="./Manuals/en/X3ML_Generators_Manual.pdf" target="_blank">editor</userRights>
+            <userRights href="./Manuals/en/X3ML_Generators_Manual.pdf" target="_blank">guest</userRights>
+            <userRights href="./Manuals/en/X3ML_Generators_Manual.pdf" target="_blank">admin</userRights>
+            <userRights href="./Manuals/en/X3ML_Generators_Manual.pdf" target="_blank">sysadmin</userRights>
+            <label>X3ML_Generators_Manual</label>
+        </menu>
 		<label>Help</label>
 	</menugroup>
 	<menugroup type="left" id="3">
