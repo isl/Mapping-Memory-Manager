@@ -1,3 +1,5 @@
+This project is obsolete. Please refer to the newer version at https://gitlab.isl.ics.forth.gr/cci/3m-docker
+===
 
 Copyright 2015 Institute of Computer Science,
 Foundation for Research and Technology - Hellas
